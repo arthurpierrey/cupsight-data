@@ -1,0 +1,1164 @@
+{
+ "version": 1,
+ "updated": "2026-06-10",
+ "note": "Styles: ultralight (ultra clair / nordique extrême), light (clair), modern (specialty équilibré), classic (traditionnel). Classement conservateur — corrections bienvenues via PR.",
+ "roasters": [
+  {
+   "name": "Belleville Brûlerie",
+   "aliases": [
+    "Brûlerie de Belleville",
+    "Belleville"
+   ],
+   "country": "FR",
+   "city": "Paris",
+   "website": "",
+   "style": "modern",
+   "notes": "Pionnier de la scène parisienne"
+  },
+  {
+   "name": "Coutume",
+   "aliases": [
+    "Coutume Café"
+   ],
+   "country": "FR",
+   "city": "Paris",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Café Lomi",
+   "aliases": [
+    "Lomi"
+   ],
+   "country": "FR",
+   "city": "Paris",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Terres de Café",
+   "aliases": [],
+   "country": "FR",
+   "city": "Paris",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "L'Arbre à Café",
+   "aliases": [],
+   "country": "FR",
+   "city": "Paris",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Hexagone Café",
+   "aliases": [
+    "Hexagone"
+   ],
+   "country": "FR",
+   "city": "Paris",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "KB Coffee Roasters",
+   "aliases": [
+    "KB CaféShop",
+    "KB"
+   ],
+   "country": "FR",
+   "city": "Paris",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Substance Café",
+   "aliases": [
+    "Substance"
+   ],
+   "country": "FR",
+   "city": "Paris",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "La Caféothèque",
+   "aliases": [],
+   "country": "FR",
+   "city": "Paris",
+   "website": "",
+   "style": "classic",
+   "notes": ""
+  },
+  {
+   "name": "Ten Belles",
+   "aliases": [],
+   "country": "FR",
+   "city": "Paris",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Anbassa",
+   "aliases": [],
+   "country": "FR",
+   "city": "Paris",
+   "website": "",
+   "style": "classic",
+   "notes": ""
+  },
+  {
+   "name": "Cafés Verlet",
+   "aliases": [
+    "Verlet"
+   ],
+   "country": "FR",
+   "city": "Paris",
+   "website": "",
+   "style": "classic",
+   "notes": "Maison historique"
+  },
+  {
+   "name": "Brûlerie Caron",
+   "aliases": [
+    "Caron"
+   ],
+   "country": "FR",
+   "city": "Paris",
+   "website": "",
+   "style": "classic",
+   "notes": ""
+  },
+  {
+   "name": "Le Café Alain Ducasse",
+   "aliases": [],
+   "country": "FR",
+   "city": "Paris",
+   "website": "",
+   "style": "classic",
+   "notes": ""
+  },
+  {
+   "name": "Kawa Coffee",
+   "aliases": [
+    "Kawa"
+   ],
+   "country": "FR",
+   "city": "Paris",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Café Mokxa",
+   "aliases": [
+    "Mokxa"
+   ],
+   "country": "FR",
+   "city": "Lyon",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "L'Alchimiste",
+   "aliases": [
+    "L'Alchimiste Café"
+   ],
+   "country": "FR",
+   "city": "Bordeaux",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Cafés Lugat",
+   "aliases": [
+    "Lugat"
+   ],
+   "country": "FR",
+   "city": "Bordeaux",
+   "website": "",
+   "style": "classic",
+   "notes": "Gamme large, du classique au specialty"
+  },
+  {
+   "name": "Hayuco Coffee Roasters",
+   "aliases": [
+    "Hayuco"
+   ],
+   "country": "FR",
+   "city": "Toulouse",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Perlo Coffee",
+   "aliases": [
+    "Perlo"
+   ],
+   "country": "FR",
+   "city": "Toulouse",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Maison Méo",
+   "aliases": [
+    "Méo"
+   ],
+   "country": "FR",
+   "city": "Lille",
+   "website": "",
+   "style": "classic",
+   "notes": ""
+  },
+  {
+   "name": "Malongo",
+   "aliases": [],
+   "country": "FR",
+   "city": "Nice",
+   "website": "",
+   "style": "classic",
+   "notes": ""
+  },
+  {
+   "name": "Café Joyeux",
+   "aliases": [],
+   "country": "FR",
+   "city": "Paris",
+   "website": "",
+   "style": "classic",
+   "notes": "Torréfacteur solidaire"
+  },
+  {
+   "name": "Tim Wendelboe",
+   "aliases": [],
+   "country": "NO",
+   "city": "Oslo",
+   "website": "",
+   "style": "light",
+   "notes": "Pionnier du style nordique très clair"
+  },
+  {
+   "name": "Fuglen Coffee Roasters",
+   "aliases": [
+    "Fuglen"
+   ],
+   "country": "NO",
+   "city": "Oslo",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Solberg & Hansen",
+   "aliases": [],
+   "country": "NO",
+   "city": "Oslo",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Talor&Jørgen",
+   "aliases": [
+    "Talor and Jorgen"
+   ],
+   "country": "NO",
+   "city": "Oslo",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Jacu Coffee Roastery",
+   "aliases": [
+    "Jacu"
+   ],
+   "country": "NO",
+   "city": "Ålesund",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Coffee Collective",
+   "aliases": [
+    "The Coffee Collective"
+   ],
+   "country": "DK",
+   "city": "Copenhague",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "April Coffee Roasters",
+   "aliases": [
+    "April"
+   ],
+   "country": "DK",
+   "city": "Copenhague",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Prolog Coffee",
+   "aliases": [
+    "Prolog"
+   ],
+   "country": "DK",
+   "city": "Copenhague",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "La Cabra",
+   "aliases": [],
+   "country": "DK",
+   "city": "Aarhus",
+   "website": "",
+   "style": "light",
+   "notes": "Très clair, style nordique"
+  },
+  {
+   "name": "Koppi",
+   "aliases": [],
+   "country": "SE",
+   "city": "Helsingborg",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Drop Coffee",
+   "aliases": [],
+   "country": "SE",
+   "city": "Stockholm",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Morgon Coffee Roasters",
+   "aliases": [
+    "Morgon"
+   ],
+   "country": "SE",
+   "city": "Göteborg",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Da Matteo",
+   "aliases": [],
+   "country": "SE",
+   "city": "Göteborg",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Standout Coffee",
+   "aliases": [
+    "Standout"
+   ],
+   "country": "SE",
+   "city": "Stockholm",
+   "website": "",
+   "style": "light",
+   "notes": "Spécialiste des lots rares"
+  },
+  {
+   "name": "Good Life Coffee",
+   "aliases": [],
+   "country": "FI",
+   "city": "Helsinki",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Kaffa Roastery",
+   "aliases": [],
+   "country": "FI",
+   "city": "Helsinki",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Frukt Coffee Roasters",
+   "aliases": [
+    "Frukt"
+   ],
+   "country": "FI",
+   "city": "Turku",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Square Mile Coffee Roasters",
+   "aliases": [
+    "Square Mile"
+   ],
+   "country": "GB",
+   "city": "Londres",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Workshop Coffee",
+   "aliases": [
+    "Workshop"
+   ],
+   "country": "GB",
+   "city": "Londres",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Origin Coffee",
+   "aliases": [
+    "Origin"
+   ],
+   "country": "GB",
+   "city": "Cornouailles",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Assembly Coffee",
+   "aliases": [
+    "Assembly"
+   ],
+   "country": "GB",
+   "city": "Londres",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Plot Roasting",
+   "aliases": [
+    "Plot"
+   ],
+   "country": "GB",
+   "city": "Londres",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Curve Coffee Roasters",
+   "aliases": [
+    "Curve"
+   ],
+   "country": "GB",
+   "city": "Margate",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Colonna Coffee",
+   "aliases": [
+    "Colonna"
+   ],
+   "country": "GB",
+   "city": "Bath",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Sweven Coffee",
+   "aliases": [
+    "Sweven"
+   ],
+   "country": "GB",
+   "city": "Bristol",
+   "website": "",
+   "style": "ultralight",
+   "notes": "Assumé ultra-clair"
+  },
+  {
+   "name": "Obadiah Coffee",
+   "aliases": [
+    "Obadiah"
+   ],
+   "country": "GB",
+   "city": "Édimbourg",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Hasbean",
+   "aliases": [
+    "Has Bean"
+   ],
+   "country": "GB",
+   "city": "Stafford",
+   "website": "",
+   "style": "classic",
+   "notes": ""
+  },
+  {
+   "name": "Union Hand-Roasted Coffee",
+   "aliases": [
+    "Union"
+   ],
+   "country": "GB",
+   "city": "Londres",
+   "website": "",
+   "style": "classic",
+   "notes": ""
+  },
+  {
+   "name": "Monmouth Coffee",
+   "aliases": [
+    "Monmouth"
+   ],
+   "country": "GB",
+   "city": "Londres",
+   "website": "",
+   "style": "classic",
+   "notes": ""
+  },
+  {
+   "name": "Climpson & Sons",
+   "aliases": [],
+   "country": "GB",
+   "city": "Londres",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Caravan Coffee Roasters",
+   "aliases": [
+    "Caravan"
+   ],
+   "country": "GB",
+   "city": "Londres",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Ozone Coffee Roasters",
+   "aliases": [
+    "Ozone"
+   ],
+   "country": "GB",
+   "city": "Londres",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Kiss the Hippo",
+   "aliases": [],
+   "country": "GB",
+   "city": "Londres",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Dark Arts Coffee",
+   "aliases": [
+    "Dark Arts"
+   ],
+   "country": "GB",
+   "city": "Londres",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "3fe Coffee",
+   "aliases": [
+    "3fe"
+   ],
+   "country": "IE",
+   "city": "Dublin",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Cloud Picker Coffee",
+   "aliases": [
+    "Cloud Picker"
+   ],
+   "country": "IE",
+   "city": "Dublin",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Manhattan Coffee Roasters",
+   "aliases": [
+    "Manhattan"
+   ],
+   "country": "NL",
+   "city": "Rotterdam",
+   "website": "",
+   "style": "ultralight",
+   "notes": "Référence ultra-claire européenne"
+  },
+  {
+   "name": "Friedhats",
+   "aliases": [
+    "Friedhats FUKU"
+   ],
+   "country": "NL",
+   "city": "Amsterdam",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "White Label Coffee",
+   "aliases": [
+    "White Label"
+   ],
+   "country": "NL",
+   "city": "Amsterdam",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Dak Coffee Roasters",
+   "aliases": [
+    "Dak"
+   ],
+   "country": "NL",
+   "city": "Amsterdam",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Bocca Coffee",
+   "aliases": [
+    "Bocca"
+   ],
+   "country": "NL",
+   "city": "Amsterdam",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Keen Coffee",
+   "aliases": [
+    "Keen"
+   ],
+   "country": "NL",
+   "city": "Utrecht",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Stooker Roasting Company",
+   "aliases": [
+    "Stooker"
+   ],
+   "country": "NL",
+   "city": "Amsterdam",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "MOK Coffee",
+   "aliases": [
+    "MOK"
+   ],
+   "country": "BE",
+   "city": "Bruxelles",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Wide Awake Coffee",
+   "aliases": [
+    "Wide Awake"
+   ],
+   "country": "BE",
+   "city": "Bruxelles",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Replica Roasters",
+   "aliases": [
+    "Replica"
+   ],
+   "country": "BE",
+   "city": "Louvain",
+   "website": "",
+   "style": "ultralight",
+   "notes": "Torréfactions très claires (classement communauté, à confirmer)"
+  },
+  {
+   "name": "OR Coffee Roasters",
+   "aliases": [
+    "OR Coffee",
+    "OR"
+   ],
+   "country": "BE",
+   "city": "Gand",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Caffènation",
+   "aliases": [
+    "Caffenation"
+   ],
+   "country": "BE",
+   "city": "Anvers",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "The Barn",
+   "aliases": [],
+   "country": "DE",
+   "city": "Berlin",
+   "website": "",
+   "style": "light",
+   "notes": "Référence berlinoise du clair"
+  },
+  {
+   "name": "Bonanza Coffee Roasters",
+   "aliases": [
+    "Bonanza"
+   ],
+   "country": "DE",
+   "city": "Berlin",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Five Elephant",
+   "aliases": [],
+   "country": "DE",
+   "city": "Berlin",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "19grams",
+   "aliases": [
+    "Nineteen grams"
+   ],
+   "country": "DE",
+   "city": "Berlin",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Fjord Coffee Roasters",
+   "aliases": [
+    "Fjord"
+   ],
+   "country": "DE",
+   "city": "Berlin",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Ernst Kaffeeröster",
+   "aliases": [
+    "Ernst"
+   ],
+   "country": "DE",
+   "city": "Cologne",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Man Versus Machine",
+   "aliases": [
+    "MVSM",
+    "Man vs Machine"
+   ],
+   "country": "DE",
+   "city": "Munich",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Elbgold",
+   "aliases": [],
+   "country": "DE",
+   "city": "Hambourg",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Süssmund Kaffee",
+   "aliases": [
+    "Suessmund",
+    "Süssmund"
+   ],
+   "country": "AT",
+   "city": "Vienne",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Jonas Reindl Coffee Roasters",
+   "aliases": [
+    "Jonas Reindl"
+   ],
+   "country": "AT",
+   "city": "Vienne",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Kaffeefabrik",
+   "aliases": [],
+   "country": "AT",
+   "city": "Vienne",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "MAME",
+   "aliases": [],
+   "country": "CH",
+   "city": "Zurich",
+   "website": "",
+   "style": "light",
+   "notes": "Fondé par des champions barista"
+  },
+  {
+   "name": "Stoll Kaffee",
+   "aliases": [
+    "Stoll"
+   ],
+   "country": "CH",
+   "city": "Zurich",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "ViCAFE",
+   "aliases": [],
+   "country": "CH",
+   "city": "Zurich",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Gardelli Specialty Coffees",
+   "aliases": [
+    "Gardelli"
+   ],
+   "country": "IT",
+   "city": "Forlì",
+   "website": "",
+   "style": "light",
+   "notes": "Rubens Gardelli, multi-champion de torréfaction"
+  },
+  {
+   "name": "His Majesty the Coffee",
+   "aliases": [],
+   "country": "IT",
+   "city": "Monza",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Ditta Artigianale",
+   "aliases": [],
+   "country": "IT",
+   "city": "Florence",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Le Piantagioni del Caffè",
+   "aliases": [],
+   "country": "IT",
+   "city": "Livourne",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Nomad Coffee",
+   "aliases": [
+    "Nomad"
+   ],
+   "country": "ES",
+   "city": "Barcelone",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Right Side Coffee",
+   "aliases": [
+    "Right Side"
+   ],
+   "country": "ES",
+   "city": "Castelldefels",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Puchero Coffee",
+   "aliases": [
+    "Puchero"
+   ],
+   "country": "ES",
+   "city": "Valladolid",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Hola Coffee",
+   "aliases": [
+    "Hola"
+   ],
+   "country": "ES",
+   "city": "Madrid",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Kima Coffee",
+   "aliases": [
+    "Kima"
+   ],
+   "country": "ES",
+   "city": "Málaga",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Fábrica Coffee Roasters",
+   "aliases": [
+    "Fabrica"
+   ],
+   "country": "PT",
+   "city": "Lisbonne",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Doubleshot",
+   "aliases": [],
+   "country": "CZ",
+   "city": "Prague",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Father's Coffee Roastery",
+   "aliases": [
+    "Father's Coffee",
+    "Fathers Coffee"
+   ],
+   "country": "CZ",
+   "city": "Ostrava",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Nordbeans",
+   "aliases": [],
+   "country": "CZ",
+   "city": "Liberec",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Hard Beans",
+   "aliases": [
+    "Hard Beans Coffee Roasters"
+   ],
+   "country": "PL",
+   "city": "Opole",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Audun Coffee",
+   "aliases": [
+    "Audun"
+   ],
+   "country": "PL",
+   "city": "Białystok",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Casino Mocca",
+   "aliases": [],
+   "country": "HU",
+   "city": "Budapest",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "SEY Coffee",
+   "aliases": [
+    "SEY"
+   ],
+   "country": "US",
+   "city": "New York",
+   "website": "",
+   "style": "ultralight",
+   "notes": "Référence mondiale de l'ultra-clair"
+  },
+  {
+   "name": "Glitch Coffee & Roasters",
+   "aliases": [
+    "Glitch",
+    "Glitch Coffee"
+   ],
+   "country": "JP",
+   "city": "Tokyo",
+   "website": "",
+   "style": "ultralight",
+   "notes": "Icône ultra-claire japonaise"
+  },
+  {
+   "name": "Onyx Coffee Lab",
+   "aliases": [
+    "Onyx"
+   ],
+   "country": "US",
+   "city": "Arkansas",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Black & White Coffee Roasters",
+   "aliases": [
+    "Black and White"
+   ],
+   "country": "US",
+   "city": "Caroline du Nord",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Heart Coffee Roasters",
+   "aliases": [
+    "Heart"
+   ],
+   "country": "US",
+   "city": "Portland",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Coava Coffee Roasters",
+   "aliases": [
+    "Coava"
+   ],
+   "country": "US",
+   "city": "Portland",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Proud Mary Coffee",
+   "aliases": [
+    "Proud Mary"
+   ],
+   "country": "AU",
+   "city": "Melbourne",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Market Lane Coffee",
+   "aliases": [
+    "Market Lane"
+   ],
+   "country": "AU",
+   "city": "Melbourne",
+   "website": "",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "ONA Coffee",
+   "aliases": [
+    "ONA"
+   ],
+   "country": "AU",
+   "city": "Canberra",
+   "website": "",
+   "style": "modern",
+   "notes": ""
+  }
+ ]
+}
