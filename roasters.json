@@ -1,8 +1,19 @@
 {
- "version": 1,
- "updated": "2026-06-10",
- "note": "Styles: ultralight (ultra clair / nordique extrême), light (clair), modern (specialty équilibré), classic (traditionnel). Classement conservateur — corrections bienvenues via PR.",
+ "version": 3,
+ "updated": "2026-07-06",
+ "note": "Styles: ultralight (moderne/radical, ultra clair — ex. Substance, Datura, Picky Chemist), light (clair, inclut le style nordique CLASSIQUE type Wendelboe), modern (specialty équilibré), classic (traditionnel). Nordic (Wendelboe) ≠ ultralight. Classement conservateur — corrections bienvenues via PR.",
  "roasters": [
+  {
+   "name": "Datura",
+   "aliases": [
+    "Datura Paris"
+   ],
+   "country": "FR",
+   "city": "Paris",
+   "website": "",
+   "style": "ultralight",
+   "notes": "Micro-torréfacteur parisien, ultra clair / radical (moderne)"
+  },
   {
    "name": "Belleville Brûlerie",
    "aliases": [
@@ -86,8 +97,31 @@
    "country": "FR",
    "city": "Paris",
    "website": "",
-   "style": "light",
-   "notes": ""
+   "style": "ultralight",
+   "notes": "Torréfaction ultra claire / radicale (style moderne)"
+  },
+  {
+   "name": "Picky Chemist",
+   "aliases": [],
+   "country": "",
+   "city": "",
+   "website": "",
+   "style": "ultralight",
+   "notes": "Torréfaction ultra claire / radicale (style moderne)"
+  },
+  {
+   "name": "Goût & Co",
+   "aliases": [
+    "Gout & Co",
+    "Gout&Co",
+    "Goût and Co",
+    "Goutandco"
+   ],
+   "country": "CN",
+   "city": "Chengdu",
+   "website": "https://goutandco.com",
+   "style": "ultralight",
+   "notes": "Torréfacteur de Chengdu (Chine) depuis 2020, niveaux Ultra-light / Light, terroir mis en avant"
   },
   {
    "name": "La Caféothèque",
@@ -148,15 +182,18 @@
    "notes": ""
   },
   {
-   "name": "Kawa Coffee",
+   "name": "Tanat Coffee",
    "aliases": [
+    "Tanat",
+    "Tanat Coffee Roasters",
+    "Kawa Coffee",
     "Kawa"
    ],
    "country": "FR",
    "city": "Paris",
-   "website": "",
+   "website": "https://tanat.coffee",
    "style": "modern",
-   "notes": ""
+   "notes": "Torréfacteur parisien (10e), ex-Kawa Coffee Roasters"
   },
   {
    "name": "Café Mokxa",
