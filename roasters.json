@@ -1,5 +1,5 @@
 {
- "version": 3,
+ "version": 4,
  "updated": "2026-07-06",
  "note": "Styles: ultralight (moderne/radical, ultra clair — ex. Substance, Datura, Picky Chemist), light (clair, inclut le style nordique CLASSIQUE type Wendelboe), modern (specialty équilibré), classic (traditionnel). Nordic (Wendelboe) ≠ ultralight. Classement conservateur — corrections bienvenues via PR.",
  "roasters": [
@@ -1196,6 +1196,424 @@
    "website": "",
    "style": "modern",
    "notes": ""
+  },
+  {
+   "name": "Blue Bottle Coffee",
+   "aliases": [
+    "Blue Bottle"
+   ],
+   "country": "US",
+   "city": "Oakland",
+   "website": "https://bluebottlecoffee.com",
+   "style": "modern",
+   "notes": "Pionnier de la third wave"
+  },
+  {
+   "name": "Intelligentsia Coffee",
+   "aliases": [
+    "Intelligentsia",
+    "Intelli"
+   ],
+   "country": "US",
+   "city": "Chicago",
+   "website": "https://www.intelligentsia.com",
+   "style": "modern",
+   "notes": "Pionnier de la third wave"
+  },
+  {
+   "name": "Stumptown Coffee Roasters",
+   "aliases": [
+    "Stumptown"
+   ],
+   "country": "US",
+   "city": "Portland",
+   "website": "https://www.stumptowncoffee.com",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Counter Culture Coffee",
+   "aliases": [
+    "Counter Culture"
+   ],
+   "country": "US",
+   "city": "Durham",
+   "website": "https://counterculturecoffee.com",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Verve Coffee Roasters",
+   "aliases": [
+    "Verve"
+   ],
+   "country": "US",
+   "city": "Santa Cruz",
+   "website": "https://www.vervecoffee.com",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "George Howell Coffee",
+   "aliases": [
+    "George Howell"
+   ],
+   "country": "US",
+   "city": "Boston",
+   "website": "https://georgehowellcoffee.com",
+   "style": "light",
+   "notes": "Pionnier américain du café de spécialité"
+  },
+  {
+   "name": "Madcap Coffee Company",
+   "aliases": [
+    "Madcap"
+   ],
+   "country": "US",
+   "city": "Grand Rapids",
+   "website": "https://madcapcoffee.com",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Ruby Coffee Roasters",
+   "aliases": [
+    "Ruby"
+   ],
+   "country": "US",
+   "city": "Nelsonville",
+   "website": "https://rubycoffeeroasters.com",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Passenger Coffee",
+   "aliases": [
+    "Passenger"
+   ],
+   "country": "US",
+   "city": "Lancaster",
+   "website": "https://www.passengercoffee.com",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Brandywine Coffee Roasters",
+   "aliases": [
+    "Brandywine"
+   ],
+   "country": "US",
+   "city": "Wilmington",
+   "website": "https://www.brandywinecoffeeroasters.com",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Equator Coffees",
+   "aliases": [
+    "Equator",
+    "Equator Coffees & Teas"
+   ],
+   "country": "US",
+   "city": "San Rafael",
+   "website": "https://www.equatorcoffees.com",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Olympia Coffee Roasting",
+   "aliases": [
+    "Olympia Coffee"
+   ],
+   "country": "US",
+   "city": "Olympia",
+   "website": "https://www.olympiacoffee.com",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Sightglass Coffee",
+   "aliases": [
+    "Sightglass"
+   ],
+   "country": "US",
+   "city": "San Francisco",
+   "website": "https://sightglasscoffee.com",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Ritual Coffee Roasters",
+   "aliases": [
+    "Ritual",
+    "Ritual Coffee"
+   ],
+   "country": "US",
+   "city": "San Francisco",
+   "website": "https://ritualcoffee.com",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Prodigal Coffee",
+   "aliases": [
+    "Prodigal"
+   ],
+   "country": "US",
+   "city": "Boulder",
+   "website": "https://getprodigal.com",
+   "style": "light",
+   "notes": "Fondé par Scott Rao"
+  },
+  {
+   "name": "Hydrangea Coffee Roasters",
+   "aliases": [
+    "Hydrangea"
+   ],
+   "country": "US",
+   "city": "Berkeley",
+   "website": "https://hydrangea.coffee",
+   "style": "light",
+   "notes": "Micro-lots, fermentations expérimentales"
+  },
+  {
+   "name": "Monogram Coffee",
+   "aliases": [
+    "Monogram"
+   ],
+   "country": "CA",
+   "city": "Calgary",
+   "website": "https://monogramcoffee.com",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "49th Parallel Coffee Roasters",
+   "aliases": [
+    "49th Parallel",
+    "49th"
+   ],
+   "country": "CA",
+   "city": "Vancouver",
+   "website": "https://49thcoffee.com",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Luna Coffee",
+   "aliases": [
+    "LÜNA",
+    "Luna"
+   ],
+   "country": "CA",
+   "city": "Vancouver",
+   "website": "https://enjoylunacoffee.com",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Pilot Coffee Roasters",
+   "aliases": [
+    "Pilot",
+    "Pilot Coffee"
+   ],
+   "country": "CA",
+   "city": "Toronto",
+   "website": "https://www.pilotcoffeeroasters.com",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Subtext Coffee Roasters",
+   "aliases": [
+    "Subtext"
+   ],
+   "country": "CA",
+   "city": "Toronto",
+   "website": "https://www.subtext.coffee",
+   "style": "light",
+   "notes": "Style nordique"
+  },
+  {
+   "name": "Hatch Coffee",
+   "aliases": [
+    "Hatch",
+    "Hatch Crafted"
+   ],
+   "country": "CA",
+   "city": "Markham",
+   "website": "https://hatchcrafted.com",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Onibus Coffee",
+   "aliases": [
+    "Onibus"
+   ],
+   "country": "JP",
+   "city": "Tokyo",
+   "website": "https://onibuscoffee.com",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Kurasu",
+   "aliases": [
+    "Kurasu Kyoto"
+   ],
+   "country": "JP",
+   "city": "Kyoto",
+   "website": "https://kurasu.kyoto",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Leaves Coffee Roasters",
+   "aliases": [
+    "Leaves Coffee",
+    "Leaves"
+   ],
+   "country": "JP",
+   "city": "Tokyo",
+   "website": "https://leavescoffee.jp",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Raw Sugar Roast",
+   "aliases": [
+    "Raw Sugar"
+   ],
+   "country": "JP",
+   "city": "Tokyo",
+   "website": "https://rawsugarroast.com",
+   "style": "light",
+   "notes": ""
+  },
+  {
+   "name": "Fritz Coffee Company",
+   "aliases": [
+    "Fritz",
+    "프릳츠"
+   ],
+   "country": "KR",
+   "city": "Seoul",
+   "website": "https://fritz.co.kr",
+   "style": "modern",
+   "notes": "Référence coréenne"
+  },
+  {
+   "name": "Momos Coffee",
+   "aliases": [
+    "Momos",
+    "모모스커피"
+   ],
+   "country": "KR",
+   "city": "Busan",
+   "website": "https://momos.co.kr",
+   "style": "modern",
+   "notes": "Champion du monde barista 2019"
+  },
+  {
+   "name": "Simple Kaffa",
+   "aliases": [
+    "興波咖啡"
+   ],
+   "country": "TW",
+   "city": "Taipei",
+   "website": "https://simplekaffa.com",
+   "style": "modern",
+   "notes": "Berg Wu, champion du monde barista 2016"
+  },
+  {
+   "name": "Seven Seeds Coffee Roasters",
+   "aliases": [
+    "Seven Seeds"
+   ],
+   "country": "AU",
+   "city": "Melbourne",
+   "website": "https://sevenseeds.com.au",
+   "style": "modern",
+   "notes": "Référence de Melbourne"
+  },
+  {
+   "name": "ST. ALi",
+   "aliases": [
+    "St Ali",
+    "St. Ali"
+   ],
+   "country": "AU",
+   "city": "Melbourne",
+   "website": "https://stali.com.au",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Code Black Coffee",
+   "aliases": [
+    "Code Black"
+   ],
+   "country": "AU",
+   "city": "Melbourne",
+   "website": "https://codeblackcoffee.com.au",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Coffee Supreme",
+   "aliases": [
+    "Supreme"
+   ],
+   "country": "NZ",
+   "city": "Wellington",
+   "website": "https://coffeesupreme.com",
+   "style": "modern",
+   "notes": "Référence néo-zélandaise"
+  },
+  {
+   "name": "Round Hill Roastery",
+   "aliases": [
+    "Round Hill"
+   ],
+   "country": "GB",
+   "city": "Radstock",
+   "website": "https://roundhillroastery.com",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "North Star Coffee Roasters",
+   "aliases": [
+    "North Star"
+   ],
+   "country": "GB",
+   "city": "Leeds",
+   "website": "https://www.northstarroast.com",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Cairngorm Coffee",
+   "aliases": [
+    "Cairngorm"
+   ],
+   "country": "GB",
+   "city": "Edinburgh",
+   "website": "https://cairngorm.coffee",
+   "style": "modern",
+   "notes": ""
+  },
+  {
+   "name": "Special Guests Coffee",
+   "aliases": [
+    "Special Guests"
+   ],
+   "country": "GB",
+   "city": "London",
+   "website": "https://specialguestscoffee.com",
+   "style": "light",
+   "notes": "Micro-lots rares"
   }
  ]
 }
