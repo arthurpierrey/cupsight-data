@@ -1,7 +1,7 @@
 {
- "version": 4,
- "updated": "2026-07-06",
- "note": "Styles: ultralight (moderne/radical, ultra clair — ex. Substance, Datura, Picky Chemist), light (clair, inclut le style nordique CLASSIQUE type Wendelboe), modern (specialty équilibré), classic (traditionnel). Nordic (Wendelboe) ≠ ultralight. Classement conservateur — corrections bienvenues via PR.",
+ "version": 6,
+ "updated": "2026-08-07",
+ "note": "Styles: ultralight (moderne/radical, ultra clair — ex. Substance, Datura, Picky Chemist), light (clair, inclut le style nordique CLASSIQUE type Wendelboe), modern (specialty équilibré), classic (traditionnel). Nordic (Wendelboe) ≠ ultralight. Classement conservateur — corrections bienvenues via PR. Fenêtres de repos (restDaysMin/Max, jours après torréfaction, référence FILTRE, une seule fenêtre pour toutes les méthodes — décision 2026-08-07) : restSource=published quand le torréfacteur la publie lui-même (verbatim), restSource=inferred quand elle est inférée du STYLE — médianes des fenêtres publiées du catalogue (modern 5-21, light 7-30, ultralight 10-28, classic 4-14, ce dernier sans donnée publiée). La machine s'est révélée NON prédictive (planchers Loring 3-21 j, même médiane que Probat) : roastMachine reste un fait documentaire, rien ne le lit.",
  "roasters": [
   {
    "name": "Datura",
@@ -12,7 +12,10 @@
    "city": "Paris",
    "website": "",
    "style": "ultralight",
-   "notes": "Micro-torréfacteur parisien, ultra clair / radical (moderne)"
+   "notes": "Micro-torréfacteur parisien, ultra clair / radical (moderne)",
+   "restDaysMin": 10,
+   "restDaysMax": 28,
+   "restSource": "inferred"
   },
   {
    "name": "Belleville Brûlerie",
@@ -24,7 +27,10 @@
    "city": "Paris",
    "website": "",
    "style": "modern",
-   "notes": "Pionnier de la scène parisienne"
+   "notes": "Pionnier de la scène parisienne",
+   "restDaysMin": 4,
+   "restDaysMax": 35,
+   "restSource": "published"
   },
   {
    "name": "Coutume",
@@ -35,7 +41,9 @@
    "city": "Paris",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restSource": "published"
   },
   {
    "name": "Café Lomi",
@@ -46,7 +54,9 @@
    "city": "Paris",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restSource": "published"
   },
   {
    "name": "Terres de Café",
@@ -55,7 +65,10 @@
    "city": "Paris",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMax": 14,
+   "roastMachine": "Loring (7, 35 et 70 kg)",
+   "restSource": "published"
   },
   {
    "name": "L'Arbre à Café",
@@ -64,7 +77,11 @@
    "city": "Paris",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 15,
+   "restDaysMax": 90,
+   "roastMachine": "Loring",
+   "restSource": "published"
   },
   {
    "name": "Hexagone Café",
@@ -75,7 +92,11 @@
    "city": "Paris",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 21,
+   "restDaysMax": 28,
+   "roastMachine": "Loring",
+   "restSource": "published"
   },
   {
    "name": "KB Coffee Roasters",
@@ -87,7 +108,10 @@
    "city": "Paris",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Substance Café",
@@ -98,7 +122,10 @@
    "city": "Paris",
    "website": "",
    "style": "ultralight",
-   "notes": "Torréfaction ultra claire / radicale (style moderne)"
+   "notes": "Torréfaction ultra claire / radicale (style moderne)",
+   "restDaysMin": 7,
+   "roastMachine": "Loring S7",
+   "restSource": "published"
   },
   {
    "name": "Picky Chemist",
@@ -107,7 +134,10 @@
    "city": "",
    "website": "",
    "style": "ultralight",
-   "notes": "Torréfaction ultra claire / radicale (style moderne)"
+   "notes": "Torréfaction ultra claire / radicale (style moderne)",
+   "restDaysMin": 10,
+   "restDaysMax": 28,
+   "restSource": "inferred"
   },
   {
    "name": "Goût & Co",
@@ -121,7 +151,10 @@
    "city": "Chengdu",
    "website": "https://goutandco.com",
    "style": "ultralight",
-   "notes": "Torréfacteur de Chengdu (Chine) depuis 2020, niveaux Ultra-light / Light, terroir mis en avant"
+   "notes": "Torréfacteur de Chengdu (Chine) depuis 2020, niveaux Ultra-light / Light, terroir mis en avant",
+   "restDaysMin": 10,
+   "restDaysMax": 28,
+   "restSource": "inferred"
   },
   {
    "name": "La Caféothèque",
@@ -130,7 +163,10 @@
    "city": "Paris",
    "website": "",
    "style": "classic",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 4,
+   "restDaysMax": 14,
+   "restSource": "inferred"
   },
   {
    "name": "Ten Belles",
@@ -139,7 +175,10 @@
    "city": "Paris",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Anbassa",
@@ -148,7 +187,10 @@
    "city": "Paris",
    "website": "",
    "style": "classic",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 4,
+   "restDaysMax": 14,
+   "restSource": "inferred"
   },
   {
    "name": "Cafés Verlet",
@@ -159,7 +201,10 @@
    "city": "Paris",
    "website": "",
    "style": "classic",
-   "notes": "Maison historique"
+   "notes": "Maison historique",
+   "restDaysMin": 4,
+   "restDaysMax": 14,
+   "restSource": "inferred"
   },
   {
    "name": "Brûlerie Caron",
@@ -170,7 +215,10 @@
    "city": "Paris",
    "website": "",
    "style": "classic",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 4,
+   "restDaysMax": 14,
+   "restSource": "inferred"
   },
   {
    "name": "Le Café Alain Ducasse",
@@ -179,7 +227,10 @@
    "city": "Paris",
    "website": "",
    "style": "classic",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 4,
+   "restDaysMax": 14,
+   "restSource": "inferred"
   },
   {
    "name": "Tanat Coffee",
@@ -193,7 +244,11 @@
    "city": "Paris",
    "website": "https://tanat.coffee",
    "style": "modern",
-   "notes": "Torréfacteur parisien (10e), ex-Kawa Coffee Roasters"
+   "notes": "Torréfacteur parisien (10e), ex-Kawa Coffee Roasters",
+   "roastMachine": "Loring 7 kg",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Café Mokxa",
@@ -204,7 +259,10 @@
    "city": "Lyon",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "L'Alchimiste",
@@ -215,7 +273,10 @@
    "city": "Bordeaux",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Cafés Lugat",
@@ -226,7 +287,10 @@
    "city": "Bordeaux",
    "website": "",
    "style": "classic",
-   "notes": "Gamme large, du classique au specialty"
+   "notes": "Gamme large, du classique au specialty",
+   "restDaysMin": 4,
+   "restDaysMax": 14,
+   "restSource": "inferred"
   },
   {
    "name": "Hayuco Coffee Roasters",
@@ -237,7 +301,10 @@
    "city": "Toulouse",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Perlo Coffee",
@@ -248,7 +315,10 @@
    "city": "Toulouse",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Maison Méo",
@@ -259,7 +329,10 @@
    "city": "Lille",
    "website": "",
    "style": "classic",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 4,
+   "restDaysMax": 14,
+   "restSource": "inferred"
   },
   {
    "name": "Malongo",
@@ -268,7 +341,10 @@
    "city": "Nice",
    "website": "",
    "style": "classic",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 4,
+   "restDaysMax": 14,
+   "restSource": "inferred"
   },
   {
    "name": "Café Joyeux",
@@ -277,7 +353,10 @@
    "city": "Paris",
    "website": "",
    "style": "classic",
-   "notes": "Torréfacteur solidaire"
+   "notes": "Torréfacteur solidaire",
+   "restDaysMin": 4,
+   "restDaysMax": 14,
+   "restSource": "inferred"
   },
   {
    "name": "Tim Wendelboe",
@@ -286,7 +365,11 @@
    "city": "Oslo",
    "website": "",
    "style": "light",
-   "notes": "Pionnier du style nordique très clair"
+   "notes": "Pionnier du style nordique très clair",
+   "restDaysMin": 7,
+   "restDaysMax": 35,
+   "roastMachine": "Loring S35 Kestrel",
+   "restSource": "published"
   },
   {
    "name": "Fuglen Coffee Roasters",
@@ -297,7 +380,11 @@
    "city": "Oslo",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "roastMachine": "Probat (1956)",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Solberg & Hansen",
@@ -306,7 +393,10 @@
    "city": "Oslo",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Talor&Jørgen",
@@ -317,7 +407,10 @@
    "city": "Oslo",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Jacu Coffee Roastery",
@@ -328,7 +421,10 @@
    "city": "Ålesund",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Coffee Collective",
@@ -339,7 +435,10 @@
    "city": "Copenhague",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 4,
+   "roastMachine": "Loring SmartRoast 35 kg",
+   "restSource": "published"
   },
   {
    "name": "April Coffee Roasters",
@@ -350,7 +449,10 @@
    "city": "Copenhague",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 14,
+   "roastMachine": "Loring S35",
+   "restSource": "published"
   },
   {
    "name": "Prolog Coffee",
@@ -361,7 +463,11 @@
    "city": "Copenhague",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "roastMachine": "Loring",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "La Cabra",
@@ -370,7 +476,10 @@
    "city": "Aarhus",
    "website": "",
    "style": "light",
-   "notes": "Très clair, style nordique"
+   "notes": "Très clair, style nordique",
+   "restDaysMin": 10,
+   "roastMachine": "Giesen W15A",
+   "restSource": "published"
   },
   {
    "name": "Koppi",
@@ -379,7 +488,11 @@
    "city": "Helsingborg",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "roastMachine": "Diedrich IR-12",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Drop Coffee",
@@ -388,7 +501,11 @@
    "city": "Stockholm",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "roastMachine": "Diedrich IR-25",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Morgon Coffee Roasters",
@@ -399,7 +516,10 @@
    "city": "Göteborg",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Da Matteo",
@@ -408,7 +528,10 @@
    "city": "Göteborg",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Standout Coffee",
@@ -419,7 +542,10 @@
    "city": "Stockholm",
    "website": "",
    "style": "light",
-   "notes": "Spécialiste des lots rares"
+   "notes": "Spécialiste des lots rares",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Good Life Coffee",
@@ -428,7 +554,10 @@
    "city": "Helsinki",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Kaffa Roastery",
@@ -437,7 +566,10 @@
    "city": "Helsinki",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Frukt Coffee Roasters",
@@ -448,7 +580,10 @@
    "city": "Turku",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Square Mile Coffee Roasters",
@@ -459,7 +594,11 @@
    "city": "Londres",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 14,
+   "roastMachine": "Probat G75 + UG15",
+   "restSource": "published"
   },
   {
    "name": "Workshop Coffee",
@@ -470,7 +609,9 @@
    "city": "Londres",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restSource": "published"
   },
   {
    "name": "Origin Coffee",
@@ -481,7 +622,11 @@
    "city": "Cornouailles",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 14,
+   "roastMachine": "Loring Smart Roast (×2)",
+   "restSource": "published"
   },
   {
    "name": "Assembly Coffee",
@@ -492,7 +637,10 @@
    "city": "Londres",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 10,
+   "roastMachine": "Giesen WPG1",
+   "restSource": "published"
   },
   {
    "name": "Plot Roasting",
@@ -503,7 +651,10 @@
    "city": "Londres",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Curve Coffee Roasters",
@@ -514,7 +665,10 @@
    "city": "Margate",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Colonna Coffee",
@@ -525,7 +679,10 @@
    "city": "Bath",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "roastMachine": "Diedrich 70 kg + Stronghold",
+   "restSource": "published"
   },
   {
    "name": "Sweven Coffee",
@@ -536,7 +693,10 @@
    "city": "Bristol",
    "website": "",
    "style": "ultralight",
-   "notes": "Assumé ultra-clair"
+   "notes": "Assumé ultra-clair",
+   "restDaysMin": 10,
+   "restDaysMax": 28,
+   "restSource": "inferred"
   },
   {
    "name": "Obadiah Coffee",
@@ -547,7 +707,10 @@
    "city": "Édimbourg",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Hasbean",
@@ -558,7 +721,10 @@
    "city": "Stafford",
    "website": "",
    "style": "classic",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 4,
+   "restDaysMax": 14,
+   "restSource": "inferred"
   },
   {
    "name": "Union Hand-Roasted Coffee",
@@ -569,7 +735,10 @@
    "city": "Londres",
    "website": "",
    "style": "classic",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 4,
+   "restDaysMax": 14,
+   "restSource": "inferred"
   },
   {
    "name": "Monmouth Coffee",
@@ -580,7 +749,10 @@
    "city": "Londres",
    "website": "",
    "style": "classic",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 4,
+   "restDaysMax": 14,
+   "restSource": "inferred"
   },
   {
    "name": "Climpson & Sons",
@@ -589,7 +761,10 @@
    "city": "Londres",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Caravan Coffee Roasters",
@@ -600,7 +775,11 @@
    "city": "Londres",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "roastMachine": "Loring Smart Roaster",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Ozone Coffee Roasters",
@@ -611,7 +790,10 @@
    "city": "Londres",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Kiss the Hippo",
@@ -620,7 +802,11 @@
    "city": "Londres",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "roastMachine": "Loring S15",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Dark Arts Coffee",
@@ -631,7 +817,10 @@
    "city": "Londres",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "3fe Coffee",
@@ -642,7 +831,10 @@
    "city": "Dublin",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 4,
+   "roastMachine": "Probat UG22",
+   "restSource": "published"
   },
   {
    "name": "Cloud Picker Coffee",
@@ -653,7 +845,10 @@
    "city": "Dublin",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Manhattan Coffee Roasters",
@@ -664,7 +859,11 @@
    "city": "Rotterdam",
    "website": "",
    "style": "ultralight",
-   "notes": "Référence ultra-claire européenne"
+   "notes": "Référence ultra-claire européenne",
+   "restDaysMin": 14,
+   "restDaysMax": 21,
+   "roastMachine": "Typhoon 20 kg (lit fluidisé)",
+   "restSource": "published"
   },
   {
    "name": "Friedhats",
@@ -675,7 +874,10 @@
    "city": "Amsterdam",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "White Label Coffee",
@@ -686,7 +888,10 @@
    "city": "Amsterdam",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Dak Coffee Roasters",
@@ -697,7 +902,11 @@
    "city": "Amsterdam",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "roastMachine": "IMF",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Bocca Coffee",
@@ -708,7 +917,10 @@
    "city": "Amsterdam",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Keen Coffee",
@@ -719,7 +931,10 @@
    "city": "Utrecht",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Stooker Roasting Company",
@@ -730,7 +945,10 @@
    "city": "Amsterdam",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "MOK Coffee",
@@ -741,7 +959,11 @@
    "city": "Bruxelles",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "roastMachine": "Giesen W15",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Wide Awake Coffee",
@@ -752,7 +974,10 @@
    "city": "Bruxelles",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Replica Roasters",
@@ -763,7 +988,10 @@
    "city": "Louvain",
    "website": "",
    "style": "ultralight",
-   "notes": "Torréfactions très claires (classement communauté, à confirmer)"
+   "notes": "Torréfactions très claires (classement communauté, à confirmer)",
+   "restDaysMin": 10,
+   "restDaysMax": 28,
+   "restSource": "inferred"
   },
   {
    "name": "OR Coffee Roasters",
@@ -775,7 +1003,10 @@
    "city": "Gand",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Caffènation",
@@ -786,7 +1017,10 @@
    "city": "Anvers",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "The Barn",
@@ -795,7 +1029,10 @@
    "city": "Berlin",
    "website": "",
    "style": "light",
-   "notes": "Référence berlinoise du clair"
+   "notes": "Référence berlinoise du clair",
+   "restDaysMin": 7,
+   "roastMachine": "Probat sur mesure",
+   "restSource": "published"
   },
   {
    "name": "Bonanza Coffee Roasters",
@@ -806,7 +1043,10 @@
    "city": "Berlin",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "roastMachine": "Probat UG22 (1965)",
+   "restSource": "published"
   },
   {
    "name": "Five Elephant",
@@ -815,7 +1055,11 @@
    "city": "Berlin",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "roastMachine": "Diedrich IR-5",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "19grams",
@@ -826,7 +1070,10 @@
    "city": "Berlin",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Fjord Coffee Roasters",
@@ -837,7 +1084,10 @@
    "city": "Berlin",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Ernst Kaffeeröster",
@@ -848,7 +1098,10 @@
    "city": "Cologne",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Man Versus Machine",
@@ -860,7 +1113,11 @@
    "city": "Munich",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "roastMachine": "Probat",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Elbgold",
@@ -869,7 +1126,10 @@
    "city": "Hambourg",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Süssmund Kaffee",
@@ -881,7 +1141,10 @@
    "city": "Vienne",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Jonas Reindl Coffee Roasters",
@@ -892,7 +1155,10 @@
    "city": "Vienne",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Kaffeefabrik",
@@ -901,7 +1167,10 @@
    "city": "Vienne",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "MAME",
@@ -910,7 +1179,10 @@
    "city": "Zurich",
    "website": "",
    "style": "light",
-   "notes": "Fondé par des champions barista"
+   "notes": "Fondé par des champions barista",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Stoll Kaffee",
@@ -921,7 +1193,10 @@
    "city": "Zurich",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "ViCAFE",
@@ -930,7 +1205,10 @@
    "city": "Zurich",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Gardelli Specialty Coffees",
@@ -941,7 +1219,10 @@
    "city": "Forlì",
    "website": "",
    "style": "light",
-   "notes": "Rubens Gardelli, multi-champion de torréfaction"
+   "notes": "Rubens Gardelli, multi-champion de torréfaction",
+   "restDaysMin": 4,
+   "restDaysMax": 28,
+   "restSource": "published"
   },
   {
    "name": "His Majesty the Coffee",
@@ -950,7 +1231,10 @@
    "city": "Monza",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Ditta Artigianale",
@@ -959,7 +1243,10 @@
    "city": "Florence",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Le Piantagioni del Caffè",
@@ -968,7 +1255,10 @@
    "city": "Livourne",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Nomad Coffee",
@@ -979,7 +1269,10 @@
    "city": "Barcelone",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 10,
+   "roastMachine": "Probat UG22",
+   "restSource": "published"
   },
   {
    "name": "Right Side Coffee",
@@ -990,7 +1283,10 @@
    "city": "Castelldefels",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Puchero Coffee",
@@ -1001,7 +1297,10 @@
    "city": "Valladolid",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Hola Coffee",
@@ -1012,7 +1311,10 @@
    "city": "Madrid",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Kima Coffee",
@@ -1023,7 +1325,10 @@
    "city": "Málaga",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Fábrica Coffee Roasters",
@@ -1034,7 +1339,10 @@
    "city": "Lisbonne",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Doubleshot",
@@ -1043,7 +1351,11 @@
    "city": "Prague",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "roastMachine": "Probat UG22 + IMF 60 kg",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Father's Coffee Roastery",
@@ -1055,7 +1367,10 @@
    "city": "Ostrava",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Nordbeans",
@@ -1064,7 +1379,10 @@
    "city": "Liberec",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Hard Beans",
@@ -1075,7 +1393,11 @@
    "city": "Opole",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "roastMachine": "Diedrich CR-35 Zenith 2",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Audun Coffee",
@@ -1086,7 +1408,10 @@
    "city": "Białystok",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Casino Mocca",
@@ -1095,7 +1420,10 @@
    "city": "Budapest",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "SEY Coffee",
@@ -1106,7 +1434,11 @@
    "city": "New York",
    "website": "",
    "style": "ultralight",
-   "notes": "Référence mondiale de l'ultra-clair"
+   "notes": "Référence mondiale de l'ultra-clair",
+   "roastMachine": "Loring",
+   "restDaysMin": 10,
+   "restDaysMax": 28,
+   "restSource": "inferred"
   },
   {
    "name": "Glitch Coffee & Roasters",
@@ -1118,7 +1450,11 @@
    "city": "Tokyo",
    "website": "",
    "style": "ultralight",
-   "notes": "Icône ultra-claire japonaise"
+   "notes": "Icône ultra-claire japonaise",
+   "roastMachine": "Probat 5 kg",
+   "restDaysMin": 10,
+   "restDaysMax": 28,
+   "restSource": "inferred"
   },
   {
    "name": "Onyx Coffee Lab",
@@ -1129,7 +1465,10 @@
    "city": "Arkansas",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 4,
+   "restDaysMax": 30,
+   "restSource": "published"
   },
   {
    "name": "Black & White Coffee Roasters",
@@ -1140,7 +1479,9 @@
    "city": "Caroline du Nord",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 14,
+   "restSource": "published"
   },
   {
    "name": "Heart Coffee Roasters",
@@ -1151,7 +1492,10 @@
    "city": "Portland",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Coava Coffee Roasters",
@@ -1162,7 +1506,10 @@
    "city": "Portland",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMax": 30,
+   "roastMachine": "Probat G60",
+   "restSource": "published"
   },
   {
    "name": "Proud Mary Coffee",
@@ -1173,7 +1520,10 @@
    "city": "Melbourne",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Market Lane Coffee",
@@ -1184,7 +1534,10 @@
    "city": "Melbourne",
    "website": "",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "ONA Coffee",
@@ -1195,7 +1548,11 @@
    "city": "Canberra",
    "website": "",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "roastMachine": "Giesen",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Blue Bottle Coffee",
@@ -1206,7 +1563,10 @@
    "city": "Oakland",
    "website": "https://bluebottlecoffee.com",
    "style": "modern",
-   "notes": "Pionnier de la third wave"
+   "notes": "Pionnier de la third wave",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Intelligentsia Coffee",
@@ -1218,7 +1578,10 @@
    "city": "Chicago",
    "website": "https://www.intelligentsia.com",
    "style": "modern",
-   "notes": "Pionnier de la third wave"
+   "notes": "Pionnier de la third wave",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Stumptown Coffee Roasters",
@@ -1229,7 +1592,10 @@
    "city": "Portland",
    "website": "https://www.stumptowncoffee.com",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Counter Culture Coffee",
@@ -1240,7 +1606,10 @@
    "city": "Durham",
    "website": "https://counterculturecoffee.com",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 3,
+   "roastMachine": "Probat GG90/GG240 + Loring",
+   "restSource": "published"
   },
   {
    "name": "Verve Coffee Roasters",
@@ -1251,7 +1620,10 @@
    "city": "Santa Cruz",
    "website": "https://www.vervecoffee.com",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "George Howell Coffee",
@@ -1262,7 +1634,10 @@
    "city": "Boston",
    "website": "https://georgehowellcoffee.com",
    "style": "light",
-   "notes": "Pionnier américain du café de spécialité"
+   "notes": "Pionnier américain du café de spécialité",
+   "restDaysMin": 7,
+   "roastMachine": "Probat UG-22 + Loring 30 kg",
+   "restSource": "published"
   },
   {
    "name": "Madcap Coffee Company",
@@ -1273,7 +1648,10 @@
    "city": "Grand Rapids",
    "website": "https://madcapcoffee.com",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Ruby Coffee Roasters",
@@ -1284,7 +1662,10 @@
    "city": "Nelsonville",
    "website": "https://rubycoffeeroasters.com",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Passenger Coffee",
@@ -1295,7 +1676,10 @@
    "city": "Lancaster",
    "website": "https://www.passengercoffee.com",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 14,
+   "roastMachine": "Loring S15 Falcon",
+   "restSource": "published"
   },
   {
    "name": "Brandywine Coffee Roasters",
@@ -1306,7 +1690,10 @@
    "city": "Wilmington",
    "website": "https://www.brandywinecoffeeroasters.com",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Equator Coffees",
@@ -1318,7 +1705,10 @@
    "city": "San Rafael",
    "website": "https://www.equatorcoffees.com",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Olympia Coffee Roasting",
@@ -1329,7 +1719,10 @@
    "city": "Olympia",
    "website": "https://www.olympiacoffee.com",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Sightglass Coffee",
@@ -1340,7 +1733,10 @@
    "city": "San Francisco",
    "website": "https://sightglasscoffee.com",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Ritual Coffee Roasters",
@@ -1352,7 +1748,10 @@
    "city": "San Francisco",
    "website": "https://ritualcoffee.com",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Prodigal Coffee",
@@ -1363,7 +1762,11 @@
    "city": "Boulder",
    "website": "https://getprodigal.com",
    "style": "light",
-   "notes": "Fondé par Scott Rao"
+   "notes": "Fondé par Scott Rao",
+   "roastMachine": "Probat (1956)",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Hydrangea Coffee Roasters",
@@ -1374,7 +1777,10 @@
    "city": "Berkeley",
    "website": "https://hydrangea.coffee",
    "style": "light",
-   "notes": "Micro-lots, fermentations expérimentales"
+   "notes": "Micro-lots, fermentations expérimentales",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Monogram Coffee",
@@ -1385,7 +1791,10 @@
    "city": "Calgary",
    "website": "https://monogramcoffee.com",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "49th Parallel Coffee Roasters",
@@ -1397,7 +1806,10 @@
    "city": "Vancouver",
    "website": "https://49thcoffee.com",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Luna Coffee",
@@ -1409,7 +1821,10 @@
    "city": "Vancouver",
    "website": "https://enjoylunacoffee.com",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Pilot Coffee Roasters",
@@ -1421,7 +1836,10 @@
    "city": "Toronto",
    "website": "https://www.pilotcoffeeroasters.com",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Subtext Coffee Roasters",
@@ -1432,7 +1850,10 @@
    "city": "Toronto",
    "website": "https://www.subtext.coffee",
    "style": "light",
-   "notes": "Style nordique"
+   "notes": "Style nordique",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Hatch Coffee",
@@ -1444,7 +1865,10 @@
    "city": "Markham",
    "website": "https://hatchcrafted.com",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Onibus Coffee",
@@ -1455,7 +1879,10 @@
    "city": "Tokyo",
    "website": "https://onibuscoffee.com",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Kurasu",
@@ -1466,7 +1893,10 @@
    "city": "Kyoto",
    "website": "https://kurasu.kyoto",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Leaves Coffee Roasters",
@@ -1478,7 +1908,10 @@
    "city": "Tokyo",
    "website": "https://leavescoffee.jp",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Raw Sugar Roast",
@@ -1489,7 +1922,10 @@
    "city": "Tokyo",
    "website": "https://rawsugarroast.com",
    "style": "light",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
   },
   {
    "name": "Fritz Coffee Company",
@@ -1501,7 +1937,10 @@
    "city": "Seoul",
    "website": "https://fritz.co.kr",
    "style": "modern",
-   "notes": "Référence coréenne"
+   "notes": "Référence coréenne",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Momos Coffee",
@@ -1513,7 +1952,10 @@
    "city": "Busan",
    "website": "https://momos.co.kr",
    "style": "modern",
-   "notes": "Champion du monde barista 2019"
+   "notes": "Champion du monde barista 2019",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Simple Kaffa",
@@ -1524,7 +1966,10 @@
    "city": "Taipei",
    "website": "https://simplekaffa.com",
    "style": "modern",
-   "notes": "Berg Wu, champion du monde barista 2016"
+   "notes": "Berg Wu, champion du monde barista 2016",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Seven Seeds Coffee Roasters",
@@ -1535,7 +1980,10 @@
    "city": "Melbourne",
    "website": "https://sevenseeds.com.au",
    "style": "modern",
-   "notes": "Référence de Melbourne"
+   "notes": "Référence de Melbourne",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "ST. ALi",
@@ -1547,7 +1995,10 @@
    "city": "Melbourne",
    "website": "https://stali.com.au",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Code Black Coffee",
@@ -1558,7 +2009,10 @@
    "city": "Melbourne",
    "website": "https://codeblackcoffee.com.au",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Coffee Supreme",
@@ -1569,7 +2023,10 @@
    "city": "Wellington",
    "website": "https://coffeesupreme.com",
    "style": "modern",
-   "notes": "Référence néo-zélandaise"
+   "notes": "Référence néo-zélandaise",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Round Hill Roastery",
@@ -1580,7 +2037,10 @@
    "city": "Radstock",
    "website": "https://roundhillroastery.com",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "North Star Coffee Roasters",
@@ -1591,7 +2051,10 @@
    "city": "Leeds",
    "website": "https://www.northstarroast.com",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Cairngorm Coffee",
@@ -1602,7 +2065,10 @@
    "city": "Edinburgh",
    "website": "https://cairngorm.coffee",
    "style": "modern",
-   "notes": ""
+   "notes": "",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
   },
   {
    "name": "Special Guests Coffee",
@@ -1613,7 +2079,56 @@
    "city": "London",
    "website": "https://specialguestscoffee.com",
    "style": "light",
-   "notes": "Micro-lots rares"
+   "notes": "Micro-lots rares",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
+  },
+  {
+   "name": "Klover Coffee",
+   "aliases": [
+    "Klover",
+    "Klover Coffee Paris"
+   ],
+   "country": "FR",
+   "city": "Paris",
+   "website": "https://klovercoffee.com",
+   "style": "light",
+   "notes": "Fondé par Harry Kim (ex-April Copenhague, Fuglen Tokyo) ; « we focus on light roast coffee ».",
+   "restDaysMin": 7,
+   "restDaysMax": 30,
+   "restSource": "inferred"
+  },
+  {
+   "name": "Tribute Torréfaction",
+   "aliases": [
+    "Tribute",
+    "Tribute Café"
+   ],
+   "country": "FR",
+   "city": "La Laupie (Drôme)",
+   "website": "https://tribute.cafe",
+   "style": "",
+   "notes": "Fondé en 2025 par Paul Arnephy (MOF torréfacteur, champion de France 2022, ex-Lomi) et Gonzague Jaret.",
+   "roastMachine": "IMF",
+   "restDaysMin": 5,
+   "restDaysMax": 21,
+   "restSource": "inferred"
+  },
+  {
+   "name": "Dose Family",
+   "aliases": [
+    "Dose",
+    "Dose Paris"
+   ],
+   "country": "FR",
+   "city": "Paris",
+   "website": "https://dose.paris",
+   "style": "modern",
+   "notes": "Micro-torréfaction 5–9 kg.",
+   "restDaysMin": 3,
+   "restDaysMax": 10,
+   "restSource": "published"
   }
  ]
 }
