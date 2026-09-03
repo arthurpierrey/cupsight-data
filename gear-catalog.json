@@ -1,0 +1,4671 @@
+{
+  "version": 17,
+  "updated": "2026-08-28",
+  "note": "Curated catalog of popular coffee gear. Ranges are commonly cited values; the user can always correct them in the form. | grind calibration points (calibPoints/uniformity, P0) merged in. | espresso brewers carry pressureRegime (fixed pump vs. variable/piloted). | v11-13 (13 supersedes both sides' 11): every calibration point used to sit in the FILTER range (400-1300 um), so where espresso falls on a dial could only be extrapolated, and drifted. Each espresso-capable grinder now carries an ESPRESSO anchor at 250 um (the centre of the 200-300 um window), placed at the centre of its published espresso setting range - from the maker's own microns-per-click where there is one (1Zpresso, Weber), else from published/community setting ranges. A window a grinder reaches only partly is CLIPPED to what it reaches, not refused - nearly every grinder, filter ones included, goes fine enough for a turbo/soup shot. Silence is reserved for a window lying entirely off the dial (a filter-only grinder asked about espresso). | v12: baskets join the catalog (kind \"basket\", basketStyle + basketDoseGrams) so they are picked like papers instead of typed. A basket is a sub-item of the MACHINE and is never a lever - it only moves where the espresso grind zone sits. | v14: the grinder catalog grows again - the Femobook line, the Eureka Mignon family, and a batch of hand and electric grinders across brands. Truly stepless dials whose zero is set at assembly and differs per unit (Eureka Mignon, Option-O Remi, Mazzer Philos, Fiorenzato F64 Evo) carry no calibPoints - their printed numbers are personal to each grinder, never a cross-grinder translation. | v15: a new kind \"burrs\" (burrDiameterMm, burrGeometry, uniformity as the character these meules give - no adjustment range, no calibPoints: swapping burrs moves the zero and breaks the grinder's own curve) with 7 aftermarket sets (SSP MP/HU/Cast/Brew at 64 and 98mm, DLC-coated 64mm, Option-O Mizen ES). A set only earns an entry if it can actually be fitted to ANOTHER grinder: a grinder's own proprietary burrs are not a choice and would only cost their owner a curve. Conversely a few grinders LEAVE THE FACTORY on a set listed here (Fellow Ode Gen 2 on SSP MPs, Lagom P64 on Mizens), so they carry stockBurrsFamilies: naming those describes the grinder instead of re-burring it, and its curve - measured with them in - holds. Grinder iteration hygiene: the missing \"Turin DF64 (Gen 1)\" entry joins with its OWN stock-burr curve (the bare \"df64\" alias stayed on Gen 2 only, to not silently re-point already-synced saved gear - each generation now also carries its own specific alias, e.g. \"df64 gen1\"/\"df64 gen 2\"); the existing \"DF64 / + SSP Multipurpose\" entry keeps its id, aliases and measured curve untouched (only its notes gained a cross-reference); Comandante C40 MK3 is now a same-curve alias of the MK4 entry (identical burrs, cosmetic revision only). | v16: the grinder catalog widens again across brands - 1Zpresso K-Plus/K-Pro, Kingrinder K3/K5/K7, Timemore Chestnut Slim/X/G1/Nano, Hario Skerton Plus, Porlex Tall, Made By Knock Feldgrind, Normcore V3, VSSL Java, Sage Dose Control Pro, Rancilio Rocky, Gaggia MDF, Melitta Calibra, Krups GX5000, De'Longhi Dedica KG521 and KG79, Baratza Sette 30 and Forte, Eureka Atom and Zenith 65E, Fiorenzato F4 Nano, Mahlkönig E65S, Turin DF83, Varia VS6, Niche Duo, Capresso Infinity, Cuisinart DBM-8 and OXO Brew Conical Burr. Where a model shares its maker's own confirmed burr, click count and micron span with an already-catalogued sibling (1Zpresso K-Max for K-Plus/K-Pro, Kingrinder K2 for K3/K5, Baratza Vario+ for Forte), it reuses that measured curve rather than inventing a new one. Ceado, Compak, Macap, Anfim, Solis, Graef, Weber Key Mk1 and Hario Mini Mill Plus were checked and left out for lack of a specific, source-backed espresso or filter reference point.",
+  "items": [
+    {
+      "kind": "grinder",
+      "brand": "Comandante",
+      "model": "C40 MK4",
+      "aliases": [
+        "comandante",
+        "c40",
+        "mk4",
+        "mk3",
+        "c40 mk3"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 40,
+      "grinderSettingUnit": "clicks",
+      "notes": "MK3 and MK4 share the same Nitro Blade burr set and grind curve - the MK4's changes (tool-less handle, refined bearings) are cosmetic/ergonomic, not a different calibration.",
+      "calibPoints": [
+        {
+          "setting": 12.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 18.0,
+          "micron": 540.0
+        },
+        {
+          "setting": 25.0,
+          "micron": 700.0
+        },
+        {
+          "setting": 32.0,
+          "micron": 900.0
+        }
+      ],
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Comandante",
+      "model": "C60 Baracuda",
+      "aliases": [
+        "c60",
+        "baracuda"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 55,
+      "grinderSettingUnit": "clicks",
+      "notes": "GX50 (Gold Clix) drivetrain, ~21 microns/click — finer than the C40, so it needs more clicks for the same grind (usable ~3–55).",
+      "calibPoints": [
+        {
+          "setting": 26.0,
+          "micron": 540.0
+        },
+        {
+          "setting": 34.0,
+          "micron": 700.0
+        },
+        {
+          "setting": 44.0,
+          "micron": 900.0
+        }
+      ],
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "1Zpresso",
+      "model": "JX-Pro S",
+      "aliases": [
+        "1zpresso",
+        "jx pro",
+        "jxpro"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 50,
+      "grinderSettingUnit": "numbers",
+      "notes": "Read in numbers (rotation.number.tick); 4 clicks per number, 40 per rotation, ~200 clicks total. Range shown is cumulative numbers.",
+      "calibPoints": [
+        {
+          "setting": 5.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 14.0,
+          "micron": 700.0
+        }
+      ],
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "1Zpresso",
+      "model": "J-Max S",
+      "aliases": [
+        "jmax",
+        "j max"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 40.5,
+      "grinderSettingUnit": "numbers",
+      "notes": "Read in numbers (rotation.number.tick); 10 clicks per number, 90 per rotation, 4.5 rotations. Range shown is cumulative numbers.",
+      "calibPoints": [
+        {
+          "setting": 2.8,
+          "micron": 250.0
+        },
+        {
+          "setting": 8.0,
+          "micron": 700.0
+        }
+      ],
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "1Zpresso",
+      "model": "K-Max",
+      "aliases": [
+        "kmax",
+        "k max"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 8.9,
+      "grinderSettingUnit": "numbers",
+      "notes": "Single numbered dial read as number.click; 10 clicks per number, max 8.9 = 89 clicks.",
+      "calibPoints": [
+        {
+          "setting": 3.5,
+          "micron": 700.0
+        },
+        {
+          "setting": 4.5,
+          "micron": 900.0
+        },
+        {
+          "setting": 5.5,
+          "micron": 1050.0
+        }
+      ],
+      "uniformity": "balanced"
+    },
+    {
+      "kind": "grinder",
+      "brand": "1Zpresso",
+      "model": "K-Ultra",
+      "aliases": [
+        "kultra",
+        "k ultra"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 10,
+      "grinderSettingUnit": "numbers",
+      "notes": "Single numbered dial read as number.click; 10 clicks per number (100 per rotation).",
+      "calibPoints": [
+        {
+          "setting": 6.0,
+          "micron": 700.0
+        },
+        {
+          "setting": 7.5,
+          "micron": 850.0
+        },
+        {
+          "setting": 9.0,
+          "micron": 980.0
+        }
+      ],
+      "uniformity": "balanced"
+    },
+    {
+      "kind": "grinder",
+      "brand": "1Zpresso",
+      "model": "ZP6 Special",
+      "aliases": [
+        "zp6",
+        "zp 6"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 8.9,
+      "grinderSettingUnit": "numbers",
+      "notes": "Single numbered dial read as number.click (e.g. 5.0 = 50 clicks); 10 clicks per number, max 8.9 = 89 clicks.",
+      "calibPoints": [
+        {
+          "setting": 3.5,
+          "micron": 600.0
+        },
+        {
+          "setting": 4.5,
+          "micron": 760.0
+        },
+        {
+          "setting": 6.0,
+          "micron": 900.0
+        }
+      ],
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "1Zpresso",
+      "model": "X-Ultra",
+      "aliases": [
+        "xultra",
+        "x ultra"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 27,
+      "grinderSettingUnit": "numbers",
+      "notes": "Read in numbers (rotation.number.tick); 10 clicks per number, 60 per rotation, 4.5 rotations. Range shown is cumulative numbers.",
+      "calibPoints": [
+        {
+          "setting": 2.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 5.6,
+          "micron": 700.0
+        }
+      ],
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Kinu",
+      "model": "M47 Classic",
+      "aliases": [
+        "kinu",
+        "m47"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 425,
+      "grinderSettingUnit": "clicks",
+      "notes": "Micrometric dial read as X.X.X; 50 clicks per full rotation, ~8.5 rotations = ~425 total clicks.",
+      "calibPoints": [
+        {
+          "setting": 52.5,
+          "micron": 250.0
+        },
+        {
+          "setting": 150.0,
+          "micron": 600.0
+        },
+        {
+          "setting": 200.0,
+          "micron": 750.0
+        },
+        {
+          "setting": 260.0,
+          "micron": 900.0
+        }
+      ],
+      "uniformity": "balanced"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Mahlkönig",
+      "model": "X54",
+      "aliases": [
+        "mahlkonig",
+        "x54"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 35,
+      "grinderSettingUnit": "numbers",
+      "notes": "Stepless; printed grind-degree scale numbered 1 (finest) to 35 (coarsest).",
+      "calibPoints": [
+        {
+          "setting": 9.5,
+          "micron": 400.0
+        },
+        {
+          "setting": 24.0,
+          "micron": 555.0
+        },
+        {
+          "setting": 35.0,
+          "micron": 690.0
+        }
+      ],
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "1Zpresso",
+      "model": "Q2 Heptagonal",
+      "aliases": [
+        "q2"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 28,
+      "grinderSettingUnit": "numbers",
+      "notes": "Read as rotation.number.tick; 3 clicks per number, 30 per rotation, ~3 rotations.",
+      "calibPoints": [
+        {
+          "setting": 3.3,
+          "micron": 250.0
+        },
+        {
+          "setting": 9.3,
+          "micron": 700.0
+        }
+      ],
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Timemore",
+      "model": "Chestnut C2",
+      "aliases": [
+        "timemore",
+        "c2",
+        "chestnut"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 36,
+      "grinderSettingUnit": "clicks",
+      "calibPoints": [
+        {
+          "setting": 15.0,
+          "micron": 600.0
+        },
+        {
+          "setting": 21.0,
+          "micron": 700.0
+        },
+        {
+          "setting": 28.0,
+          "micron": 880.0
+        }
+      ],
+      "uniformity": "fines-heavy"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Timemore",
+      "model": "Chestnut C3 ESP Pro",
+      "aliases": [
+        "c3 esp",
+        "c3 pro"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 90,
+      "grinderSettingUnit": "clicks",
+      "notes": "Fine-thread espresso dial: 30 clicks per rotation (23.3 µm/click), ~3 rotations = ~90 clicks.",
+      "calibPoints": [
+        {
+          "setting": 25.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 45.0,
+          "micron": 600.0
+        },
+        {
+          "setting": 60.0,
+          "micron": 700.0
+        },
+        {
+          "setting": 82.0,
+          "micron": 900.0
+        }
+      ],
+      "uniformity": "balanced"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Kingrinder",
+      "model": "K6",
+      "aliases": [
+        "kingrinder",
+        "k6"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 240,
+      "grinderSettingUnit": "clicks",
+      "calibPoints": [
+        {
+          "setting": 33.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 40.0,
+          "micron": 600.0
+        },
+        {
+          "setting": 50.0,
+          "micron": 750.0
+        },
+        {
+          "setting": 60.0,
+          "micron": 900.0
+        }
+      ],
+      "uniformity": "balanced"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Kingrinder",
+      "model": "K4",
+      "aliases": [
+        "k4"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 240,
+      "grinderSettingUnit": "clicks",
+      "calibPoints": [
+        {
+          "setting": 33.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 40.0,
+          "micron": 620.0
+        },
+        {
+          "setting": 50.0,
+          "micron": 780.0
+        },
+        {
+          "setting": 58.0,
+          "micron": 900.0
+        }
+      ],
+      "uniformity": "balanced"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Baratza",
+      "model": "Encore",
+      "aliases": [
+        "baratza",
+        "encore"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 40,
+      "grinderSettingUnit": "numbers",
+      "calibPoints": [
+        {
+          "setting": 7.0,
+          "micron": 450.0
+        },
+        {
+          "setting": 15.0,
+          "micron": 700.0
+        },
+        {
+          "setting": 28.0,
+          "micron": 1090.0
+        }
+      ],
+      "uniformity": "fines-heavy"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Baratza",
+      "model": "Encore ESP",
+      "aliases": [
+        "encore esp"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 40,
+      "grinderSettingUnit": "numbers",
+      "calibPoints": [
+        {
+          "setting": 8.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 15.0,
+          "micron": 745.0
+        },
+        {
+          "setting": 22.0,
+          "micron": 950.0
+        },
+        {
+          "setting": 30.0,
+          "micron": 1270.0
+        }
+      ],
+      "uniformity": "fines-heavy"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Fellow",
+      "model": "Ode Gen 2",
+      "aliases": [
+        "fellow",
+        "ode"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 11,
+      "grinderSettingUnit": "numbers",
+      "notes": "Ships from the factory with SSP MP Red Speed burrs: naming them is not a modification, and the curve below was measured with them in.",
+      "stockBurrsFamilies": [
+        "ssp-mp-64"
+      ],
+      "calibPoints": [
+        {
+          "setting": 2.2,
+          "micron": 500.0
+        },
+        {
+          "setting": 5.0,
+          "micron": 700.0
+        },
+        {
+          "setting": 8.1,
+          "micron": 960.0
+        }
+      ],
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Fellow",
+      "model": "Opus",
+      "aliases": [
+        "opus"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 11,
+      "grinderSettingUnit": "numbers",
+      "calibPoints": [
+        {
+          "setting": 3.0,
+          "micron": 440.0
+        },
+        {
+          "setting": 5.5,
+          "micron": 660.0
+        },
+        {
+          "setting": 8.5,
+          "micron": 880.0
+        }
+      ],
+      "uniformity": "fines-heavy"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Niche",
+      "model": "Zero",
+      "aliases": [
+        "niche",
+        "niche zero"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 50,
+      "grinderSettingUnit": "numbers",
+      "calibPoints": [
+        {
+          "setting": 17.5,
+          "micron": 250.0
+        },
+        {
+          "setting": 44.5,
+          "micron": 700.0
+        }
+      ],
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Turin",
+      "model": "DF64 Gen 2",
+      "aliases": [
+        "df64",
+        "df64 gen 2",
+        "df64 gen2",
+        "df64 v2"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 100,
+      "grinderSettingUnit": "numbers",
+      "notes": "Its own DFC-coated stock 64mm flat burrs, distinct from the original DF64 (Gen 1)'s Italmill burrs - a different curve, not just a cosmetic update.",
+      "calibPoints": [
+        {
+          "setting": 10.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 24.0,
+          "micron": 600.0
+        },
+        {
+          "setting": 50.0,
+          "micron": 800.0
+        },
+        {
+          "setting": 77.0,
+          "micron": 1000.0
+        }
+      ],
+      "uniformity": "balanced"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Wilfa",
+      "model": "Uniform",
+      "aliases": [
+        "wilfa",
+        "uniform"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 41,
+      "grinderSettingUnit": "numbers",
+      "calibPoints": [
+        {
+          "setting": 11.0,
+          "micron": 450.0
+        },
+        {
+          "setting": 25.0,
+          "micron": 690.0
+        },
+        {
+          "setting": 36.0,
+          "micron": 900.0
+        }
+      ],
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Hario",
+      "model": "Mini Mill Slim+",
+      "aliases": [
+        "mini mill"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 12,
+      "grinderSettingUnit": "clicks",
+      "calibPoints": [
+        {
+          "setting": 2.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 6.5,
+          "micron": 700.0
+        }
+      ],
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Porlex",
+      "model": "Mini II",
+      "aliases": [
+        "porlex"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 15,
+      "grinderSettingUnit": "clicks",
+      "calibPoints": [
+        {
+          "setting": 2.5,
+          "micron": 250.0
+        },
+        {
+          "setting": 5.0,
+          "micron": 700.0
+        }
+      ],
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Weber Workshops",
+      "model": "Key Mk2",
+      "aliases": [
+        "weber",
+        "key"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 200,
+      "grinderSettingUnit": "microns",
+      "calibPoints": [
+        {
+          "setting": 53.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 149.0,
+          "micron": 700.0
+        }
+      ],
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Baratza",
+      "model": "Virtuoso+",
+      "aliases": [
+        "virtuoso",
+        "virtuoso+"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 40,
+      "grinderSettingUnit": "numbers",
+      "notes": "Stepped macro ring, 40 settings: 1 (finest) to 40 (coarsest).",
+      "calibPoints": [
+        {
+          "setting": 9.0,
+          "micron": 445.0
+        },
+        {
+          "setting": 20.0,
+          "micron": 700.0
+        },
+        {
+          "setting": 32.0,
+          "micron": 1030.0
+        }
+      ],
+      "uniformity": "fines-heavy"
+    },
+    {
+      "kind": "grinder",
+      "brand": "1Zpresso",
+      "model": "Q-Air",
+      "aliases": [
+        "qair",
+        "q air",
+        "q-air"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 40,
+      "grinderSettingUnit": "numbers",
+      "notes": "Read as rotation.number.tick; 3 clicks per number, 30 per rotation, ~4 rotations.",
+      "calibPoints": [
+        {
+          "setting": 3.3,
+          "micron": 250.0
+        },
+        {
+          "setting": 9.3,
+          "micron": 700.0
+        }
+      ],
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "1Zpresso",
+      "model": "X-Pro S",
+      "aliases": [
+        "xpro",
+        "x pro",
+        "x-pro"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 27,
+      "grinderSettingUnit": "numbers",
+      "notes": "Read as rotation.number.tick; 10 clicks per number, 60 per rotation, 4.5 rotations.",
+      "calibPoints": [
+        {
+          "setting": 2.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 5.6,
+          "micron": 700.0
+        }
+      ],
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Timemore",
+      "model": "Chestnut C3",
+      "aliases": [
+        "chestnut c3"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 25,
+      "grinderSettingUnit": "clicks",
+      "notes": "Standard C3 (38mm S2C burr); total clicks from zero, ~12 per rotation.",
+      "calibPoints": [
+        {
+          "setting": 13.0,
+          "micron": 600.0
+        },
+        {
+          "setting": 17.0,
+          "micron": 700.0
+        },
+        {
+          "setting": 22.0,
+          "micron": 850.0
+        }
+      ],
+      "uniformity": "balanced"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Turin",
+      "model": "DF54",
+      "aliases": [
+        "df54",
+        "miicoffee df54"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 90,
+      "grinderSettingUnit": "numbers",
+      "notes": "Stepless single-dose flat burr; numbered reference dial 0 (finest) to ~90.",
+      "calibPoints": [
+        {
+          "setting": 19.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 34.0,
+          "micron": 500.0
+        },
+        {
+          "setting": 50.0,
+          "micron": 650.0
+        },
+        {
+          "setting": 90.0,
+          "micron": 900.0
+        }
+      ],
+      "uniformity": "balanced"
+    },
+    {
+      "kind": "brewer",
+      "brand": "Hario",
+      "model": "V60",
+      "family": "hario-v60",
+      "aliases": [
+        "v60",
+        "hario v60",
+        "v60 01",
+        "v60 02",
+        "v60-01",
+        "v60-02"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Category-defining 60-degree cone with spiral ribs and one large hole; fast, bright, clarity-forward, pour-technique sensitive."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Hario",
+      "model": "V60 Mugen",
+      "family": "hario-v60-mugen",
+      "aliases": [
+        "mugen",
+        "one pour",
+        "v60 mugen",
+        "v60 one pour"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "V60 body with smoother walls and minimal ribs for higher flow restriction; designed for a single continuous pour."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Hario",
+      "model": "Switch",
+      "family": "hario-switch",
+      "aliases": [
+        "switch",
+        "hario switch"
+      ],
+      "brewMethods": [
+        "pourOver",
+        "immersion",
+        "hybrid"
+      ],
+      "notes": "V60-shaped valve dripper: steep like immersion, flip the steel-ball switch to drain like pour-over, or combine both in one brew."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Cafec",
+      "model": "Flower Dripper",
+      "family": "cafec-flower-dripper",
+      "aliases": [
+        "cafec",
+        "flower dripper",
+        "flower"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "60-degree cone with flower-shaped ribs holding an air gap for full bloom; balanced, forgiving, even extraction."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Cafec",
+      "model": "Deep 27",
+      "family": "cafec-deep-27",
+      "aliases": [
+        "deep 27",
+        "deep27",
+        "cafec deep 27"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Narrow 27-degree deep flower-dripper cone for a tall bed and single cups; slower flow, more body and sweetness. The deep bed wants a FAIRLY COARSE grind, coarser than a standard V60 (about 760-810 um)."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Cafec",
+      "model": "Deep 45",
+      "family": "cafec-deep-45",
+      "aliases": [
+        "deep 45",
+        "deep45",
+        "cafec deep 45"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "45-degree deep flower-dripper cone tuned for larger 3-7 cup batches with the same deep-bed richness."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Origami",
+      "model": "Dripper",
+      "family": "origami-dripper",
+      "aliases": [
+        "origami",
+        "origami dripper",
+        "origami s",
+        "origami m",
+        "air"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Fluted ceramic or resin cone (sizes S/M); accepts both V60 cone and Kalita Wave flat filters, so flow can be tuned. Fast and clean."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Kono",
+      "model": "Meimon",
+      "family": "kono-meimon",
+      "aliases": [
+        "kono",
+        "meimon",
+        "kono md",
+        "kono meimon"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Classic 60-degree cone with short lower ribs for bypass control; rounder, heavier-bodied old-school Japanese cup."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Tricolate",
+      "model": "Tricolate",
+      "family": "tricolate",
+      "aliases": [
+        "tricolate"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Restricted single-pour cone with a flow-control disc/lid; long contact time, high extraction, very clean."
+    },
+    {
+      "kind": "brewer",
+      "brand": "December",
+      "model": "December Dripper",
+      "family": "december-dripper",
+      "aliases": [
+        "december",
+        "december dripper"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Stainless flat-bottom brewer with an adjustable aperture base (12 holes, 4 settings) to dial flow rate and hit target brew time."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Graycano",
+      "model": "Graycano",
+      "family": "graycano",
+      "aliases": [
+        "graycano",
+        "goat story",
+        "gray cano"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Cast-aluminium 60-degree cone with Lava Rib interior and steam air pocket; heats fast, holds temp, even drawdown."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Brewista",
+      "model": "Tornado",
+      "family": "brewista-tornado",
+      "aliases": [
+        "brewista",
+        "tornado",
+        "tornado duo"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Double-wall glass conical with internal vortex ribs that regulate flow; insulated to hold heat."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Brewista",
+      "model": "Gem",
+      "family": "brewista-gem",
+      "aliases": [
+        "gem",
+        "brewista gem",
+        "gem series"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Diamond-shaped ceramic cone by WBrC champion Stefanos Domatiotis; dual horizontal/vertical ribs and a covering lid for clarity and consistency."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Timemore",
+      "model": "Crystal Eye",
+      "family": "timemore-crystal-eye",
+      "aliases": [
+        "timemore",
+        "crystal eye",
+        "crystal eye 02"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Glass/PCTG 60-degree cone with a three-layer rib structure for filter adherence and flow control."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Timemore",
+      "model": "Crystal Eye B75",
+      "family": "timemore-b75",
+      "aliases": [
+        "b75",
+        "crystal eye b75",
+        "timemore b75"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Flat-bottom Orea-style brewer with 75-degree walls and ribbed 10-hole base; fast forgiving flow, lets you grind fine."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Saint Anthony Industries",
+      "model": "C70",
+      "family": "saint-anthony-c70",
+      "aliases": [
+        "c70",
+        "saint anthony",
+        "phoenix",
+        "st anthony"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Steeper 70-degree cone (vs V60's 60) for a taller bed and more filtration; cleaner, more delicate cup."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Gabi",
+      "model": "Master A",
+      "family": "gabi-master",
+      "aliases": [
+        "gabi",
+        "master a",
+        "gabi master",
+        "dripmaster"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Cone dripper paired with a flow-distribution waterspout insert for even, hands-off water dispersion."
+    },
+    {
+      "kind": "brewer",
+      "brand": "notNeutral",
+      "model": "Gino",
+      "family": "notneutral-gino",
+      "aliases": [
+        "notneutral",
+        "gino",
+        "not neutral"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Ceramic cone with internal ribs and a slightly shallower angle; even, balanced extraction."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Fellow",
+      "model": "Stagg",
+      "family": "fellow-stagg",
+      "aliases": [
+        "stagg",
+        "fellow stagg",
+        "stagg x",
+        "stagg xf"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Double-wall steel dripper with ridged walls; X is conical-ish, XF is flat-bottom. Heat-retentive, even bed, ratio markings inside."
+    },
+    {
+      "kind": "brewer",
+      "brand": "April",
+      "model": "April Brewer",
+      "family": "april-brewer",
+      "aliases": [
+        "april",
+        "april brewer",
+        "april plastic",
+        "april glass",
+        "april ceramic"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Scandinavian competition-favorite flat-bottom brewer (Patrik Rolf); large single drain, fast flow, clean repeatable comp-style brews."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Orea",
+      "model": "Orea Brewer",
+      "family": "orea",
+      "aliases": [
+        "orea",
+        "orea brewer",
+        "orea v3",
+        "orea v4"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Flat-floor brewer with a very open base; extremely fast drawdown. V4 is modular with interchangeable bottoms. Competition staple."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Kalita",
+      "model": "Wave",
+      "family": "kalita-wave",
+      "aliases": [
+        "kalita",
+        "wave",
+        "kalita wave",
+        "wave 155",
+        "wave 185"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Reference flat-bottom 3-hole brewer; forgiving, even extraction, wavy filter stabilizes the bed."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Blue Bottle",
+      "model": "Dripper",
+      "family": "blue-bottle-dripper",
+      "aliases": [
+        "blue bottle",
+        "blue bottle dripper"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Minimalist single-hole flat-bottom ceramic; slow controlled flow for sweet, balanced cups."
+    },
+    {
+      "kind": "brewer",
+      "brand": "NextLevel Brewer Co",
+      "model": "LV3",
+      "family": "nextlevel-lv3",
+      "aliases": [
+        "nextlevel",
+        "next level",
+        "lv3",
+        "nextlevel brewer"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Original zero-bypass flat-bed brewer with stepless flow-control valve; impermeable walls force all water through the bed."
+    },
+    {
+      "kind": "brewer",
+      "brand": "NextLevel Brewer Co",
+      "model": "Pulsar",
+      "family": "nextlevel-pulsar",
+      "aliases": [
+        "pulsar",
+        "nextlevel pulsar"
+      ],
+      "brewMethods": [
+        "pourOver",
+        "immersion",
+        "hybrid"
+      ],
+      "notes": "Flat-bottom immersion/percolation hybrid with shower screen and stepless valve (Jonathan Gagne collab); clarity-focused, no bypass."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Melitta",
+      "model": "Pour-Over",
+      "family": "melitta-pourover",
+      "aliases": [
+        "melitta",
+        "melitta pour over",
+        "1x4",
+        "melitta classic"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Original wedge single-hole cone; mass-market, easy, the historical pour-over standard."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Bonavita",
+      "model": "Immersion Dripper",
+      "family": "bonavita-immersion-dripper",
+      "aliases": [
+        "bonavita immersion",
+        "bonavita dripper",
+        "immersion dripper"
+      ],
+      "brewMethods": [
+        "pourOver",
+        "immersion",
+        "hybrid"
+      ],
+      "notes": "Flat-bottom immersion brewer with a bottom release valve; steep-then-drain, very forgiving."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Wilfa",
+      "model": "Pour Over",
+      "family": "wilfa-pourover",
+      "aliases": [
+        "wilfa",
+        "wilfa svart",
+        "wilfa pour over",
+        "svart"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Flat-bottom brewer designed with Tim Wendelboe; matched to Wilfa filters for even, comp-grade extraction."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Loveramics",
+      "model": "Brewers Flat-Bottom",
+      "family": "loveramics-brewers",
+      "aliases": [
+        "loveramics",
+        "loveramics brewers",
+        "flatbed",
+        "loveramics flatbed"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Fast-flowing Kalita-Wave-style ceramic flat-bottom dripper, multi-hole; well-priced, even extraction."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Chemex",
+      "model": "Classic",
+      "family": "chemex",
+      "aliases": [
+        "chemex",
+        "chemex classic",
+        "6-cup"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Hourglass carafe using thick bonded paper filters; very slow flow, exceptionally clean, low-body cup."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Clever",
+      "model": "Clever Dripper",
+      "family": "clever-dripper",
+      "aliases": [
+        "clever",
+        "clever dripper"
+      ],
+      "brewMethods": [
+        "pourOver",
+        "immersion",
+        "hybrid"
+      ],
+      "notes": "Plastic cone with a gravity-actuated shut-off valve that opens when set on a mug; near-foolproof immersion-then-drip, paper-clean cup."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Bodum",
+      "model": "French Press",
+      "family": "french-press",
+      "aliases": [
+        "french press",
+        "bodum",
+        "chambord",
+        "cafetiere",
+        "brazil"
+      ],
+      "brewMethods": [
+        "immersion"
+      ],
+      "notes": "Classic steep-and-plunge with a single metal mesh; oils and fines pass through for a heavy, full body."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Espro",
+      "model": "Press",
+      "family": "espro-press",
+      "aliases": [
+        "espro",
+        "espro p3",
+        "espro p5",
+        "espro p7",
+        "espro press"
+      ],
+      "brewMethods": [
+        "immersion"
+      ],
+      "notes": "French press with a patented double micro-filter (basket-in-basket) that traps grit and stops extraction at plunge; much cleaner than a standard press."
+    },
+    {
+      "kind": "brewer",
+      "brand": "AeroPress",
+      "model": "AeroPress",
+      "family": "aeropress",
+      "aliases": [
+        "aeropress",
+        "aero",
+        "aeropress original",
+        "aeropress go",
+        "aeropress xl",
+        "aeropress clear",
+        "aeropress premium"
+      ],
+      "brewMethods": [
+        "aeropress",
+        "immersion"
+      ],
+      "notes": "Combined immersion plus manual pressure through a paper or metal filter; variants differ only in size/material, not method."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Delter",
+      "model": "Coffee Press",
+      "family": "delter-press",
+      "aliases": [
+        "delter",
+        "delter press",
+        "delter coffee press"
+      ],
+      "brewMethods": [
+        "aeropress",
+        "hybrid"
+      ],
+      "notes": "Injection piston press: a Jet-Seal keeps water off the grounds until you press, then injects water through the puck; pour-over-like, avoids true immersion agitation."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Hario",
+      "model": "Mizudashi",
+      "family": "hario-mizudashi",
+      "aliases": [
+        "mizudashi",
+        "hario mizudashi",
+        "hario cold brew bottle",
+        "cold brew bottle"
+      ],
+      "brewMethods": [
+        "coldBrew"
+      ],
+      "notes": "Fridge pitcher with a tall mesh filter basket; brews ready-to-drink (not concentrate) cold brew in ~8-12h."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Toddy",
+      "model": "Cold Brew System",
+      "family": "toddy",
+      "aliases": [
+        "toddy",
+        "toddy cold brew",
+        "cold brew system"
+      ],
+      "brewMethods": [
+        "coldBrew"
+      ],
+      "notes": "Bucket-style immersion brewer making a strong concentrate (~1:3 to serve) through a felt/paper filter; classic low-acid cold brew, 12-24h."
+    },
+    {
+      "kind": "brewer",
+      "brand": "OXO",
+      "model": "Rapid Brewer",
+      "family": "oxo-rapid-brewer",
+      "aliases": [
+        "oxo",
+        "oxo brew",
+        "oxo rapid brewer",
+        "rapid brewer",
+        "oxo good grips"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Compact pressure-assisted brewer: the water is pressed through the bed rather than free-falling, so the brew is a bloom then ONE single pour with all the remaining water, never staged fractional pours. Its rapid cold brew PERCOLATES under pressure too: grind FINER than filter there, never coarse, and the concentrate is meant to be diluted to serve."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Technivorm Moccamaster",
+      "model": "KBGV Select",
+      "family": "moccamaster",
+      "aliases": [
+        "moccamaster",
+        "technivorm",
+        "kbgv",
+        "kbgv select"
+      ],
+      "brewMethods": [
+        "batchBrewer"
+      ],
+      "notes": "SCA/ECBC-certified Dutch-built drip brewer; brews half or full 1.25L carafe to Golden Cup standard."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Ratio",
+      "model": "Six",
+      "family": "ratio-six",
+      "aliases": [
+        "ratio",
+        "ratio six",
+        "ratio 6"
+      ],
+      "brewMethods": [
+        "batchBrewer"
+      ],
+      "notes": "Simulated-pour-over auto drip; Series 2 added redesigned carafe and reservoir markings."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Ratio",
+      "model": "Eight",
+      "family": "ratio-eight",
+      "aliases": [
+        "ratio eight",
+        "ratio 8"
+      ],
+      "brewMethods": [
+        "batchBrewer"
+      ],
+      "notes": "Walnut-paneled flagship one-button drip brewer; Series 2 refresh."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Breville",
+      "model": "Precision Brewer",
+      "family": "breville-precision-brewer",
+      "aliases": [
+        "breville",
+        "sage",
+        "precision brewer",
+        "bdc450",
+        "bdc400"
+      ],
+      "brewMethods": [
+        "batchBrewer"
+      ],
+      "notes": "SCA-certified programmable drip; Gold/Fast/Strong/Iced/Cold Brew presets, adjustable temp, bloom and flow control."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Wilfa",
+      "model": "Svart Performance",
+      "family": "wilfa-svart-performance",
+      "aliases": [
+        "svart performance",
+        "wilfa svart performance",
+        "wspl-3"
+      ],
+      "brewMethods": [
+        "batchBrewer"
+      ],
+      "notes": "Tim Wendelboe-designed Norwegian filter machine; holds 92-96C, adjustable flow with steep-and-release."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Bonavita",
+      "model": "Connoisseur",
+      "family": "bonavita-connoisseur",
+      "aliases": [
+        "bonavita",
+        "connoisseur",
+        "bonavita 8-cup",
+        "one-touch"
+      ],
+      "brewMethods": [
+        "batchBrewer"
+      ],
+      "notes": "Single-button thermal-carafe drip brewer."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Hario",
+      "model": "Syphon",
+      "family": "hario-syphon",
+      "aliases": [
+        "hario syphon",
+        "hario siphon",
+        "technica",
+        "next syphon"
+      ],
+      "brewMethods": [
+        "siphon"
+      ],
+      "notes": "Borosilicate vacuum pot with alcohol/beam-heater burner (3 and 5-cup); Hario pioneered the format."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Yama",
+      "model": "Tabletop Siphon",
+      "family": "yama-siphon",
+      "aliases": [
+        "yama",
+        "yama siphon",
+        "yama vacuum pot"
+      ],
+      "brewMethods": [
+        "siphon"
+      ],
+      "notes": "Hand-blown glass stovetop/burner vacuum pot (3, 5, 8-cup); long-standing siphon staple."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Cafe de Tiamo",
+      "model": "Syphon",
+      "family": "tiamo-siphon",
+      "aliases": [
+        "tiamo",
+        "cafe de tiamo",
+        "tiamo syphon"
+      ],
+      "brewMethods": [
+        "siphon"
+      ],
+      "notes": "Taiwanese glass vacuum brewer; same gravity-then-vacuum siphon principle as Hario/Yama."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Flair",
+      "model": "58",
+      "family": "flair-58",
+      "aliases": [
+        "flair",
+        "flair 58",
+        "flair 58+2",
+        "flair 58 plus"
+      ],
+      "brewMethods": [
+        "espresso"
+      ],
+      "pressureRegime": "variable",
+      "notes": "58mm group manual lever; pour off-boil water and pull by hand, with detachable preheat controller. Current flagship."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Flair",
+      "model": "Neo Flex",
+      "family": "flair-neo-flex",
+      "aliases": [
+        "neo flex",
+        "flair neo",
+        "flair neo flex"
+      ],
+      "brewMethods": [
+        "espresso"
+      ],
+      "pressureRegime": "variable",
+      "notes": "Entry-level lever maker with pressurized-style basket; easiest Flair on-ramp."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Cafelat",
+      "model": "Robot",
+      "family": "cafelat-robot",
+      "aliases": [
+        "cafelat",
+        "robot",
+        "cafelat robot",
+        "robot barista"
+      ],
+      "brewMethods": [
+        "espresso"
+      ],
+      "pressureRegime": "variable",
+      "notes": "Die-cast lever press with twin arms; no electricity. Barista version adds an in-basket pressure gauge."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Wacaco",
+      "model": "Nanopresso",
+      "family": "wacaco-nanopresso",
+      "aliases": [
+        "wacaco",
+        "nanopresso"
+      ],
+      "brewMethods": [
+        "espresso"
+      ],
+      "pressureRegime": "variable",
+      "notes": "Hand-pumped portable espresso for ground coffee (~18 bar claimed); travel and camping staple."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Wacaco",
+      "model": "Picopresso",
+      "family": "wacaco-picopresso",
+      "aliases": [
+        "picopresso"
+      ],
+      "brewMethods": [
+        "espresso"
+      ],
+      "pressureRegime": "variable",
+      "notes": "Compact pro-oriented portable with a naked 52mm 18g basket for true specialty shots on the go."
+    },
+    {
+      "kind": "brewer",
+      "brand": "ROK",
+      "model": "EspressoGC",
+      "family": "rok-espresso",
+      "aliases": [
+        "rok",
+        "rok espresso",
+        "espressogc"
+      ],
+      "brewMethods": [
+        "espresso"
+      ],
+      "pressureRegime": "variable",
+      "notes": "Twin-lever manual press producing 5-10 bar; Commercial/Pro editions add a gauge."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Gaggia",
+      "model": "Classic Pro",
+      "family": "gaggia-classic",
+      "aliases": [
+        "gaggia",
+        "gaggia classic",
+        "classic pro"
+      ],
+      "brewMethods": [
+        "espresso"
+      ],
+      "pressureRegime": "fixed",
+      "notes": "Prosumer 58mm-portafilter machine with a commercial-style steam wand; a common first upgrade from pod machines."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Rancilio",
+      "model": "Silvia",
+      "family": "rancilio-silvia",
+      "aliases": [
+        "rancilio",
+        "silvia"
+      ],
+      "brewMethods": [
+        "espresso"
+      ],
+      "pressureRegime": "fixed",
+      "notes": "58mm single-boiler prosumer classic, largely unchanged for two decades; commercial-grade steam wand."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Breville",
+      "model": "Barista Express",
+      "family": "breville-barista-express",
+      "aliases": [
+        "sage",
+        "barista express",
+        "sage barista express",
+        "bes870"
+      ],
+      "brewMethods": [
+        "espresso"
+      ],
+      "pressureRegime": "fixed",
+      "notes": "Built-in conical burr grinder, 54mm portafilter and steam wand in one all-in-one machine.",
+      "builtInGrinder": {
+        "grinderMinSetting": 1,
+        "grinderMaxSetting": 16,
+        "grinderSettingUnit": "clicks",
+        "notes": "uncalibrated: no published micron chart found (checked 2026-09-03). 16-setting built-in conical burr grinder; widely cited guides place settings 1-4 too fine (choke risk), 5-10 as the espresso zone, 11-16 as filter/coarse. Source: dialmycoffee.com/sage-barista-express-grind-settings."
+      }
+    },
+    {
+      "kind": "brewer",
+      "brand": "Breville",
+      "model": "Barista Pro",
+      "family": "breville-barista-pro",
+      "aliases": [
+        "sage barista pro",
+        "barista pro",
+        "bes878"
+      ],
+      "brewMethods": [
+        "espresso"
+      ],
+      "pressureRegime": "fixed",
+      "notes": "Built-in conical burr grinder, 54mm portafilter, digital temperature control (PID) in one all-in-one machine.",
+      "builtInGrinder": {
+        "grinderMinSetting": 1,
+        "grinderMaxSetting": 30,
+        "grinderSettingUnit": "clicks",
+        "notes": "uncalibrated: no published micron chart found (checked 2026-09-03). 30-setting built-in conical burr grinder (Baratza-made), default factory setting 15; guides cite an espresso starting point around 9-12. Sources: Sage's own instruction manual (BES878) ; home-barista.com/tips/barista-express-and-pro-grinder-settings-t95422.html."
+      }
+    },
+    {
+      "kind": "brewer",
+      "brand": "Breville",
+      "model": "Barista Touch",
+      "family": "breville-barista-touch",
+      "aliases": [
+        "sage barista touch",
+        "barista touch",
+        "ses880"
+      ],
+      "brewMethods": [
+        "espresso"
+      ],
+      "pressureRegime": "fixed",
+      "notes": "Built-in conical burr grinder, 54mm portafilter, touchscreen and automatic milk texturing in one all-in-one machine.",
+      "builtInGrinder": {
+        "grinderMinSetting": 1,
+        "grinderMaxSetting": 30,
+        "grinderSettingUnit": "clicks",
+        "notes": "uncalibrated: no published micron chart found (checked 2026-09-03); 30-setting dial cited by third-party guides but not independently confirmed against a Sage manual page. Source: completehomebarista.com/guides/breville-barista-touch-grind-settings."
+      }
+    },
+    {
+      "kind": "brewer",
+      "brand": "De'Longhi",
+      "model": "La Specialista Arte",
+      "family": "delonghi-la-specialista-arte",
+      "aliases": [
+        "la specialista arte",
+        "specialista arte",
+        "ec9155"
+      ],
+      "brewMethods": [
+        "espresso"
+      ],
+      "pressureRegime": "fixed",
+      "notes": "Built-in conical burr grinder, 54mm portafilter, manual milk frother in one all-in-one machine.",
+      "builtInGrinder": {
+        "grinderSettingUnit": "clicks",
+        "notes": "uncalibrated: no published micron chart found, and sources disagree on the dial's own span (some product pages cite 8, others 15 settings; checked 2026-09-03) so no range is stamped here either. Setting 2 is commonly cited as the espresso starting point. Sources: completehomebarista.com/guides/delonghi-la-specialista-grind-settings ; delonghi.com product page for EC9155.MB."
+      }
+    },
+    {
+      "kind": "brewer",
+      "brand": "De'Longhi",
+      "model": "Magnifica S",
+      "family": "delonghi-magnifica-s",
+      "aliases": [
+        "magnifica s",
+        "ecam 20.110",
+        "ecam20110"
+      ],
+      "brewMethods": [
+        "espresso"
+      ],
+      "pressureRegime": "fixed",
+      "notes": "Fully automatic bean-to-cup machine with a built-in conical burr grinder; no separate portafilter (brews straight into the cup).",
+      "builtInGrinder": {
+        "grinderMinSetting": 1,
+        "grinderMaxSetting": 13,
+        "grinderSettingUnit": "clicks",
+        "notes": "uncalibrated: no published micron chart found (checked 2026-09-03). 13-setting built-in conical burr grinder shared across the Magnifica line, adjustment knob inside the bean hopper; guides cite an espresso starting point around 5-6. Source: completehomebarista.com/guides/delonghi-magnifica-s-grinder-settings."
+      }
+    },
+    {
+      "kind": "brewer",
+      "brand": "De'Longhi",
+      "model": "Dedica",
+      "family": "delonghi-dedica",
+      "aliases": [
+        "delonghi",
+        "dedica",
+        "de'longhi dedica"
+      ],
+      "brewMethods": [
+        "espresso"
+      ],
+      "pressureRegime": "fixed",
+      "notes": "Slim 15-bar pump machine with a small single/double portafilter; compact-kitchen staple."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Lelit",
+      "model": "Bianca",
+      "family": "lelit-bianca",
+      "aliases": [
+        "lelit",
+        "bianca"
+      ],
+      "brewMethods": [
+        "espresso"
+      ],
+      "pressureRegime": "variable",
+      "notes": "Dual-boiler 58mm machine with a flow-control paddle (pressure profiling) and a PID display."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Lelit",
+      "model": "MaraX",
+      "family": "lelit-mara-x",
+      "aliases": [
+        "mara x",
+        "marax"
+      ],
+      "brewMethods": [
+        "espresso"
+      ],
+      "pressureRegime": "fixed",
+      "notes": "Heat-exchanger 58mm machine with a flow-control paddle and a PID-controlled brew boiler."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Rocket Espresso",
+      "model": "Appartamento",
+      "family": "rocket-appartamento",
+      "aliases": [
+        "rocket",
+        "appartamento"
+      ],
+      "brewMethods": [
+        "espresso"
+      ],
+      "pressureRegime": "fixed",
+      "notes": "Compact heat-exchanger machine with a copper boiler and E61 group; a popular home upgrade."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Profitec",
+      "model": "Pro 500",
+      "family": "profitec-pro-500",
+      "aliases": [
+        "profitec",
+        "pro 500"
+      ],
+      "brewMethods": [
+        "espresso"
+      ],
+      "pressureRegime": "fixed",
+      "notes": "Dual-boiler PID machine with an E61 group, built on the same platform as the ECM Synchronika."
+    },
+    {
+      "kind": "brewer",
+      "brand": "La Marzocco",
+      "model": "Linea Micra",
+      "family": "la-marzocco-linea-micra",
+      "aliases": [
+        "la marzocco",
+        "linea micra",
+        "marzocco"
+      ],
+      "brewMethods": [
+        "espresso"
+      ],
+      "pressureRegime": "fixed",
+      "notes": "Home-sized single-boiler descendant of La Marzocco's commercial Linea, with app-controlled profiling."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Decent",
+      "model": "DE1",
+      "family": "decent-de1",
+      "aliases": [
+        "decent espresso",
+        "de1",
+        "de1pro",
+        "de1+"
+      ],
+      "brewMethods": [
+        "espresso"
+      ],
+      "pressureRegime": "variable",
+      "notes": "Software-driven machine exposing full pressure/flow profiling and shot graphs on its touchscreen."
+    },
+    {
+      "kind": "brewer",
+      "brand": "La Pavoni",
+      "model": "Europiccola",
+      "family": "la-pavoni-europiccola",
+      "aliases": [
+        "la pavoni",
+        "europiccola",
+        "pavoni lever"
+      ],
+      "brewMethods": [
+        "espresso"
+      ],
+      "pressureRegime": "variable",
+      "notes": "Classic manual spring-lever machine, hand-pulled shots with no pump or electronics."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Bialetti",
+      "model": "Moka Express",
+      "family": "bialetti-moka",
+      "aliases": [
+        "bialetti",
+        "moka express",
+        "moka pot"
+      ],
+      "brewMethods": [
+        "mokaPot"
+      ],
+      "notes": "Classic stovetop aluminium moka pot; the original moka design."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Bialetti",
+      "model": "Brikka",
+      "family": "bialetti-brikka",
+      "aliases": [
+        "brikka",
+        "bialetti brikka"
+      ],
+      "brewMethods": [
+        "mokaPot"
+      ],
+      "notes": "Pressure-valve moka pot; silicone pressure regulator builds extra pressure for a crema-like layer."
+    },
+    {
+      "kind": "filter",
+      "brand": "Hario",
+      "model": "V60 02 (tabbed)",
+      "aliases": [
+        "hario filter",
+        "v60 filter",
+        "vcf"
+      ],
+      "notes": "Standard reference paper for V60; medium flow rate, balanced cup."
+    },
+    {
+      "kind": "filter",
+      "brand": "Hario",
+      "model": "V60 01 (tabbed)",
+      "aliases": [
+        "v60 01 filter"
+      ],
+      "notes": "Standard reference paper for V60 size 01; medium flow rate."
+    },
+    {
+      "kind": "filter",
+      "brand": "Cafec",
+      "model": "Abaca",
+      "aliases": [
+        "cafec",
+        "abaca"
+      ],
+      "notes": "Abaca-fiber cone paper; flows slightly faster than Hario stock, very consistent, crisp cup."
+    },
+    {
+      "kind": "filter",
+      "brand": "Cafec",
+      "model": "Abaca+",
+      "aliases": [
+        "abaca plus",
+        "abaca+"
+      ],
+      "notes": "Thicker Abaca; slower flow than regular Abaca, more clarity, suits finer grinds."
+    },
+    {
+      "kind": "filter",
+      "brand": "Cafec",
+      "model": "Light Roast (T-92)",
+      "aliases": [
+        "t92",
+        "t-92",
+        "light roast filter",
+        "light"
+      ],
+      "notes": "Thin one-side crepe, high density; clean cup with strong aroma, made for light roasts."
+    },
+    {
+      "kind": "filter",
+      "brand": "Cafec",
+      "model": "Medium Roast (T-90)",
+      "aliases": [
+        "t90",
+        "t-90",
+        "medium roast filter",
+        "medium roast",
+        "medium"
+      ],
+      "notes": "Thick two-side crepe, low density; fastest drawdown and a balanced, rich cup. Cafec's MEDIUM-roast paper (T-83 is the dark-roast one)."
+    },
+    {
+      "kind": "filter",
+      "brand": "Cafec",
+      "model": "Dark Roast (T-83)",
+      "aliases": [
+        "t83",
+        "t-83",
+        "dark roast filter",
+        "dark"
+      ],
+      "notes": "Two-side low-crepe, medium density; slower contact that enhances body and sweetness for dark roasts."
+    },
+    {
+      "kind": "filter",
+      "brand": "Sibarist",
+      "model": "FAST Specialty",
+      "aliases": [
+        "sibarist",
+        "fast filter"
+      ],
+      "notes": "Premium fast filter; drains 30-50% faster than standard papers — allows much finer grinds without stalling, very clean cup."
+    },
+    {
+      "kind": "filter",
+      "brand": "Sibarist",
+      "model": "B3 FLAT",
+      "aliases": [
+        "b3",
+        "sibarist flat"
+      ],
+      "notes": "Fast flat-bottom filter for Kalita/Orea-style brewers."
+    },
+    {
+      "kind": "filter",
+      "brand": "Kalita",
+      "model": "Wave 185",
+      "aliases": [
+        "wave filter",
+        "kalita filter"
+      ],
+      "notes": "Flat-bottom wave paper; medium-slow flow, very even extraction, forgiving."
+    },
+    {
+      "kind": "filter",
+      "brand": "Chemex",
+      "model": "Bonded",
+      "aliases": [
+        "chemex filter"
+      ],
+      "notes": "Very thick bonded paper; slow flow, removes most oils and fines, exceptionally clean cup."
+    },
+    {
+      "kind": "filter",
+      "brand": "Origami",
+      "model": "Cone (Hario-compatible)",
+      "aliases": [
+        "origami filter"
+      ],
+      "notes": "Uses standard V60-style cone papers; medium flow."
+    },
+    {
+      "kind": "kettle",
+      "brand": "Fellow",
+      "model": "Stagg EKG",
+      "aliases": [
+        "stagg",
+        "ekg"
+      ]
+    },
+    {
+      "kind": "kettle",
+      "brand": "Fellow",
+      "model": "Stagg EKG Pro",
+      "aliases": [
+        "stagg pro",
+        "ekg pro"
+      ]
+    },
+    {
+      "kind": "kettle",
+      "brand": "Brewista",
+      "model": "Artisan",
+      "aliases": [
+        "brewista"
+      ]
+    },
+    {
+      "kind": "kettle",
+      "brand": "Hario",
+      "model": "Buono",
+      "aliases": [
+        "buono"
+      ]
+    },
+    {
+      "kind": "scale",
+      "brand": "Acaia",
+      "model": "Pearl",
+      "aliases": [
+        "acaia",
+        "pearl"
+      ]
+    },
+    {
+      "kind": "scale",
+      "brand": "Acaia",
+      "model": "Lunar",
+      "aliases": [
+        "lunar"
+      ]
+    },
+    {
+      "kind": "scale",
+      "brand": "Timemore",
+      "model": "Black Mirror Basic 2",
+      "aliases": [
+        "black mirror"
+      ]
+    },
+    {
+      "kind": "scale",
+      "brand": "Hario",
+      "model": "V60 Drip Scale",
+      "aliases": [
+        "drip scale"
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Sage",
+      "model": "Smart Grinder Pro",
+      "aliases": [
+        "breville smart grinder pro",
+        "bcg820",
+        "sage sgp",
+        "smart grinder pro",
+        "sage smart grinder"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 60,
+      "grinderSettingUnit": "numbers",
+      "brewMethods": [],
+      "notes": "40mm conical, espresso-tuned. Max ~820µm (barely reaches filter coarseness); fines-heavy at coarse — better for espresso.",
+      "uniformity": "fines-heavy",
+      "calibPoints": [
+        {
+          "setting": 21.0,
+          "micron": 400.0
+        },
+        {
+          "setting": 48.0,
+          "micron": 700.0
+        },
+        {
+          "setting": 60.0,
+          "micron": 820.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "DF64",
+      "model": "+ SSP Multipurpose",
+      "aliases": [
+        "df64 ssp",
+        "df64 ssp mp",
+        "df64 multipurpose",
+        "ssp multipurpose",
+        "df64 gen1 ssp"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 90,
+      "grinderSettingUnit": "numbers",
+      "brewMethods": [],
+      "notes": "DF64 (Gen1) + SSP Multipurpose 64mm flat. Measured PSD: median µm ≈ 205 + 13.4×dial. Low fines, high clarity. Now also expressible as the catalog's separate \"Turin DF64 (Gen 1)\" grinder fitted with the standalone \"SSP Multi Purpose 64 mm\" burrs entry - this entry is kept as-is (own id, aliases and measured curve) so gear already saved against it stays intact.",
+      "uniformity": "uniform",
+      "calibPoints": [
+        {
+          "setting": 30.0,
+          "micron": 607.0
+        },
+        {
+          "setting": 40.0,
+          "micron": 741.0
+        },
+        {
+          "setting": 59.0,
+          "micron": 996.0
+        }
+      ]
+    },
+    {
+      "kind": "basket",
+      "brand": "VST",
+      "model": "15 g Ridgeless",
+      "aliases": [
+        "vst",
+        "vst 15"
+      ],
+      "basketStyle": "competition",
+      "basketDoseGrams": 15,
+      "notes": "Precision basket, tightly graded holes and a high open area."
+    },
+    {
+      "kind": "basket",
+      "brand": "VST",
+      "model": "18 g Ridgeless",
+      "aliases": [
+        "vst 18"
+      ],
+      "basketStyle": "competition",
+      "basketDoseGrams": 18,
+      "notes": "Precision basket, tightly graded holes and a high open area."
+    },
+    {
+      "kind": "basket",
+      "brand": "VST",
+      "model": "20 g Ridgeless",
+      "aliases": [
+        "vst 20"
+      ],
+      "basketStyle": "competition",
+      "basketDoseGrams": 20,
+      "notes": "Precision basket, tightly graded holes and a high open area."
+    },
+    {
+      "kind": "basket",
+      "brand": "VST",
+      "model": "22 g Ridgeless",
+      "aliases": [
+        "vst 22"
+      ],
+      "basketStyle": "competition",
+      "basketDoseGrams": 22,
+      "notes": "Precision basket, tightly graded holes and a high open area."
+    },
+    {
+      "kind": "basket",
+      "brand": "IMS",
+      "model": "Competition 18 g",
+      "aliases": [
+        "ims",
+        "ims competition"
+      ],
+      "basketStyle": "competition",
+      "basketDoseGrams": 18,
+      "notes": "Precision basket with an even, high-flow perforation."
+    },
+    {
+      "kind": "basket",
+      "brand": "IMS",
+      "model": "Competition 20 g",
+      "aliases": [
+        "ims 20"
+      ],
+      "basketStyle": "competition",
+      "basketDoseGrams": 20,
+      "notes": "Precision basket with an even, high-flow perforation."
+    },
+    {
+      "kind": "basket",
+      "brand": "IMS",
+      "model": "Superfine 18 g",
+      "aliases": [
+        "ims superfine",
+        "superfine"
+      ],
+      "basketStyle": "highExtraction",
+      "basketDoseGrams": 18,
+      "notes": "Superfine mesh: the most open there is, flows fastest."
+    },
+    {
+      "kind": "basket",
+      "brand": "Pesado",
+      "model": "18 g",
+      "aliases": [
+        "pesado"
+      ],
+      "basketStyle": "competition",
+      "basketDoseGrams": 18,
+      "notes": "Precision basket."
+    },
+    {
+      "kind": "basket",
+      "brand": "Normcore",
+      "model": "18 g",
+      "aliases": [
+        "normcore"
+      ],
+      "basketStyle": "competition",
+      "basketDoseGrams": 18,
+      "notes": "Precision basket."
+    },
+    {
+      "kind": "basket",
+      "brand": "Standard",
+      "model": "Single-wall 18 g",
+      "aliases": [
+        "stock",
+        "single wall",
+        "simple paroi"
+      ],
+      "basketStyle": "stock",
+      "basketDoseGrams": 18,
+      "notes": "The single-wall basket most machines ship with."
+    },
+    {
+      "kind": "basket",
+      "brand": "Standard",
+      "model": "Pressurized (dual wall)",
+      "aliases": [
+        "pressurise",
+        "pressurized",
+        "dual wall",
+        "double paroi"
+      ],
+      "basketStyle": "pressurized",
+      "basketDoseGrams": 18,
+      "notes": "Makes its own back-pressure through one small hole; forgiving, and wants a much coarser grind."
+    },
+    {
+      "kind": "basket",
+      "brand": "Standard",
+      "model": "Step-down",
+      "aliases": [
+        "stepdown",
+        "step down"
+      ],
+      "basketStyle": "competition",
+      "basketDoseGrams": 18,
+      "notes": "Step-down basket: narrows toward the bottom so the same dose sits deeper. Filed under precision (Arthur, 2026-09-03: four readable categories, not five)."
+    },
+    {
+      "kind": "grinder",
+      "brand": "Femobook",
+      "model": "A2",
+      "aliases": [
+        "femobook",
+        "femobook a2",
+        "a2"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 120,
+      "grinderSettingUnit": "clicks",
+      "notes": "38mm conical burr, ~18 microns/click (40 clicks/rotation, ~3 rotations); portable electric spanning moka pot to French press.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 6.5,
+          "micron": 250.0
+        },
+        {
+          "setting": 50.0,
+          "micron": 550.0
+        },
+        {
+          "setting": 65.0,
+          "micron": 750.0
+        },
+        {
+          "setting": 80.0,
+          "micron": 950.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Femobook",
+      "model": "A3",
+      "aliases": [
+        "femobook a3",
+        "a3"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 300,
+      "grinderSettingUnit": "clicks",
+      "notes": "38mm conical burr, 8 microns/click (100 clicks/rotation, ~3 rotations); budget dual-purpose for espresso and pour-over.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 65.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 150.0,
+          "micron": 650.0
+        },
+        {
+          "setting": 185.0,
+          "micron": 800.0
+        },
+        {
+          "setting": 220.0,
+          "micron": 1000.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Femobook",
+      "model": "A4Z",
+      "aliases": [
+        "femobook a4z",
+        "a4z"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 300,
+      "grinderSettingUnit": "clicks",
+      "notes": "48mm conical burr sharing the 1Zpresso ZP6 geometry, 8 microns/click; pour-over only, no published espresso range.",
+      "uniformity": "uniform",
+      "calibPoints": [
+        {
+          "setting": 100.0,
+          "micron": 450.0
+        },
+        {
+          "setting": 155.0,
+          "micron": 700.0
+        },
+        {
+          "setting": 220.0,
+          "micron": 950.0
+        },
+        {
+          "setting": 280.0,
+          "micron": 1200.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Femobook",
+      "model": "A5",
+      "aliases": [
+        "femobook a5",
+        "a5"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 300,
+      "grinderSettingUnit": "clicks",
+      "notes": "53mm heptagonal conical burr, 8 microns/click; handles espresso and pour-over but slow on shots (50-70s per double).",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 95.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 150.0,
+          "micron": 650.0
+        },
+        {
+          "setting": 200.0,
+          "micron": 850.0
+        },
+        {
+          "setting": 260.0,
+          "micron": 1150.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Femobook",
+      "model": "A68",
+      "aliases": [
+        "femobook a68",
+        "a68"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 300,
+      "grinderSettingUnit": "clicks",
+      "notes": "68mm conical burr, 8 microns/click (~3 rotations); large single burr for both espresso and filter, catch cup fits 58mm portafilters.",
+      "uniformity": "fines-heavy",
+      "calibPoints": [
+        {
+          "setting": 82.5,
+          "micron": 250.0
+        },
+        {
+          "setting": 170.0,
+          "micron": 650.0
+        },
+        {
+          "setting": 190.0,
+          "micron": 900.0
+        },
+        {
+          "setting": 250.0,
+          "micron": 1250.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "1Zpresso",
+      "model": "J-Ultra",
+      "aliases": [
+        "jultra",
+        "j ultra"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 45,
+      "grinderSettingUnit": "numbers",
+      "notes": "Read as rotation.number.tick; 10 clicks per number, 100 per rotation, ~4.5 rotations usable, range 0-1230 microns.",
+      "uniformity": "uniform",
+      "calibPoints": [
+        {
+          "setting": 11.4,
+          "micron": 250.0
+        },
+        {
+          "setting": 17.0,
+          "micron": 500.0
+        },
+        {
+          "setting": 26.0,
+          "micron": 800.0
+        },
+        {
+          "setting": 37.0,
+          "micron": 1200.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Kingrinder",
+      "model": "K0",
+      "aliases": [
+        "kingrinder k0",
+        "k0"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 140,
+      "grinderSettingUnit": "clicks",
+      "notes": "38mm circle-ball burr, 18 microns/click, 40 clicks/rotation; pour-over, French press and cold brew only, not built for espresso.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 56.0,
+          "micron": 500.0
+        },
+        {
+          "setting": 90.0,
+          "micron": 800.0
+        },
+        {
+          "setting": 126.0,
+          "micron": 1100.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Kingrinder",
+      "model": "K1",
+      "aliases": [
+        "kingrinder k1",
+        "k1"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 140,
+      "grinderSettingUnit": "clicks",
+      "notes": "38mm circle-ball burr, 18 microns/click, 40 clicks/rotation; entry-level espresso grinder.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 38.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 56.0,
+          "micron": 500.0
+        },
+        {
+          "setting": 90.0,
+          "micron": 800.0
+        },
+        {
+          "setting": 126.0,
+          "micron": 1100.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Kingrinder",
+      "model": "K2",
+      "aliases": [
+        "kingrinder k2",
+        "k2"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 140,
+      "grinderSettingUnit": "clicks",
+      "notes": "48mm circle-ball burr, 18 microns/click, 40 clicks/rotation; handles espresso through pour-over.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 38.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 56.0,
+          "micron": 550.0
+        },
+        {
+          "setting": 90.0,
+          "micron": 850.0
+        },
+        {
+          "setting": 126.0,
+          "micron": 1150.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Timemore",
+      "model": "Chestnut C2 Max",
+      "aliases": [
+        "c2 max",
+        "chestnut c2 max"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 36,
+      "grinderSettingUnit": "clicks",
+      "notes": "38mm CNC stainless conical burr, ~32 microns/click; bigger-hopper C2 sibling, same click structure as the base C2.",
+      "uniformity": "fines-heavy",
+      "calibPoints": [
+        {
+          "setting": 9.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 13.0,
+          "micron": 500.0
+        },
+        {
+          "setting": 20.0,
+          "micron": 750.0
+        },
+        {
+          "setting": 29.0,
+          "micron": 950.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Timemore",
+      "model": "Chestnut C5 ESP Pro",
+      "aliases": [
+        "c5 esp pro",
+        "c5 esp"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 150,
+      "grinderSettingUnit": "clicks",
+      "notes": "42mm S2C conical burr, 50 clicks/rotation (~15 microns/click), 3 rotations; read as rotation.number.tick, shown here as cumulative clicks.",
+      "uniformity": "uniform",
+      "calibPoints": [
+        {
+          "setting": 33.5,
+          "micron": 250.0
+        },
+        {
+          "setting": 50.0,
+          "micron": 550.0
+        },
+        {
+          "setting": 80.0,
+          "micron": 850.0
+        },
+        {
+          "setting": 111.0,
+          "micron": 1150.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Hario",
+      "model": "Skerton Pro",
+      "aliases": [
+        "skerton pro",
+        "hario skerton pro"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 24,
+      "grinderSettingUnit": "clicks",
+      "notes": "Ceramic conical burr, 24 clicks/rotation, 350-1400 micron range; not fine enough for consistent espresso - filter and French press only.",
+      "uniformity": "fines-heavy",
+      "calibPoints": [
+        {
+          "setting": 4.0,
+          "micron": 400.0
+        },
+        {
+          "setting": 9.0,
+          "micron": 700.0
+        },
+        {
+          "setting": 16.0,
+          "micron": 1050.0
+        },
+        {
+          "setting": 22.0,
+          "micron": 1350.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Knock",
+      "model": "Aergrind",
+      "aliases": [
+        "knock",
+        "aergrind",
+        "knock aergrind"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 45,
+      "grinderSettingUnit": "numbers",
+      "notes": "Small conical burr, read as rotation.number.tick (cumulative here); handles filter beautifully, espresso works but consistency drops off at the finest settings (more fines mixed with coarse, prone to channeling).",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 11.1,
+          "micron": 250.0
+        },
+        {
+          "setting": 20.0,
+          "micron": 650.0
+        },
+        {
+          "setting": 30.0,
+          "micron": 900.0
+        },
+        {
+          "setting": 40.0,
+          "micron": 1200.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "ROK",
+      "model": "GrinderGC",
+      "aliases": [
+        "rok grinder",
+        "grindergc",
+        "rok gc"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 25,
+      "grinderSettingUnit": "clicks",
+      "notes": "48mm steel conical burr, ~58 microns/click; hand grinder, not recommended past 25 clicks from zero.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 2.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 6.5,
+          "micron": 650.0
+        },
+        {
+          "setting": 11.0,
+          "micron": 900.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Orphan Espresso",
+      "model": "Lido OG",
+      "aliases": [
+        "lido og",
+        "orphan espresso lido og",
+        "lido"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 1400,
+      "grinderSettingUnit": "microns",
+      "notes": "Etzinger 48mm ring + 32mm cone burr set; macro dial reads in approximate microns (e.g. '400+10'), plus a separate 5-micron micro disk for espresso fine-tuning layered on top - only the macro dial is modeled here.",
+      "uniformity": "uniform",
+      "calibPoints": [
+        {
+          "setting": 300.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 650.0,
+          "micron": 650.0
+        },
+        {
+          "setting": 900.0,
+          "micron": 950.0
+        },
+        {
+          "setting": 1300.0,
+          "micron": 1300.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Orphan Espresso",
+      "model": "Apex",
+      "aliases": [
+        "apex",
+        "orphan espresso apex"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 19,
+      "grinderSettingUnit": "clicks",
+      "notes": "78mm/75mm Ghost Tooth burrs; dial reads C-9 (finest) to C+9 (coarsest) around a Center detente, mapped here to 1-19 with Center=10. Pour-over, drip and immersion only - cannot grind fine enough for espresso.",
+      "uniformity": "uniform",
+      "calibPoints": [
+        {
+          "setting": 7.0,
+          "micron": 500.0
+        },
+        {
+          "setting": 10.0,
+          "micron": 650.0
+        },
+        {
+          "setting": 16.0,
+          "micron": 1000.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Comandante",
+      "model": "X25 Trailmaster",
+      "aliases": [
+        "x25",
+        "trailmaster",
+        "x25 trailmaster"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 40,
+      "grinderSettingUnit": "clicks",
+      "notes": "39mm Nitro Blade S2 burr, same burr family as the C40; 40-step travel grinder, particle distribution close to the C40 MK4.",
+      "uniformity": "uniform",
+      "calibPoints": [
+        {
+          "setting": 10.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 15.0,
+          "micron": 500.0
+        },
+        {
+          "setting": 25.0,
+          "micron": 800.0
+        },
+        {
+          "setting": 34.0,
+          "micron": 1090.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Eureka",
+      "model": "Mignon",
+      "aliases": [
+        "eureka",
+        "mignon",
+        "eureka mignon",
+        "specialita",
+        "specialità",
+        "silenzio",
+        "mignon zero",
+        "manuale",
+        "oro",
+        "perfetto",
+        "mignon libra"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 15,
+      "grinderSettingUnit": "numbers",
+      "notes": "Stepless dial: numbers are arbitrary and differ per unit (the zero is set at assembly) - settings are personal to your grinder, no cross-grinder translation. Covers the whole Mignon line (Specialità, Silenzio, Zero, Manuale, Oro, Perfetto...) which shares the same 50-55mm flat stepless collar (Oro runs 65mm); all variants are espresso-capable.",
+      "uniformity": "balanced"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Option-O",
+      "model": "Remi",
+      "aliases": [
+        "remi",
+        "option-o remi",
+        "helor"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 10,
+      "grinderSettingUnit": "numbers",
+      "notes": "Stepless dial: numbers are arbitrary and differ per unit - settings are personal to your grinder, no cross-grinder translation. 38mm conical burr set: conventional burrs for drip/press (can't reach espresso) or contemporary burrs for espresso and Turkish.",
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Mazzer",
+      "model": "Philos",
+      "aliases": [
+        "mazzer",
+        "philos",
+        "mazzer philos"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 10,
+      "grinderSettingUnit": "numbers",
+      "notes": "Stepless dial: numbers are arbitrary and differ per unit - settings are personal to your grinder, no cross-grinder translation. 64mm flat burr single-dose grinder; also offers a stepped 6-micron mode, not modeled here.",
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Fiorenzato",
+      "model": "F64 Evo",
+      "aliases": [
+        "fiorenzato",
+        "f64 evo",
+        "fiorenzato f64 evo"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 10,
+      "grinderSettingUnit": "numbers",
+      "notes": "Stepless dial: numbers are arbitrary and differ per unit - settings are personal to your grinder, no cross-grinder translation. 64mm flat burr, touchscreen on-demand espresso grinder with no clicks or detents at all.",
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Baratza",
+      "model": "Sette 270",
+      "aliases": [
+        "sette 270",
+        "baratza sette 270",
+        "sette",
+        "sette 270wi"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 30,
+      "grinderSettingUnit": "numbers",
+      "notes": "Macro ring only (1-30, five lettered ranges of six); a stepless micro ring adds further fine-tuning within each macro step, not modeled here.",
+      "uniformity": "fines-heavy",
+      "calibPoints": [
+        {
+          "setting": 4.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 15.0,
+          "micron": 600.0
+        },
+        {
+          "setting": 22.0,
+          "micron": 800.0
+        },
+        {
+          "setting": 30.0,
+          "micron": 950.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Baratza",
+      "model": "Vario+",
+      "aliases": [
+        "vario+",
+        "baratza vario+",
+        "vario"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 10,
+      "grinderSettingUnit": "numbers",
+      "notes": "54mm ceramic flat burr; macro ring only (1-10), a stepless micro ring (A-Z) adds finer adjustment within each macro step, not modeled here.",
+      "uniformity": "fines-heavy",
+      "calibPoints": [
+        {
+          "setting": 2.5,
+          "micron": 250.0
+        },
+        {
+          "setting": 4.0,
+          "micron": 450.0
+        },
+        {
+          "setting": 7.0,
+          "micron": 800.0
+        },
+        {
+          "setting": 10.0,
+          "micron": 1150.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Fellow",
+      "model": "Ode Gen 1",
+      "aliases": [
+        "ode gen 1",
+        "fellow ode gen 1",
+        "ode 1"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 11,
+      "grinderSettingUnit": "numbers",
+      "notes": "Original Ode burr set; filter only, and coarse even for filter - Fellow later shipped a wider-range burr set on the Gen 2. The curve is the published 550-1400 micron range laid on the printed 1-11 dial, so its floor sits INSIDE the turbo/soup window rather than above it: this grinder simply starts there, and gets offered what it reaches instead of being refused for not reaching the rest.",
+      "calibPoints": [
+        {
+          "setting": 1.0,
+          "micron": 550.0
+        },
+        {
+          "setting": 11.0,
+          "micron": 1400.0
+        }
+      ],
+      "uniformity": "balanced"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Timemore",
+      "model": "Sculptor 064S",
+      "aliases": [
+        "sculptor 064s",
+        "064s",
+        "timemore 064s"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 16,
+      "grinderSettingUnit": "numbers",
+      "notes": "64mm flat burr, stepless with printed reference numbers, ~5 microns/step; covers espresso through filter.",
+      "uniformity": "uniform",
+      "calibPoints": [
+        {
+          "setting": 1.45,
+          "micron": 250.0
+        },
+        {
+          "setting": 3.5,
+          "micron": 450.0
+        },
+        {
+          "setting": 8.0,
+          "micron": 700.0
+        },
+        {
+          "setting": 13.9,
+          "micron": 1035.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Timemore",
+      "model": "Sculptor 078S",
+      "aliases": [
+        "sculptor 078s",
+        "078s",
+        "timemore 078s"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 16,
+      "grinderSettingUnit": "numbers",
+      "notes": "78mm flat burr, stepless with printed reference numbers, ~25 microns/step; built for espresso but reaches into filter too.",
+      "uniformity": "uniform",
+      "calibPoints": [
+        {
+          "setting": 1.3,
+          "micron": 250.0
+        },
+        {
+          "setting": 3.2,
+          "micron": 450.0
+        },
+        {
+          "setting": 8.0,
+          "micron": 800.0
+        },
+        {
+          "setting": 12.5,
+          "micron": 1200.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Option-O",
+      "model": "Lagom P64",
+      "aliases": [
+        "lagom p64",
+        "lagom",
+        "option-o lagom"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 10,
+      "grinderSettingUnit": "numbers",
+      "stockBurrsFamilies": [
+        "option-o-mizen-es-64"
+      ],
+      "notes": "64mm flat Mizen ES burr, stepless collar with printed reference points (10 micron resolution); espresso through French press.",
+      "uniformity": "uniform",
+      "calibPoints": [
+        {
+          "setting": 0.65,
+          "micron": 250.0
+        },
+        {
+          "setting": 1.7,
+          "micron": 400.0
+        },
+        {
+          "setting": 4.0,
+          "micron": 800.0
+        },
+        {
+          "setting": 6.8,
+          "micron": 1245.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Varia",
+      "model": "VS3",
+      "aliases": [
+        "varia",
+        "vs3",
+        "varia vs3"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 19,
+      "grinderSettingUnit": "numbers",
+      "notes": "38mm Supernova hexagonal-core conical burr, stepless with printed reference numbers, 10 micron resolution; covers espresso through filter, avoid settings under 2.",
+      "uniformity": "uniform",
+      "calibPoints": [
+        {
+          "setting": 1.75,
+          "micron": 250.0
+        },
+        {
+          "setting": 4.0,
+          "micron": 450.0
+        },
+        {
+          "setting": 8.0,
+          "micron": 800.0
+        },
+        {
+          "setting": 12.1,
+          "micron": 1200.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Mahlkönig",
+      "model": "X64",
+      "aliases": [
+        "x64",
+        "mahlkonig x64",
+        "x64 sd"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 12,
+      "grinderSettingUnit": "numbers",
+      "notes": "64mm flat steel burr, stepless with a printed 0-12 reference scale (~9 microns/step); espresso 0-2, filter 2-7, coarse 7-12.",
+      "uniformity": "uniform",
+      "calibPoints": [
+        {
+          "setting": 1.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 3.0,
+          "micron": 400.0
+        },
+        {
+          "setting": 6.0,
+          "micron": 750.0
+        },
+        {
+          "setting": 10.0,
+          "micron": 1100.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Weber Workshops",
+      "model": "EG-1",
+      "aliases": [
+        "eg-1",
+        "eg1",
+        "weber eg-1"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 25,
+      "grinderSettingUnit": "numbers",
+      "notes": "80mm flat Core burr, 5-micron stepped adjustment; the collar carries reference marks rather than a printed micron scale, so it's modeled here as numbers, not microns like the Key Mk2.",
+      "uniformity": "uniform",
+      "calibPoints": [
+        {
+          "setting": 5.6,
+          "micron": 250.0
+        },
+        {
+          "setting": 8.0,
+          "micron": 450.0
+        },
+        {
+          "setting": 13.0,
+          "micron": 800.0
+        },
+        {
+          "setting": 18.6,
+          "micron": 1200.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Turin",
+      "model": "DF64 (Gen 1)",
+      "aliases": [
+        "df64 gen1",
+        "df64 gen 1",
+        "df64 v1",
+        "df64 og",
+        "df64 original",
+        "df64 italmill"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 90,
+      "grinderSettingUnit": "numbers",
+      "notes": "The original DF64 with its stock 64mm Italmill flat burrs (same hole pattern as the Mazzer Super Jolly): noticeably more fines than the SSP-upgraded or Gen 2 curve, and needs a 2-10kg break-in. Community-published settings: espresso around 3-19, filter/V60 around 22-47 - the printed 0 is not the true touch point and varies several marks unit to unit.",
+      "calibPoints": [
+        {
+          "setting": 11.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 34.5,
+          "micron": 700.0
+        }
+      ],
+      "uniformity": "balanced"
+    },
+    {
+      "kind": "burrs",
+      "brand": "SSP",
+      "model": "Multi Purpose 64 mm",
+      "aliases": [
+        "ssp mp",
+        "ssp multipurpose",
+        "ssp multi-purpose",
+        "mp burrs"
+      ],
+      "family": "ssp-mp-64",
+      "burrDiameterMm": 64,
+      "burrGeometry": "flat",
+      "uniformity": "uniform",
+      "notes": "The classic clarity burr: unimodal distribution, low fines, high flavour separation - best for light roasts and filter, still usable for espresso. Needs a 3-6kg break-in before it settles."
+    },
+    {
+      "kind": "burrs",
+      "brand": "SSP",
+      "model": "High Uniformity 64 mm",
+      "aliases": [
+        "ssp hu",
+        "high uniformity",
+        "hu burrs"
+      ],
+      "family": "ssp-hu-64",
+      "burrDiameterMm": 64,
+      "burrGeometry": "flat",
+      "uniformity": "uniform",
+      "notes": "Espresso-forward, not filter: a tighter particle spread than the MP with more body and crema for medium-to-dark roasts wanting balance over pure clarity."
+    },
+    {
+      "kind": "burrs",
+      "brand": "SSP",
+      "model": "Cast 64 mm",
+      "aliases": [
+        "ssp cast",
+        "lab sweet",
+        "sweet lab",
+        "silver knight lab sweet"
+      ],
+      "family": "ssp-cast-64",
+      "burrDiameterMm": 64,
+      "burrGeometry": "flat",
+      "uniformity": "balanced",
+      "notes": "Also sold as 'Lab Sweet': more body and more fines than the MP, less clarity than the HU - the middle ground for both filter and espresso. Season with about 5kg before judging it."
+    },
+    {
+      "kind": "burrs",
+      "brand": "SSP",
+      "model": "Brew 98 mm",
+      "aliases": [
+        "ssp brew",
+        "ssp 98 brew"
+      ],
+      "family": "ssp-brew-98",
+      "burrDiameterMm": 98,
+      "burrGeometry": "flat",
+      "uniformity": "uniform",
+      "notes": "Commercial brewing burr for EK43-class grinders: unimodal, low fines, built for filter clarity with a forgiving dial-in."
+    },
+    {
+      "kind": "burrs",
+      "brand": "SSP",
+      "model": "Multi Purpose 98 mm",
+      "aliases": [
+        "ssp mp 98",
+        "ssp lu",
+        "ssp 98 lu"
+      ],
+      "family": "ssp-mp-98",
+      "burrDiameterMm": 98,
+      "burrGeometry": "flat",
+      "uniformity": "balanced",
+      "notes": "Commercial multi-purpose burr for EK43-class grinders (sold as 'LU'/Low-Uniformity at this size by some retailers): more fines and complexity than the 98 Brew, general-purpose across espresso and filter."
+    },
+    {
+      "kind": "burrs",
+      "brand": "Turin",
+      "model": "DF64 DLC Coated 64 mm",
+      "aliases": [
+        "dlc burrs",
+        "dlc coated",
+        "df64 dlc"
+      ],
+      "family": "turin-df64-dlc-64",
+      "burrDiameterMm": 64,
+      "burrGeometry": "flat",
+      "uniformity": "balanced",
+      "notes": "Diamond-like carbon coating on the standard DF64/DF64V geometry: sharper and far longer-lived than bare steel, high body with a balanced amount of clarity - a surface treatment more than a taste overhaul."
+    },
+    {
+      "kind": "burrs",
+      "brand": "Option-O",
+      "model": "Mizen ES 64 mm",
+      "aliases": [
+        "mizen es",
+        "option-o mizen",
+        "64es",
+        "mizen 64es"
+      ],
+      "family": "option-o-mizen-es-64",
+      "burrDiameterMm": 64,
+      "burrGeometry": "flat",
+      "uniformity": "balanced",
+      "notes": "The Lagom P64's own espresso burr: more forgiving than SSP, a velvety, sweet, low-harshness cup that trades a little clarity for balance."
+    },
+    {
+      "kind": "grinder",
+      "brand": "1Zpresso",
+      "model": "K-Plus",
+      "aliases": [
+        "kplus",
+        "k plus"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 8.9,
+      "grinderSettingUnit": "numbers",
+      "notes": "Same 48mm conical burr, 90 clicks/rotation, 10 clicks/number, ~22 microns/click mechanism as the K-Max (1Zpresso's own K-Pro/K-Plus/K-Max comparison page) - shares its measured grind curve; only the catch-cup and accessories differ.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 3.5,
+          "micron": 700.0
+        },
+        {
+          "setting": 4.5,
+          "micron": 900.0
+        },
+        {
+          "setting": 5.5,
+          "micron": 1050.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "1Zpresso",
+      "model": "K-Pro",
+      "aliases": [
+        "kpro",
+        "k pro"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 8.9,
+      "grinderSettingUnit": "numbers",
+      "notes": "Same 48mm conical burr, 90 clicks/rotation, 10 clicks/number, ~22 microns/click mechanism as the K-Max (1Zpresso's own K-Pro/K-Plus/K-Max comparison page) - shares its measured grind curve; only the catch-cup and accessories differ.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 3.5,
+          "micron": 700.0
+        },
+        {
+          "setting": 4.5,
+          "micron": 900.0
+        },
+        {
+          "setting": 5.5,
+          "micron": 1050.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Kingrinder",
+      "model": "K3",
+      "aliases": [
+        "kingrinder k3",
+        "k3"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 140,
+      "grinderSettingUnit": "clicks",
+      "notes": "48mm titanium-coated ball burr, 18 microns/click, 40 clicks/rotation - the same internal-adjustment mechanism as the K2 (KINGrinder's own comparison page); shares its measured curve, the coating mainly changes wear life.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 38.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 56.0,
+          "micron": 550.0
+        },
+        {
+          "setting": 90.0,
+          "micron": 850.0
+        },
+        {
+          "setting": 126.0,
+          "micron": 1150.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Kingrinder",
+      "model": "K5",
+      "aliases": [
+        "kingrinder k5",
+        "k5"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 140,
+      "grinderSettingUnit": "clicks",
+      "notes": "48mm heptagonal stainless burr, 18 microns/click, 40 clicks/rotation - the same internal-adjustment mechanism as the K2 (KINGrinder's own comparison page); shares its measured curve.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 38.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 56.0,
+          "micron": 550.0
+        },
+        {
+          "setting": 90.0,
+          "micron": 850.0
+        },
+        {
+          "setting": 126.0,
+          "micron": 1150.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Kingrinder",
+      "model": "K7",
+      "aliases": [
+        "kingrinder k7",
+        "k7"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 120,
+      "grinderSettingUnit": "clicks",
+      "notes": "53mm 7-edge stainless conical burr with an exterior 100-gear micro-adjustment (unlike the internal K0-K5); community-cited ~10-15 microns/click. Espresso around clicks 30-40, filter around 95-120.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 35.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 107.0,
+          "micron": 900.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Timemore",
+      "model": "Chestnut Slim",
+      "aliases": [
+        "timemore slim",
+        "chestnut slim"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 30,
+      "grinderSettingUnit": "clicks",
+      "notes": "Budget stepped hand grinder; avoid settings below 6 clicks (dulls the burrs). Community click guide: espresso 6-12, V60 13-22, filter machine 10-28, French press 22-30.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 9.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 17.0,
+          "micron": 700.0
+        },
+        {
+          "setting": 26.0,
+          "micron": 1000.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Timemore",
+      "model": "Chestnut X",
+      "aliases": [
+        "timemore chestnut x",
+        "chestnut x"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 24,
+      "grinderSettingUnit": "clicks",
+      "notes": "Community click guide: espresso 2.8-8, filter coffee machine 6-21.8, French press 16.4-24; avoid settings below 3 (dulls the burrs).",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 5.4,
+          "micron": 250.0
+        },
+        {
+          "setting": 14.0,
+          "micron": 700.0
+        },
+        {
+          "setting": 20.0,
+          "micron": 1000.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Timemore",
+      "model": "Chestnut G1",
+      "aliases": [
+        "timemore g1",
+        "chestnut g1"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 30,
+      "grinderSettingUnit": "clicks",
+      "notes": "38mm conical hand grinder. Community testing puts espresso at clicks 8-9 (coffee barely falls through the burrs below that), but flags the burr geometry as not really built for espresso fineness - pour-over (15-24) is its comfort zone.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 8.5,
+          "micron": 250.0
+        },
+        {
+          "setting": 19.0,
+          "micron": 700.0
+        },
+        {
+          "setting": 27.0,
+          "micron": 1050.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Timemore",
+      "model": "Nano",
+      "aliases": [
+        "timemore nano",
+        "chestnut nano"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 36,
+      "grinderSettingUnit": "clicks",
+      "notes": "Ultra-compact travel hand grinder; multiple reviews cite espresso around clicks 6-12 (finest is a fight to grind through). The two coarser points below are estimated proportionally across its 36-click travel, not independently confirmed.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 9.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 20.0,
+          "micron": 700.0
+        },
+        {
+          "setting": 32.0,
+          "micron": 1200.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Hario",
+      "model": "Skerton Plus",
+      "aliases": [
+        "hario skerton plus",
+        "skerton plus"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 10,
+      "grinderSettingUnit": "clicks",
+      "notes": "10-notch collar - Hario's older mechanism, distinct from the 24-click screw thread on the newer Skerton Pro. Like the Pro, its floor sits above the 200-300 micron espresso window, so no espresso anchor.",
+      "uniformity": "fines-heavy",
+      "calibPoints": [
+        {
+          "setting": 1.0,
+          "micron": 450.0
+        },
+        {
+          "setting": 5.0,
+          "micron": 750.0
+        },
+        {
+          "setting": 8.0,
+          "micron": 1050.0
+        },
+        {
+          "setting": 10.0,
+          "micron": 1350.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Porlex",
+      "model": "Tall",
+      "aliases": [
+        "porlex tall"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 11,
+      "grinderSettingUnit": "clicks",
+      "notes": "Ceramic conical hand grinder, stepped with no micro-adjustment. Community click guide: espresso 2-3, pour-over/V60 4-6, French press 6-11 - marginal at the fine end, no true micro-adjustment for dialing in espresso.",
+      "uniformity": "fines-heavy",
+      "calibPoints": [
+        {
+          "setting": 2.5,
+          "micron": 250.0
+        },
+        {
+          "setting": 5.0,
+          "micron": 600.0
+        },
+        {
+          "setting": 8.5,
+          "micron": 1100.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Knock",
+      "model": "Feldgrind",
+      "aliases": [
+        "feldgrind",
+        "knock feldgrind"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 6,
+      "grinderSettingUnit": "numbers",
+      "notes": "38mm stainless conical burr. Continuous (no click detents), but the printed rotation.number scale is consistent unit to unit like the Aergrind's, not an arbitrary-zero stepless dial. The maker calls its espresso range limited - filter/pour-over/AeroPress is where it shines.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 1.2,
+          "micron": 250.0
+        },
+        {
+          "setting": 2.6,
+          "micron": 700.0
+        },
+        {
+          "setting": 4.0,
+          "micron": 1000.0
+        },
+        {
+          "setting": 4.9,
+          "micron": 1300.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Normcore",
+      "model": "V3",
+      "aliases": [
+        "normcore v3",
+        "normcore"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 24,
+      "grinderSettingUnit": "clicks",
+      "notes": "38mm conical hand grinder, 24 clicks/rotation, 0.5mm thread pitch. Community-cited espresso around click 13, pour-over around click 20.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 13.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 20.0,
+          "micron": 700.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "VSSL",
+      "model": "Java",
+      "aliases": [
+        "vssl java",
+        "java g25"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 49,
+      "grinderSettingUnit": "clicks",
+      "notes": "50-position hand grinder. VSSL's own chart: espresso at the finest clicks off burr-lock, V60 2-15, French press 16-44.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 1.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 8.0,
+          "micron": 600.0
+        },
+        {
+          "setting": 20.0,
+          "micron": 900.0
+        },
+        {
+          "setting": 35.0,
+          "micron": 1200.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Sage",
+      "model": "Dose Control Pro",
+      "aliases": [
+        "breville dose control pro",
+        "bcg600",
+        "dose control pro",
+        "sage dose control pro"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 60,
+      "grinderSettingUnit": "numbers",
+      "notes": "40mm conical, doser-style; Sage/Breville's own settings guide: espresso 5-8, pour-over 25-35, French press 45-55. Tops out around 820 microns like the Smart Grinder Pro - the shared conical burr family never reaches true French-press coarseness.",
+      "uniformity": "fines-heavy",
+      "calibPoints": [
+        {
+          "setting": 6.5,
+          "micron": 250.0
+        },
+        {
+          "setting": 30.0,
+          "micron": 600.0
+        },
+        {
+          "setting": 50.0,
+          "micron": 800.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Rancilio",
+      "model": "Rocky",
+      "aliases": [
+        "rancilio rocky",
+        "rocky"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 55,
+      "grinderSettingUnit": "numbers",
+      "notes": "Home doser grinder, community-cited range 195-1110 microns. Community settings: espresso 0-10, pour-over 10-20, drip 25-35, French press 40+.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 5.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 15.0,
+          "micron": 500.0
+        },
+        {
+          "setting": 30.0,
+          "micron": 750.0
+        },
+        {
+          "setting": 50.0,
+          "micron": 1050.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Gaggia",
+      "model": "MDF",
+      "aliases": [
+        "gaggia mdf",
+        "mdf",
+        "gaggia mdf 55"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 34,
+      "grinderSettingUnit": "numbers",
+      "notes": "50mm flat steel burr, doser-style. Community-cited espresso range 2-10; the coarse end (drip/French press) isn't independently confirmed - the second point below is a proportional estimate across the 34 settings, not a sourced click.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 6.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 20.0,
+          "micron": 700.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Melitta",
+      "model": "Calibra",
+      "aliases": [
+        "melitta calibra"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 39,
+      "grinderSettingUnit": "numbers",
+      "notes": "39-setting conical burr grinder with an onboard scale; Melitta's own breakdown: espresso 1-5, filter coffee 6-26, cafetiere/French press 27-39.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 3.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 16.0,
+          "micron": 700.0
+        },
+        {
+          "setting": 33.0,
+          "micron": 1050.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Krups",
+      "model": "GX5000",
+      "aliases": [
+        "krups gx5000",
+        "gx5000"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 9,
+      "grinderSettingUnit": "numbers",
+      "notes": "9 main grind positions (each with 5 sub-steps, not modeled here). Per Krups' own manual and user reports it does not grind fine enough for real espresso - filter and French press only.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 2.0,
+          "micron": 450.0
+        },
+        {
+          "setting": 5.0,
+          "micron": 800.0
+        },
+        {
+          "setting": 8.0,
+          "micron": 1200.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "De'Longhi",
+      "model": "KG521 Dedica",
+      "aliases": [
+        "delonghi kg521",
+        "kg521",
+        "delonghi dedica grinder",
+        "kg520"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 18,
+      "grinderSettingUnit": "numbers",
+      "notes": "18-position conical burr grinder built into the Dedica line; De'Longhi's own manual reserves 1-6 for the ESPRESSO zone. The split beyond that isn't independently confirmed, so the second point below is a rough midpoint of the remaining range, not a sourced click.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 3.5,
+          "micron": 250.0
+        },
+        {
+          "setting": 12.0,
+          "micron": 800.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "De'Longhi",
+      "model": "KG79",
+      "aliases": [
+        "delonghi kg79",
+        "kg79"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 17,
+      "grinderSettingUnit": "numbers",
+      "notes": "17-18 position conical burr grinder, community-cited range 365-1250 microns. Community consensus is that it does not grind fine enough for real espresso even at its lowest setting - filter, drip and French press only.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 4.0,
+          "micron": 500.0
+        },
+        {
+          "setting": 12.0,
+          "micron": 1100.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Baratza",
+      "model": "Sette 30",
+      "aliases": [
+        "sette 30",
+        "baratza sette 30",
+        "sette 30 ap"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 31,
+      "grinderSettingUnit": "numbers",
+      "notes": "Same 40mm AP conical burr as the Sette 270, mounted in a plastic (not metal) assembly; macro-only, 31 steps. Community-cited espresso setting around 9.",
+      "uniformity": "fines-heavy",
+      "calibPoints": [
+        {
+          "setting": 9.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 20.0,
+          "micron": 650.0
+        },
+        {
+          "setting": 30.0,
+          "micron": 950.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Baratza",
+      "model": "Forte",
+      "aliases": [
+        "baratza forte",
+        "forte ap",
+        "forte bg"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 10,
+      "grinderSettingUnit": "numbers",
+      "notes": "The Vario+'s successor: the same 10-position macro ring (a 26-position micro ring adds further fine-tuning within each macro step, not modeled here) and the same 230-1150 micron span, so it shares the Vario+'s measured curve.",
+      "uniformity": "fines-heavy",
+      "calibPoints": [
+        {
+          "setting": 2.5,
+          "micron": 250.0
+        },
+        {
+          "setting": 4.0,
+          "micron": 450.0
+        },
+        {
+          "setting": 7.0,
+          "micron": 800.0
+        },
+        {
+          "setting": 10.0,
+          "micron": 1150.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Eureka",
+      "model": "Atom",
+      "aliases": [
+        "eureka atom",
+        "atom 60",
+        "atom 65",
+        "atom 75",
+        "atom w"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 15,
+      "grinderSettingUnit": "numbers",
+      "notes": "Stepless dial like the Mignon line: numbers are reference marks that differ per unit, no cross-grinder translation (the exact printed range isn't independently confirmed, shown here as the Mignon's own reference span). Covers the 60/65/75mm Atom W flat-burr line - larger and more commercial than the Mignon's 50-65mm collar.",
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Eureka",
+      "model": "Zenith 65E",
+      "aliases": [
+        "eureka zenith",
+        "zenith 65e",
+        "zenith neo"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 15,
+      "grinderSettingUnit": "numbers",
+      "notes": "Stepless dial, 65mm flat burrs, commercial hi-speed grinder; numbers are reference marks only, no cross-grinder translation, and the exact printed range isn't independently confirmed.",
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Fiorenzato",
+      "model": "F4 Nano",
+      "aliases": [
+        "fiorenzato f4",
+        "f4 nano",
+        "fiorenzato f4 nano"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 10,
+      "grinderSettingUnit": "numbers",
+      "notes": "Stepless micrometric dial (the numbered scale is for personal reference only, like the F64 Evo's), 64mm flat burrs, doserless espresso grinder.",
+      "uniformity": "balanced"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Mahlkönig",
+      "model": "E65S",
+      "aliases": [
+        "mahlkonig e65s",
+        "e65s",
+        "e65s gbw"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 80,
+      "grinderSettingUnit": "numbers",
+      "notes": "Stepless collar with an 80-step reference scale (Mahlkonig's own manual); the burr-gap adjustment spans roughly 180-580 microns, which is not the particle-median curve this catalog needs, and the numbers are personal to each unit. 65mm flat burrs.",
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Turin",
+      "model": "DF83",
+      "aliases": [
+        "df83",
+        "turin df83"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 90,
+      "grinderSettingUnit": "numbers",
+      "notes": "83mm flat burr, the bigger sibling of the DF64 line; community-published dial: espresso 8-28, pour-over 33-87, French press 63-90.",
+      "uniformity": "uniform",
+      "calibPoints": [
+        {
+          "setting": 18.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 40.0,
+          "micron": 500.0
+        },
+        {
+          "setting": 60.0,
+          "micron": 700.0
+        },
+        {
+          "setting": 80.0,
+          "micron": 900.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Varia",
+      "model": "VS6",
+      "aliases": [
+        "varia vs6"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 24,
+      "grinderSettingUnit": "numbers",
+      "notes": "83mm flat burr, the electric sibling of the VS3 hand grinder; 5-micron stepless resolution with a printed reference scale. Community-published dial: espresso 1.0-4.7, pour-over 5.3-15.1, French press 10.6-22.1.",
+      "uniformity": "uniform",
+      "calibPoints": [
+        {
+          "setting": 2.9,
+          "micron": 250.0
+        },
+        {
+          "setting": 8.0,
+          "micron": 500.0
+        },
+        {
+          "setting": 13.0,
+          "micron": 800.0
+        },
+        {
+          "setting": 20.0,
+          "micron": 1200.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Niche",
+      "model": "Duo",
+      "aliases": [
+        "niche duo"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 50,
+      "grinderSettingUnit": "numbers",
+      "notes": "Dual-burr grinder (separate espresso and filter burr sets in one body). Niche's own guide: espresso 0-10, V60 30-45, French press 45+.",
+      "uniformity": "uniform",
+      "calibPoints": [
+        {
+          "setting": 5.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 37.0,
+          "micron": 700.0
+        },
+        {
+          "setting": 48.0,
+          "micron": 1050.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Capresso",
+      "model": "Infinity",
+      "aliases": [
+        "capresso infinity"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 16,
+      "grinderSettingUnit": "numbers",
+      "notes": "16 settings across four labeled ranges (Extra Fine/Fine/Medium/Coarse, 4 positions each). Capresso's own guidance points to the 2nd-3rd Extra Fine position for espresso with a bottomless portafilter - marginal at the true fine end.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 2.5,
+          "micron": 250.0
+        },
+        {
+          "setting": 10.5,
+          "micron": 700.0
+        },
+        {
+          "setting": 14.5,
+          "micron": 1050.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Cuisinart",
+      "model": "DBM-8",
+      "aliases": [
+        "cuisinart dbm-8",
+        "dbm8",
+        "dbm-8"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 12,
+      "grinderSettingUnit": "numbers",
+      "notes": "18 settings total, but Cuisinart's own guidance and community testing find settings 13-18 too coarse to be useful (\"gravel\"); only 1-12 (420-1400 microns) is modeled here. Its floor sits above the 200-300 micron espresso window, so no espresso anchor - the marketing claim only holds with a pressurized portafilter compensating for it.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 2.0,
+          "micron": 450.0
+        },
+        {
+          "setting": 7.0,
+          "micron": 900.0
+        },
+        {
+          "setting": 12.0,
+          "micron": 1350.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "OXO",
+      "model": "Brew Conical Burr",
+      "aliases": [
+        "oxo conical burr",
+        "oxo brew conical burr"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 15,
+      "grinderSettingUnit": "numbers",
+      "notes": "15 main settings (plus in-between microsettings), community-cited range 195-1100 microns. OXO's own guide: espresso 1-5, pour-over/drip 6-10, French press/cold brew 11-15.",
+      "uniformity": "balanced",
+      "calibPoints": [
+        {
+          "setting": 3.0,
+          "micron": 250.0
+        },
+        {
+          "setting": 8.0,
+          "micron": 650.0
+        },
+        {
+          "setting": 13.0,
+          "micron": 1050.0
+        }
+      ]
+    },
+    {
+      "kind": "grinder",
+      "brand": "Hibrew",
+      "model": "G5",
+      "aliases": [
+        "hibrew",
+        "g5",
+        "hibrew g5",
+        "g5 plus"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 36,
+      "grinderSettingUnit": "numbers",
+      "notes": "uncalibrated: no published micron data (checked 2026-09-03). 48mm conical burrs, stepless 0-36 dial, dual speed (400/500rpm). G5 Plus shares the same burr set. Sources: hibrew.com/products/hibrew-coffee-grinder-g5 ; amazon.com/dp/B0F1D5GWFG. Field observation (one Cupsight user, espresso, 2026-08/09): 9-9.5 ran 30-58s, 15 ran 22s.",
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Wacaco",
+      "model": "Exagrind",
+      "aliases": [
+        "wacaco exagrind",
+        "exagrind"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 60,
+      "grinderSettingUnit": "clicks",
+      "micronsPerDialUnit": 33.0,
+      "notes": "38mm stainless conical burr, 30 clicks per turn, 33 microns per click published by Wacaco (a 60-microclick range from the fully-closed zero) - no absolute anchor micron value is published, so this carries the per-click step but no calibPoints. Manual's brew-method starting points, in clicks from the closed zero, cited as-is and not converted to microns: espresso 10-20, filter coffee 20-26, pour over 34-42, French press 42-46. The newer Exagrind Pro-E uses a different 14.5 micron/click, 207-setting scale - separate hardware, not modeled here. Sources: wacaco.com/products/exagrind ; amazon.com/dp/B09W2273L7 (checked 2026-09-03).",
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Handground",
+      "model": "Precision",
+      "aliases": [
+        "handground",
+        "handground precision"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 8,
+      "grinderSettingUnit": "numbers",
+      "notes": "uncalibrated: only an overall range is published, not a per-setting curve (checked 2026-09-03). Ceramic conical burr, community-cited range 350-1400 microns; settings above 6 run coarser than 1400 microns. Brand's own chart, cited as-is - not converted to microns: espresso at 0, V60 0.5-2, French press 2-5. Source: honestcoffeeguide.com/handground-precision-coffee-grinder-grind-settings/.",
+      "uniformity": "balanced"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Zassenhaus",
+      "model": "Santiago",
+      "aliases": [
+        "zassenhaus",
+        "zassenhaus santiago"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 10,
+      "grinderSettingUnit": "numbers",
+      "notes": "uncalibrated: stepless adjustment screw under the crank, no printed numbered dial and no published micron data (checked 2026-09-03) - the 0-10 range here is a nominal placeholder, not a real scale (same convention as the catalog's other stepless grinders, e.g. Option-O Remi). German conical steel burr hand mill, extra-fine (Turkish) through French press by feel; roughly 80 crank turns to grind a fine setting, 60 for a coarse one. Sources: library.sweetmarias.com/zassenhaus-hand-crank-mills-use-and-care-instructions/ ; zassenhaus-brandshop.com.",
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Rhinowares",
+      "model": "Hand Grinder",
+      "aliases": [
+        "rhino",
+        "rhino hand grinder",
+        "rhinowares hand grinder",
+        "rhino coffee gear hand grinder"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 30,
+      "grinderSettingUnit": "clicks",
+      "notes": "uncalibrated: the adjustment nut is counted in clicks loosened from fully tightened, but neither the total click count nor a micron chart is published (checked 2026-09-03) - the 0-30 max here is an unconfirmed nominal placeholder. Conical ceramic burr, 42g hopper. Manufacturer starting points, in clicks from closed, cited as-is and not converted to microns: a notch or two open for moka, 2-3 for AeroPress/Clever/small French press, 5-6 for single-mug V60. Sources: rhinocoffeegear.com/rhino-hand-grinder-tall.html ; seattlecoffeegear.com Rhinowares hand grinder user manual.",
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Orphan Espresso",
+      "model": "Pharos",
+      "aliases": [
+        "pharos",
+        "orphan espresso pharos",
+        "oe pharos"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 10,
+      "grinderSettingUnit": "numbers",
+      "notes": "Stepless top adjustment (split collar on a fine-threaded axle); the Pharos 2.0 adds an indexing scale on the collar, but like the catalog's other stepless grinders the zero is set per unit, so no cross-grinder calibration - the 0-10 range here is a nominal placeholder, not a real scale. 68mm Italian conical steel burrs, forgiving down to roughly 1g/turn at espresso settings. No published micron chart (checked 2026-09-03). Source: blackoutcoffee.com Pharos hands-on posts.",
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "JavaPresse",
+      "model": "Manual Coffee Grinder",
+      "aliases": [
+        "javapresse",
+        "javapresse manual grinder"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 18,
+      "grinderSettingUnit": "clicks",
+      "notes": "uncalibrated: only an overall range is published, not a per-click curve (checked 2026-09-03). Stainless conical burr, community-cited range 170-1400 microns. Brand's own chart, cited as-is - not converted to microns: Turkish 1, espresso 2-4, extra fine 1-3, medium fine 4-6, medium 7-9, medium coarse 10-12, coarse/French press 13-18. Sources: javapresse.com/blogs/grinding-coffee/javapresse-manual-coffee-grinder-grind-settings ; honestcoffeeguide.com/javapresse-manual-coffee-grinder-grind-settings/.",
+      "uniformity": "balanced"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Cuisinart",
+      "model": "CBM-18",
+      "aliases": [
+        "cuisinart cbm-18",
+        "cbm18",
+        "cbm-18"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 18,
+      "grinderSettingUnit": "numbers",
+      "notes": "uncalibrated: only an overall range is published, not a per-setting curve (checked 2026-09-03). Programmable conical burr mill, community-cited range 450-1400 microns - already coarser than the 200-300 micron espresso window at its finest setting, despite the marketing claim of an extra-fine espresso setting. Brand's own chart lists V60 at settings 1-4, cited as-is and not converted to microns. Distinct model from the already-catalogued Cuisinart DBM-8. Sources: honestcoffeeguide.com/cuisinart-cbm-18-grind-settings/ ; cuisinart.com/discontinued-programmable-conical-burr-mill/CBM-18.html.",
+      "uniformity": "balanced"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Krups",
+      "model": "Expert GVX2",
+      "aliases": [
+        "krups gvx2",
+        "gvx2",
+        "krups expert gvx2",
+        "gvx212",
+        "gvx231"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 17,
+      "grinderSettingUnit": "numbers",
+      "notes": "uncalibrated: no published micron chart found (checked 2026-09-03). 17-position fineness selector, fine to coarse, with a separate 2-12 cup doser. Sources: krups.co.uk/COFFEE-GRINDERS-AND-FROTHERS/COFFEE-GRINDERS/KRUPS-GVX231-Expert-Burr-Grinder-Black-/p/1500813215 ; krupsusa.com burr-grinder manuals.",
+      "uniformity": "balanced"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Bodum",
+      "model": "Bistro",
+      "aliases": [
+        "bodum bistro",
+        "bodum bistro grinder"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 12,
+      "grinderSettingUnit": "numbers",
+      "notes": "uncalibrated: no published micron chart found (checked 2026-09-03). 35mm conical steel burr, 12 numbered settings (1 finest/espresso-fine, 12 coarsest/French press), preset timer. Sources: target.com/p/bodum-bistro-conical-burr-electric-coffee-grinder-black/-/A-91920642 ; homegrounds.co/bodum-bistro-grinder-review/.",
+      "uniformity": "balanced"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Melitta",
+      "model": "Molino",
+      "aliases": [
+        "melitta molino",
+        "molino"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 17,
+      "grinderSettingUnit": "numbers",
+      "notes": "uncalibrated: only brew-method setting bands are published, not a micron chart (checked 2026-09-03). Stainless flat disc burr, 17 fineness settings and a separate 2-14 cup doser. Brand's own chart, cited as-is - not converted to microns: espresso 1-3, filter 4-12, French press 13-17. Sources: honestcoffeeguide.com/melitta-molino-grind-settings/ ; shoponline.melitta.com/products/molino-burr-grinder-black-1.",
+      "uniformity": "balanced"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Cafflano",
+      "model": "Krinder",
+      "aliases": [
+        "cafflano krinder",
+        "krinder"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 8,
+      "grinderSettingUnit": "numbers",
+      "notes": "uncalibrated: no published micron chart found (checked 2026-09-03). Italian stainless conical burr, compact travel hand grinder, numbered adjusting wheel with 8 settings. Sources: incapto.com/en/product/manual-coffee-grinder-cafflano/ ; honestcoffeeguide.com/cafflano-grinder-grind-settings/.",
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Peugeot",
+      "model": "Kronos",
+      "aliases": [
+        "peugeot kronos",
+        "kronos"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 43,
+      "grinderSettingUnit": "numbers",
+      "notes": "uncalibrated: no published micron chart found (checked 2026-09-03). Steel conical burr hand mill, 43 grind settings, 50g hopper. Sources: frenchpresscoffee.com/products/peugeot-kronos-grinder ; faemacanada.com/products/peugeot-kronos-manual-coffee-grinder.",
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Peugeot",
+      "model": "L'Arbre a Cafe",
+      "aliases": [
+        "peugeot l'arbre a cafe",
+        "l'arbre a cafe",
+        "peugeot arbre a cafe"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 11,
+      "grinderSettingUnit": "numbers",
+      "notes": "uncalibrated: no published micron chart found (checked 2026-09-03). Steel burr hand mill, u'Select ring with 11 settings for espresso, cappuccino, filter or cold brew in one turn; 30-35g glass jar capacity. Sources: us.peugeot-saveurs.com/en_us/l-arbre-a-cafe-manual-coffee-mill-u-select-20-cm-8.html ; amazon.com/dp/B07RSXD64T.",
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "De'Longhi",
+      "model": "KG89",
+      "aliases": [
+        "delonghi kg89",
+        "kg89"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 17,
+      "grinderSettingUnit": "numbers",
+      "notes": "uncalibrated: no published micron chart found (checked 2026-09-03). 170W conical burr mill, 120g hopper. Shares its instruction manual and dial with the already-catalogued De'Longhi KG79 (\"KG 79-89\"), so modeled with the same 1-17 range - distinct entry because the two are sold and reviewed as separate SKUs. Sources: wholelattelove.com/products/delonghi-kg-89-burr-coffee-grinder ; manuals.plus/m/1d819e73a045ca6585e2e7903886c1dda27c126c13e5845f64779be8936a7f80 (\"DeLonghi KG 79-89 Coffee Grinder\").",
+      "uniformity": "balanced"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Cafede Kona",
+      "model": "Manual Grinder",
+      "aliases": [
+        "cafede kona",
+        "cafedekona"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 10,
+      "grinderSettingUnit": "numbers",
+      "notes": "uncalibrated: stepless push-and-turn adjuster, no printed numbered dial and no published micron data (checked 2026-09-03) - the 0-10 range here is a nominal placeholder, not a real scale. Stainless conical burr, 25g hopper, marketed across espresso through Turkish. Several near-identical models are sold under this name (M3 and others); modeled generically. Sources: amazon.com/dp/B09QS3CQHH ; roastthatbean.com/products/cafede-kona-hand-held-coffee-grinder.",
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Baratza",
+      "model": "Preciso",
+      "aliases": [
+        "baratza preciso",
+        "preciso"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 40,
+      "grinderSettingUnit": "numbers",
+      "notes": "uncalibrated: only an overall range is published, not a per-setting curve (checked 2026-09-03). Discontinued but common secondhand; flat ceramic burr, 40 macro settings (1-40, modeled here) plus an 11-step MICROadjust lever (A-K, ~10 microns/step per Baratza, not modeled), community-cited overall range 200-1170 microns. Sources: honestcoffeeguide.com/baratza-preciso-grind-settings/ ; breville-production-aem-assets.s3.us-west-2.amazonaws.com/Baratza/Legacy+Grinders/Preciso/Preciso-Manual-EN-v2.2-SS.pdf.",
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Baratza",
+      "model": "Maestro",
+      "aliases": [
+        "baratza maestro",
+        "maestro"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 40,
+      "grinderSettingUnit": "numbers",
+      "notes": "uncalibrated: only an overall range is published, not a per-setting curve (checked 2026-09-03). Discontinued but common secondhand entry-level Baratza; conical steel burr, community-cited range 200-1010 microns. Brand's own chart, cited as-is and not converted to microns: Turkish 1, espresso 1-9, French press 25-40, cold brew 30-40. Source: honestcoffeeguide.com/baratza-maestro-grind-settings/.",
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Orphan Espresso",
+      "model": "Lido 3",
+      "aliases": [
+        "lido 3",
+        "oe lido 3",
+        "orphan espresso lido 3"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 10,
+      "grinderSettingUnit": "numbers",
+      "notes": "Stepless micrometric adjustment, roughly 0.02mm (20 micron) burr shift per full turn of the ring per the manufacturer, but no numbered/indexed scale to anchor a setting to a micron value, and like the catalog's other stepless grinders the zero is set per unit - no cross-grinder calibration; the 0-10 range here is a nominal placeholder, not a real scale. 48mm Swiss stainless conical burr, French press through espresso. Sources: alternativebrewing.com.au/products/lido-3-hand-grinder ; frenchpresscoffee.com/blogs/perfect-cup-of-coffee/lido-3-review (checked 2026-09-03).",
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Wilfa",
+      "model": "Svart Aroma",
+      "aliases": [
+        "wilfa svart aroma",
+        "svart aroma"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 40,
+      "grinderSettingUnit": "numbers",
+      "notes": "uncalibrated: only an overall range is published, not a per-setting curve (checked 2026-09-03). Conical steel burr, marked positions from coarse to fine (steep/French press, filter, AeroPress, mocca) with fine-tuning steps between them - sources disagree on the exact count (roughly 20 to 40 distinct positions), modeled here as 1-40. Community-cited overall range 310-1100 microns; filter-only, no espresso setting. Distinct model from the already-catalogued Wilfa Uniform. Sources: honestcoffeeguide.com/wilfa-svart-aroma-grind-settings/ ; beanbros.co/products/wilfa-svart-aroma-coffee-grinder.",
+      "uniformity": "balanced"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Kalita",
+      "model": "Next G",
+      "aliases": [
+        "kalita next g",
+        "next g",
+        "next g2"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 10,
+      "grinderSettingUnit": "numbers",
+      "notes": "uncalibrated: no printed numbered dial and no per-setting micron chart found (checked 2026-09-03) - the 0-10 range here is a nominal placeholder, not a real scale. Ceramic conical burr hand grinder, low-static design, community-cited overall range 470-1400 microns. Sources: honestcoffeeguide.com/kalita-next-g-grind-settings/ ; home-barista.com/grinders/kalita-next-g-t40293.html.",
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Kalita",
+      "model": "Nice Cut G",
+      "aliases": [
+        "kalita nice cut g",
+        "nice cut g"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 8,
+      "grinderSettingUnit": "numbers",
+      "notes": "uncalibrated: no published micron chart found (checked 2026-09-03). Electric flat burr mill (a sharp-edged cut rather than Kalita's usual ceramic conical roll), 8 settings, 50g hopper. Sources: honestcoffeeguide.com/kalita-nice-cut-g-grind-settings/ ; mycoffeestage.com/en/products/kalita-nice-cut-g-electric-bean-grinder.",
+      "uniformity": "balanced"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Hario",
+      "model": "Skerton",
+      "aliases": [
+        "hario skerton",
+        "skerton"
+      ],
+      "grinderMinSetting": 0,
+      "grinderMaxSetting": 15,
+      "grinderSettingUnit": "clicks",
+      "micronsPerDialUnit": 228.6,
+      "notes": "Original ceramic-burr Skerton, superseded by the already-catalogued Skerton Plus/Pro: no printed numbered dial, settings are counted as notches counter-clockwise from a burrs-touching zero point the user sets by hand. Hario's manual states each notch equals 0.009in (228.6 microns) - a genuine per-notch step, but with no published anchor micron value or confirmed top-end notch count, so no calibPoints; the max of 15 here is an unconfirmed nominal placeholder. Source: manualslib.com/manual/1435535/Hario-Skerton.html (checked 2026-09-03).",
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Hario",
+      "model": "V60 EVC-8B",
+      "aliases": [
+        "hario v60 electric grinder",
+        "evc-8b",
+        "evcg-8b",
+        "hario evc-8b"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 39,
+      "grinderSettingUnit": "numbers",
+      "notes": "uncalibrated: no published micron chart found (checked 2026-09-03). Stainless conical burr, 39 fineness levels from French press through espresso, 100g hopper. Sources: global.hario.com/pickup_EVC-8B.html ; honestcoffeeguide.com/hario-v60-evc-8b-grind-settings/.",
+      "uniformity": "balanced"
+    },
+    {
+      "kind": "grinder",
+      "brand": "Baratza",
+      "model": "Vario",
+      "aliases": [
+        "baratza vario",
+        "vario original",
+        "vario (original)"
+      ],
+      "grinderMinSetting": 1,
+      "grinderMaxSetting": 10,
+      "grinderSettingUnit": "numbers",
+      "notes": "uncalibrated: no published per-setting micron chart found (checked 2026-09-03). Original Vario, predating the already-catalogued Vario+: flat ceramic burr, same macro ring (1-10, modeled here) plus a stepless micro ring (A-Z) for finer adjustment, not modeled. Discontinued but common secondhand; the curve is not assumed to match the Vario+'s measured one since no source ties the two burr generations together. Source: honestcoffeeguide.com/baratza-vario-grind-settings/.",
+      "uniformity": "uniform"
+    },
+    {
+      "kind": "brewer",
+      "brand": "Hibrew",
+      "model": "H10B",
+      "family": "hibrew-h10b",
+      "aliases": [
+        "hibrew",
+        "h10b",
+        "hibrew h10b",
+        "h10"
+      ],
+      "brewMethods": [
+        "espresso"
+      ],
+      "pressureRegime": "fixed",
+      "notes": "20-bar pump, 51mm portafilter, PID with adjustable extraction temperature (90-95C) and adjustable pre-infusion (0-10s), thermoblock heater; ships with both a pressurized and a non-pressurized basket. H10A is the 58mm-portafilter variant (separate machine, not modeled here); H10B Plus and H11 are undocumented and not added. Sources: hibrew.com/products/hibrew-espresso-h10b ; brewcoffeehome.com/hibrew-h10b-espresso-machine-review ; amazon.com/dp/B0DLP26373 (checked 2026-09-03)."
+    }
+  ]
+}
