@@ -1,6 +1,6 @@
 {
- "version": 8,
- "updated": "2026-09-05",
+ "version": 9,
+ "updated": "2026-09-06",
  "note": "Styles: ultralight (moderne/radical, ultra clair — ex. Substance, Datura, Picky Chemist), light (clair, inclut le style nordique CLASSIQUE type Wendelboe), modern (specialty équilibré), classic (traditionnel). Nordic (Wendelboe) ≠ ultralight. Classement conservateur — corrections bienvenues via PR. Fenêtres de repos (restDaysMin/Max, jours après torréfaction, référence FILTRE, une seule fenêtre pour toutes les méthodes — décision 2026-08-07) : restSource=published quand le torréfacteur la publie lui-même (verbatim), restSource=inferred quand elle est inférée du STYLE — médianes des fenêtres publiées du catalogue (modern 5-21, light 7-30, ultralight 10-28, classic 4-14, ce dernier sans donnée publiée). La machine s'est révélée NON prédictive (planchers Loring 3-21 j, même médiane que Probat) : roastMachine reste un fait documentaire, rien ne le lit.",
  "roasters": [
   {
@@ -135,9 +135,11 @@
    "website": "",
    "style": "ultralight",
    "notes": "Torréfaction ultra claire / radicale (style moderne)",
-   "restDaysMin": 10,
-   "restDaysMax": 28,
-   "restSource": "inferred"
+   "restSource": "published",
+   "restDaysMin": 5,
+   "restDaysMax": 42,
+   "restQuote": "Filter roast starts around one week post-roast; peak enjoyment window extends to approximately 6 weeks after roasting",
+   "restSourceURL": "https://en.thepickychemist.com/conseils-d-utilisation"
   },
   {
    "name": "Goût & Co",
@@ -580,9 +582,11 @@
    "website": "",
    "style": "light",
    "notes": "",
-   "restDaysMin": 7,
-   "restDaysMax": 30,
-   "restSource": "inferred"
+   "restSource": "published",
+   "restDaysMin": 14,
+   "restDaysMax": 28,
+   "restQuote": "We most often enjoy our coffee 2-4+ weeks of the roast.",
+   "restSourceURL": "https://www.frukt.coffee/"
   },
   {
    "name": "Square Mile Coffee Roasters",
@@ -665,9 +669,10 @@
    "website": "",
    "style": "modern",
    "notes": "",
-   "restDaysMin": 5,
-   "restDaysMax": 21,
-   "restSource": "inferred"
+   "restSource": "published",
+   "restDaysMin": 7,
+   "restQuote": "We recommend to rest our coffee for a minimum of 7 days after roasting for both Filter and Espresso brewing. We find that flavour really starts to open up from around 10-14 days onwards.",
+   "restSourceURL": "https://www.curveroasters.co.uk/faqs"
   },
   {
    "name": "Colonna Coffee",
@@ -693,9 +698,10 @@
    "website": "",
    "style": "ultralight",
    "notes": "Assumé ultra-clair",
-   "restDaysMin": 10,
-   "restDaysMax": 28,
-   "restSource": "inferred"
+   "restSource": "published",
+   "restDaysMin": 14,
+   "restQuote": "It is advisable to allow your coffee to rest for a minimum of 2 weeks when using for filter.",
+   "restSourceURL": "https://www.swevencoffee.co.uk/faqs/"
   },
   {
    "name": "Obadiah Coffee",
@@ -707,9 +713,10 @@
    "website": "",
    "style": "light",
    "notes": "",
-   "restDaysMin": 7,
-   "restDaysMax": 30,
-   "restSource": "inferred"
+   "restSource": "published",
+   "restDaysMin": 21,
+   "restQuote": "minimum of 21 days resting in its sealed bag, which is notably longer than most roasters suggest",
+   "restSourceURL": "https://obadiahcoffee.com/pages/about"
   },
   {
    "name": "Hasbean",
@@ -721,9 +728,11 @@
    "website": "",
    "style": "classic",
    "notes": "",
-   "restDaysMin": 4,
-   "restDaysMax": 14,
-   "restSource": "inferred"
+   "restSource": "published",
+   "restDaysMin": 5,
+   "restDaysMax": 28,
+   "restQuote": "rest for 5-7 days after the roast date to de-gas, and then using within 4 weeks for the very best results",
+   "restSourceURL": "https://support.hasbean.co.uk/hc/en-gb/articles/5009207798545-Coffee-storage-Recommended-use-by-date"
   },
   {
    "name": "Union Hand-Roasted Coffee",
@@ -974,9 +983,11 @@
    "website": "",
    "style": "light",
    "notes": "",
-   "restDaysMin": 7,
-   "restDaysMax": 30,
-   "restSource": "inferred"
+   "restSource": "published",
+   "restDaysMin": 28,
+   "restDaysMax": 56,
+   "restQuote": "resting coffee for a few weeks at minimum, with their optimal drinking window being 4-8 weeks after roasting",
+   "restSourceURL": "https://wideawake.coffee/pages/coffee-freshness"
   },
   {
    "name": "Replica Roasters",
@@ -1084,9 +1095,11 @@
    "website": "",
    "style": "light",
    "notes": "",
-   "restDaysMin": 7,
-   "restDaysMax": 30,
-   "restSource": "inferred"
+   "restSource": "published",
+   "restDaysMin": 5,
+   "restDaysMax": 25,
+   "restQuote": "Light roasts: Rest for approximately 5 days before brewing. Washed coffees: Peak flavor occurs between 6-14 days after roasting. Natural/anaerobic coffees: best flavor window between 10-25 days post-roasting",
+   "restSourceURL": "https://fjord-coffee.de/blogs/all-blog-posts/what-is-fresh-coffee"
   },
   {
    "name": "Ernst Kaffeeröster",
@@ -1311,9 +1324,11 @@
    "website": "",
    "style": "modern",
    "notes": "",
-   "restDaysMin": 5,
-   "restDaysMax": 21,
-   "restSource": "inferred"
+   "restSource": "published",
+   "restDaysMin": 7,
+   "restDaysMax": 60,
+   "restQuote": "we recommend waiting at least 7 days after the roasting date. Depending on the coffee, it can maintain its flavor 60 days after the roasting date or even a little longer.",
+   "restSourceURL": "https://hola.coffee/en/blogs/principal/la-frescura-del-cafe"
   },
   {
    "name": "Kima Coffee",
@@ -1492,9 +1507,11 @@
    "website": "",
    "style": "light",
    "notes": "",
+   "restSource": "published",
    "restDaysMin": 7,
    "restDaysMax": 30,
-   "restSource": "inferred"
+   "restQuote": "we recommend letting your beans rest for about 7 days after roasting. After that, you'll find they tend to shine within a 7–30 day window off roast.",
+   "restSourceURL": "https://www.heartroasters.com/pages/faq"
   },
   {
    "name": "Coava Coffee Roasters",
@@ -1578,9 +1595,11 @@
    "website": "https://www.intelligentsia.com",
    "style": "modern",
    "notes": "Pionnier de la third wave",
+   "restSource": "published",
    "restDaysMin": 5,
    "restDaysMax": 21,
-   "restSource": "inferred"
+   "restQuote": "five to seven days off roast and up to three weeks thereafter",
+   "restSourceURL": "https://www.intelligentsia.com/pages/faqs"
   },
   {
    "name": "Stumptown Coffee Roasters",
@@ -1662,9 +1681,10 @@
    "website": "https://rubycoffeeroasters.com",
    "style": "light",
    "notes": "",
-   "restDaysMin": 7,
-   "restDaysMax": 30,
-   "restSource": "inferred"
+   "restSource": "published",
+   "restDaysMax": 14,
+   "restQuote": "we recommend that you brew any coffee at home within two weeks of roasting to maintain peak flavor potential",
+   "restSourceURL": "https://rubycoffeeroasters.com/blogs/journal/resources-age-off-roast"
   },
   {
    "name": "Passenger Coffee",
@@ -1690,9 +1710,11 @@
    "website": "https://www.brandywinecoffeeroasters.com",
    "style": "light",
    "notes": "",
+   "restSource": "published",
    "restDaysMin": 7,
-   "restDaysMax": 30,
-   "restSource": "inferred"
+   "restDaysMax": 28,
+   "restQuote": "Our beans benefit from at least a week's rest time, and generally hit their peak flavor around 3-4 weeks off roast!",
+   "restSourceURL": "https://www.brandywinecoffeeroasters.com/pages/coffee-wizard"
   },
   {
    "name": "Equator Coffees",
@@ -1748,9 +1770,11 @@
    "website": "https://ritualcoffee.com",
    "style": "modern",
    "notes": "",
-   "restDaysMin": 5,
+   "restSource": "published",
+   "restDaysMin": 3,
    "restDaysMax": 21,
-   "restSource": "inferred"
+   "restQuote": "Coffee will taste best between 3 and 21 days past the roast date if stored in its whole bean form",
+   "restSourceURL": "https://ritualcoffee.com/learn/brew-guides/"
   },
   {
    "name": "Prodigal Coffee",
@@ -1806,9 +1830,10 @@
    "website": "https://49thcoffee.com",
    "style": "modern",
    "notes": "",
-   "restDaysMin": 5,
-   "restDaysMax": 21,
-   "restSource": "inferred"
+   "restSource": "published",
+   "restDaysMin": 7,
+   "restQuote": "Allowing the roasted coffee rest at least 7 days after roasting, depending on the roast level, before brewing will reduce the CO2 levels",
+   "restSourceURL": "https://49thcoffee.com/blogs/blog/coffee-degassing-and-its-influence-on-extraction"
   },
   {
    "name": "Luna Coffee",
@@ -1821,9 +1846,10 @@
    "website": "https://enjoylunacoffee.com",
    "style": "light",
    "notes": "",
-   "restDaysMin": 7,
-   "restDaysMax": 30,
-   "restSource": "inferred"
+   "restSource": "published",
+   "restDaysMin": 14,
+   "restQuote": "We recommend waiting for 2 weeks off roast for best results",
+   "restSourceURL": "https://enjoylunacoffee.com/faq/"
   },
   {
    "name": "Pilot Coffee Roasters",
@@ -1850,9 +1876,11 @@
    "website": "https://www.subtext.coffee",
    "style": "light",
    "notes": "Style nordique",
-   "restDaysMin": 7,
-   "restDaysMax": 30,
-   "restSource": "inferred"
+   "restSource": "published",
+   "restDaysMin": 14,
+   "restDaysMax": 42,
+   "restQuote": "Our coffee tends to taste its best after 2 weeks of rest time, and continues to taste great past the 6 week mark",
+   "restSourceURL": "https://www.subtext.coffee/pages/brew-guide"
   },
   {
    "name": "Hatch Coffee",
@@ -1980,9 +2008,11 @@
    "website": "https://sevenseeds.com.au",
    "style": "modern",
    "notes": "Référence de Melbourne",
+   "restSource": "published",
    "restDaysMin": 5,
-   "restDaysMax": 21,
-   "restSource": "inferred"
+   "restDaysMax": 14,
+   "restQuote": "the best window to use roasted coffee is between 5-14 days after roasting. And, importantly coffee continues to be optimal for at least 30 days after roast.",
+   "restSourceURL": "https://sevenseeds.com.au/pages/faq"
   },
   {
    "name": "ST. ALi",
@@ -2051,9 +2081,10 @@
    "website": "https://www.northstarroast.com",
    "style": "modern",
    "notes": "",
+   "restSource": "published",
    "restDaysMin": 5,
-   "restDaysMax": 21,
-   "restSource": "inferred"
+   "restQuote": "allowing the coffee to rest for around 5–7 days after roast date usually helps create a more balanced and consistent brew",
+   "restSourceURL": "https://www.northstarroast.com/pages/faq"
   },
   {
    "name": "Cairngorm Coffee",
