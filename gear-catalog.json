@@ -1,7 +1,7 @@
 {
-  "version": 17,
-  "updated": "2026-08-28",
-  "note": "Curated catalog of popular coffee gear. Ranges are commonly cited values; the user can always correct them in the form. | grind calibration points (calibPoints/uniformity, P0) merged in. | espresso brewers carry pressureRegime (fixed pump vs. variable/piloted). | v11-13 (13 supersedes both sides' 11): every calibration point used to sit in the FILTER range (400-1300 um), so where espresso falls on a dial could only be extrapolated, and drifted. Each espresso-capable grinder now carries an ESPRESSO anchor at 250 um (the centre of the 200-300 um window), placed at the centre of its published espresso setting range - from the maker's own microns-per-click where there is one (1Zpresso, Weber), else from published/community setting ranges. A window a grinder reaches only partly is CLIPPED to what it reaches, not refused - nearly every grinder, filter ones included, goes fine enough for a turbo/soup shot. Silence is reserved for a window lying entirely off the dial (a filter-only grinder asked about espresso). | v12: baskets join the catalog (kind \"basket\", basketStyle + basketDoseGrams) so they are picked like papers instead of typed. A basket is a sub-item of the MACHINE and is never a lever - it only moves where the espresso grind zone sits. | v14: the grinder catalog grows again - the Femobook line, the Eureka Mignon family, and a batch of hand and electric grinders across brands. Truly stepless dials whose zero is set at assembly and differs per unit (Eureka Mignon, Option-O Remi, Mazzer Philos, Fiorenzato F64 Evo) carry no calibPoints - their printed numbers are personal to each grinder, never a cross-grinder translation. | v15: a new kind \"burrs\" (burrDiameterMm, burrGeometry, uniformity as the character these meules give - no adjustment range, no calibPoints: swapping burrs moves the zero and breaks the grinder's own curve) with 7 aftermarket sets (SSP MP/HU/Cast/Brew at 64 and 98mm, DLC-coated 64mm, Option-O Mizen ES). A set only earns an entry if it can actually be fitted to ANOTHER grinder: a grinder's own proprietary burrs are not a choice and would only cost their owner a curve. Conversely a few grinders LEAVE THE FACTORY on a set listed here (Fellow Ode Gen 2 on SSP MPs, Lagom P64 on Mizens), so they carry stockBurrsFamilies: naming those describes the grinder instead of re-burring it, and its curve - measured with them in - holds. Grinder iteration hygiene: the missing \"Turin DF64 (Gen 1)\" entry joins with its OWN stock-burr curve (the bare \"df64\" alias stayed on Gen 2 only, to not silently re-point already-synced saved gear - each generation now also carries its own specific alias, e.g. \"df64 gen1\"/\"df64 gen 2\"); the existing \"DF64 / + SSP Multipurpose\" entry keeps its id, aliases and measured curve untouched (only its notes gained a cross-reference); Comandante C40 MK3 is now a same-curve alias of the MK4 entry (identical burrs, cosmetic revision only). | v16: the grinder catalog widens again across brands - 1Zpresso K-Plus/K-Pro, Kingrinder K3/K5/K7, Timemore Chestnut Slim/X/G1/Nano, Hario Skerton Plus, Porlex Tall, Made By Knock Feldgrind, Normcore V3, VSSL Java, Sage Dose Control Pro, Rancilio Rocky, Gaggia MDF, Melitta Calibra, Krups GX5000, De'Longhi Dedica KG521 and KG79, Baratza Sette 30 and Forte, Eureka Atom and Zenith 65E, Fiorenzato F4 Nano, Mahlkönig E65S, Turin DF83, Varia VS6, Niche Duo, Capresso Infinity, Cuisinart DBM-8 and OXO Brew Conical Burr. Where a model shares its maker's own confirmed burr, click count and micron span with an already-catalogued sibling (1Zpresso K-Max for K-Plus/K-Pro, Kingrinder K2 for K3/K5, Baratza Vario+ for Forte), it reuses that measured curve rather than inventing a new one. Ceado, Compak, Macap, Anfim, Solis, Graef, Weber Key Mk1 and Hario Mini Mill Plus were checked and left out for lack of a specific, source-backed espresso or filter reference point.",
+  "version": 18,
+  "updated": "2026-09-06",
+  "note": "Curated catalog of popular coffee gear. Ranges are commonly cited values; the user can always correct them in the form. | grind calibration points (calibPoints/uniformity, P0) merged in. | espresso brewers carry pressureRegime (fixed pump vs. variable/piloted). | v11-13 (13 supersedes both sides' 11): every calibration point used to sit in the FILTER range (400-1300 um), so where espresso falls on a dial could only be extrapolated, and drifted. Each espresso-capable grinder now carries an ESPRESSO anchor at 250 um (the centre of the 200-300 um window), placed at the centre of its published espresso setting range - from the maker's own microns-per-click where there is one (1Zpresso, Weber), else from published/community setting ranges. A window a grinder reaches only partly is CLIPPED to what it reaches, not refused - nearly every grinder, filter ones included, goes fine enough for a turbo/soup shot. Silence is reserved for a window lying entirely off the dial (a filter-only grinder asked about espresso). | v12: baskets join the catalog (kind \"basket\", basketStyle + basketDoseGrams) so they are picked like papers instead of typed. A basket is a sub-item of the MACHINE and is never a lever - it only moves where the espresso grind zone sits. | v14: the grinder catalog grows again - the Femobook line, the Eureka Mignon family, and a batch of hand and electric grinders across brands. Truly stepless dials whose zero is set at assembly and differs per unit (Eureka Mignon, Option-O Remi, Mazzer Philos, Fiorenzato F64 Evo) carry no calibPoints - their printed numbers are personal to each grinder, never a cross-grinder translation. | v15: a new kind \"burrs\" (burrDiameterMm, burrGeometry, uniformity as the character these meules give - no adjustment range, no calibPoints: swapping burrs moves the zero and breaks the grinder's own curve) with 7 aftermarket sets (SSP MP/HU/Cast/Brew at 64 and 98mm, DLC-coated 64mm, Option-O Mizen ES). A set only earns an entry if it can actually be fitted to ANOTHER grinder: a grinder's own proprietary burrs are not a choice and would only cost their owner a curve. Conversely a few grinders LEAVE THE FACTORY on a set listed here (Fellow Ode Gen 2 on SSP MPs, Lagom P64 on Mizens), so they carry stockBurrsFamilies: naming those describes the grinder instead of re-burring it, and its curve - measured with them in - holds. Grinder iteration hygiene: the missing \"Turin DF64 (Gen 1)\" entry joins with its OWN stock-burr curve (the bare \"df64\" alias stayed on Gen 2 only, to not silently re-point already-synced saved gear - each generation now also carries its own specific alias, e.g. \"df64 gen1\"/\"df64 gen 2\"); the existing \"DF64 / + SSP Multipurpose\" entry keeps its id, aliases and measured curve untouched (only its notes gained a cross-reference); Comandante C40 MK3 is now a same-curve alias of the MK4 entry (identical burrs, cosmetic revision only). | v16: the grinder catalog widens again across brands - 1Zpresso K-Plus/K-Pro, Kingrinder K3/K5/K7, Timemore Chestnut Slim/X/G1/Nano, Hario Skerton Plus, Porlex Tall, Made By Knock Feldgrind, Normcore V3, VSSL Java, Sage Dose Control Pro, Rancilio Rocky, Gaggia MDF, Melitta Calibra, Krups GX5000, De'Longhi Dedica KG521 and KG79, Baratza Sette 30 and Forte, Eureka Atom and Zenith 65E, Fiorenzato F4 Nano, Mahlkönig E65S, Turin DF83, Varia VS6, Niche Duo, Capresso Infinity, Cuisinart DBM-8 and OXO Brew Conical Burr. Where a model shares its maker's own confirmed burr, click count and micron span with an already-catalogued sibling (1Zpresso K-Max for K-Plus/K-Pro, Kingrinder K2 for K3/K5, Baratza Vario+ for Forte), it reuses that measured curve rather than inventing a new one. Ceado, Compak, Macap, Anfim, Solis, Graef, Weber Key Mk1 and Hario Mini Mill Plus were checked and left out for lack of a specific, source-backed espresso or filter reference point. | v18 (2026-09-06, CUP-132): an electric filter machine is a batchBrewer ONLY when it is one-button (the machine heats, pours and times on its own: Moccamaster, Ratio, Bonavita, Wilfa). A PROGRAMMABLE machine, where the user sets the bloom, the pours and the temperature (Fellow Aiden, xBloom, Breville Precision Brewer), is declared pourOver: its recipe has the manual-filter structure, exactly like the OXO Rapid Brewer precedent. Fellow Aiden and xBloom added.",
   "items": [
     {
       "kind": "grinder",
@@ -1490,9 +1490,39 @@
         "bdc400"
       ],
       "brewMethods": [
-        "batchBrewer"
+        "pourOver"
       ],
-      "notes": "SCA-certified programmable drip; Gold/Fast/Strong/Iced/Cold Brew presets, adjustable temp, bloom and flow control."
+      "notes": "SCA-certified PROGRAMMABLE drip: adjustable temperature, bloom time and flow rate, so the user sets the recipe the way a hand pourer does. Declared pourOver for that reason (manual-filter structure, temperature a lever), not batchBrewer."
+    },
+    {
+      "kind": "brewer",
+      "brand": "Fellow",
+      "model": "Aiden",
+      "family": "fellow-aiden",
+      "aliases": [
+        "aiden",
+        "fellow aiden"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "Programmable precision brewer: each profile sets the water temperature, the bloom (ratio and duration) and pulsed pours, single-cup or batch basket. The user writes the recipe, so it reads as a pour-over (bloom, staged pours, temperature a lever), never as a one-button batch brewer."
+    },
+    {
+      "kind": "brewer",
+      "brand": "xBloom",
+      "model": "Studio",
+      "family": "xbloom",
+      "aliases": [
+        "xbloom",
+        "x bloom",
+        "xbloom studio",
+        "xbloom original"
+      ],
+      "brewMethods": [
+        "pourOver"
+      ],
+      "notes": "App-programmable pour-over machine with built-in grinder and scale: every recipe sets the temperature, the bloom, the pour pattern and the pauses. Reads as a pour-over (the user writes the structure), never as a one-button batch brewer."
     },
     {
       "kind": "brewer",
