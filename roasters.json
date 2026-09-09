@@ -1,6 +1,6 @@
 {
- "version": 10,
- "updated": "2026-09-06",
+ "version": 11,
+ "updated": "2026-09-09",
  "note": "Styles: ultralight (moderne/radical, ultra clair — ex. Substance, Datura, Picky Chemist), light (clair, inclut le style nordique CLASSIQUE type Wendelboe), modern (specialty équilibré), classic (traditionnel). Nordic (Wendelboe) ≠ ultralight. Classement conservateur — corrections bienvenues via PR. Fenêtres de repos (restDaysMin/Max, jours après torréfaction, référence FILTRE, une seule fenêtre pour toutes les méthodes — décision 2026-08-07) : restSource=published quand le torréfacteur la publie lui-même (verbatim), restSource=inferred quand elle est inférée du STYLE — médianes des fenêtres publiées du catalogue (modern 5-21, light 7-30, ultralight 10-28, classic 4-14, ce dernier sans donnée publiée ; la médiane light recalculée le 2026-09-06 sur les 23 fenêtres publiées donne 7-29, portée par Tanat, les fiches light plus anciennes gardent 7-30 en attendant un recalcul groupé). La machine s'est révélée NON prédictive (planchers Loring 3-21 j, même médiane que Probat) : roastMachine reste un fait documentaire, rien ne le lit.",
  "roasters": [
   {
@@ -30,7 +30,7 @@
    "notes": "Pionnier de la scène parisienne",
    "restDaysMin": 4,
    "restDaysMax": 35,
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "Coutume",
@@ -43,7 +43,7 @@
    "style": "modern",
    "notes": "",
    "restDaysMin": 5,
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "Café Lomi",
@@ -56,7 +56,7 @@
    "style": "modern",
    "notes": "",
    "restDaysMin": 5,
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "Terres de Café",
@@ -68,7 +68,7 @@
    "notes": "",
    "restDaysMax": 14,
    "roastMachine": "Loring (7, 35 et 70 kg)",
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "L'Arbre à Café",
@@ -81,7 +81,7 @@
    "restDaysMin": 15,
    "restDaysMax": 90,
    "roastMachine": "Loring",
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "Hexagone Café",
@@ -96,7 +96,7 @@
    "restDaysMin": 21,
    "restDaysMax": 28,
    "roastMachine": "Loring",
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "KB Coffee Roasters",
@@ -125,7 +125,7 @@
    "notes": "Torréfaction ultra claire / radicale (style moderne)",
    "restDaysMin": 7,
    "roastMachine": "Loring S7",
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "Picky Chemist",
@@ -370,7 +370,7 @@
    "restDaysMin": 7,
    "restDaysMax": 35,
    "roastMachine": "Loring S35 Kestrel",
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "Fuglen Coffee Roasters",
@@ -439,7 +439,7 @@
    "notes": "",
    "restDaysMin": 4,
    "roastMachine": "Loring SmartRoast 35 kg",
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "April Coffee Roasters",
@@ -453,7 +453,7 @@
    "notes": "",
    "restDaysMin": 14,
    "roastMachine": "Loring S35",
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "Prolog Coffee",
@@ -480,7 +480,7 @@
    "notes": "Très clair, style nordique",
    "restDaysMin": 10,
    "roastMachine": "Giesen W15A",
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "Koppi",
@@ -601,7 +601,7 @@
    "restDaysMin": 5,
    "restDaysMax": 14,
    "roastMachine": "Probat G75 + UG15",
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "Workshop Coffee",
@@ -614,7 +614,7 @@
    "style": "modern",
    "notes": "",
    "restDaysMin": 5,
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "Origin Coffee",
@@ -629,7 +629,7 @@
    "restDaysMin": 5,
    "restDaysMax": 14,
    "roastMachine": "Loring Smart Roast (×2)",
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "Assembly Coffee",
@@ -643,7 +643,7 @@
    "notes": "",
    "restDaysMin": 10,
    "roastMachine": "Giesen WPG1",
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "Plot Roasting",
@@ -686,7 +686,7 @@
    "notes": "",
    "restDaysMin": 7,
    "roastMachine": "Diedrich 70 kg + Stronghold",
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "Sweven Coffee",
@@ -842,7 +842,7 @@
    "notes": "",
    "restDaysMin": 4,
    "roastMachine": "Probat UG22",
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "Cloud Picker Coffee",
@@ -871,7 +871,7 @@
    "restDaysMin": 14,
    "restDaysMax": 21,
    "roastMachine": "Typhoon 20 kg (lit fluidisé)",
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "Friedhats",
@@ -1042,7 +1042,7 @@
    "notes": "Référence berlinoise du clair",
    "restDaysMin": 7,
    "roastMachine": "Probat sur mesure",
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "Bonanza Coffee Roasters",
@@ -1056,7 +1056,7 @@
    "notes": "",
    "restDaysMin": 7,
    "roastMachine": "Probat UG22 (1965)",
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "Five Elephant",
@@ -1234,7 +1234,7 @@
    "notes": "Rubens Gardelli, multi-champion de torréfaction",
    "restDaysMin": 4,
    "restDaysMax": 28,
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "His Majesty the Coffee",
@@ -1284,7 +1284,7 @@
    "notes": "",
    "restDaysMin": 10,
    "roastMachine": "Probat UG22",
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "Right Side Coffee",
@@ -1482,7 +1482,7 @@
    "notes": "",
    "restDaysMin": 4,
    "restDaysMax": 30,
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "Black & White Coffee Roasters",
@@ -1495,7 +1495,7 @@
    "style": "modern",
    "notes": "",
    "restDaysMin": 14,
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "Heart Coffee Roasters",
@@ -1525,7 +1525,7 @@
    "notes": "",
    "restDaysMax": 30,
    "roastMachine": "Probat G60",
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "Proud Mary Coffee",
@@ -1627,7 +1627,7 @@
    "notes": "",
    "restDaysMin": 3,
    "roastMachine": "Probat GG90/GG240 + Loring",
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "Verve Coffee Roasters",
@@ -1655,7 +1655,7 @@
    "notes": "Pionnier américain du café de spécialité",
    "restDaysMin": 7,
    "roastMachine": "Probat UG-22 + Loring 30 kg",
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "Madcap Coffee Company",
@@ -1698,7 +1698,7 @@
    "notes": "",
    "restDaysMin": 14,
    "roastMachine": "Loring S15 Falcon",
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "Brandywine Coffee Roasters",
@@ -2158,7 +2158,7 @@
    "notes": "Micro-torréfaction 5–9 kg.",
    "restDaysMin": 3,
    "restDaysMax": 10,
-   "restSource": "published"
+   "restSource": "inferred"
   },
   {
    "name": "Saftig Kaffe",
