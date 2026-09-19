@@ -1,7 +1,7 @@
 {
-  "version": 18,
-  "updated": "2026-09-06",
-  "note": "Curated catalog of popular coffee gear. Ranges are commonly cited values; the user can always correct them in the form. | grind calibration points (calibPoints/uniformity, P0) merged in. | espresso brewers carry pressureRegime (fixed pump vs. variable/piloted). | v11-13 (13 supersedes both sides' 11): every calibration point used to sit in the FILTER range (400-1300 um), so where espresso falls on a dial could only be extrapolated, and drifted. Each espresso-capable grinder now carries an ESPRESSO anchor at 250 um (the centre of the 200-300 um window), placed at the centre of its published espresso setting range - from the maker's own microns-per-click where there is one (1Zpresso, Weber), else from published/community setting ranges. A window a grinder reaches only partly is CLIPPED to what it reaches, not refused - nearly every grinder, filter ones included, goes fine enough for a turbo/soup shot. Silence is reserved for a window lying entirely off the dial (a filter-only grinder asked about espresso). | v12: baskets join the catalog (kind \"basket\", basketStyle + basketDoseGrams) so they are picked like papers instead of typed. A basket is a sub-item of the MACHINE and is never a lever - it only moves where the espresso grind zone sits. | v14: the grinder catalog grows again - the Femobook line, the Eureka Mignon family, and a batch of hand and electric grinders across brands. Truly stepless dials whose zero is set at assembly and differs per unit (Eureka Mignon, Option-O Remi, Mazzer Philos, Fiorenzato F64 Evo) carry no calibPoints - their printed numbers are personal to each grinder, never a cross-grinder translation. | v15: a new kind \"burrs\" (burrDiameterMm, burrGeometry, uniformity as the character these meules give - no adjustment range, no calibPoints: swapping burrs moves the zero and breaks the grinder's own curve) with 7 aftermarket sets (SSP MP/HU/Cast/Brew at 64 and 98mm, DLC-coated 64mm, Option-O Mizen ES). A set only earns an entry if it can actually be fitted to ANOTHER grinder: a grinder's own proprietary burrs are not a choice and would only cost their owner a curve. Conversely a few grinders LEAVE THE FACTORY on a set listed here (Fellow Ode Gen 2 on SSP MPs, Lagom P64 on Mizens), so they carry stockBurrsFamilies: naming those describes the grinder instead of re-burring it, and its curve - measured with them in - holds. Grinder iteration hygiene: the missing \"Turin DF64 (Gen 1)\" entry joins with its OWN stock-burr curve (the bare \"df64\" alias stayed on Gen 2 only, to not silently re-point already-synced saved gear - each generation now also carries its own specific alias, e.g. \"df64 gen1\"/\"df64 gen 2\"); the existing \"DF64 / + SSP Multipurpose\" entry keeps its id, aliases and measured curve untouched (only its notes gained a cross-reference); Comandante C40 MK3 is now a same-curve alias of the MK4 entry (identical burrs, cosmetic revision only). | v16: the grinder catalog widens again across brands - 1Zpresso K-Plus/K-Pro, Kingrinder K3/K5/K7, Timemore Chestnut Slim/X/G1/Nano, Hario Skerton Plus, Porlex Tall, Made By Knock Feldgrind, Normcore V3, VSSL Java, Sage Dose Control Pro, Rancilio Rocky, Gaggia MDF, Melitta Calibra, Krups GX5000, De'Longhi Dedica KG521 and KG79, Baratza Sette 30 and Forte, Eureka Atom and Zenith 65E, Fiorenzato F4 Nano, Mahlkönig E65S, Turin DF83, Varia VS6, Niche Duo, Capresso Infinity, Cuisinart DBM-8 and OXO Brew Conical Burr. Where a model shares its maker's own confirmed burr, click count and micron span with an already-catalogued sibling (1Zpresso K-Max for K-Plus/K-Pro, Kingrinder K2 for K3/K5, Baratza Vario+ for Forte), it reuses that measured curve rather than inventing a new one. Ceado, Compak, Macap, Anfim, Solis, Graef, Weber Key Mk1 and Hario Mini Mill Plus were checked and left out for lack of a specific, source-backed espresso or filter reference point. | v18 (2026-09-06, CUP-132): an electric filter machine is a batchBrewer ONLY when it is one-button (the machine heats, pours and times on its own: Moccamaster, Ratio, Bonavita, Wilfa). A PROGRAMMABLE machine, where the user sets the bloom, the pours and the temperature (Fellow Aiden, xBloom, Breville Precision Brewer), is declared pourOver: its recipe has the manual-filter structure, exactly like the OXO Rapid Brewer precedent. Fellow Aiden and xBloom added.",
+  "version": 22,
+  "updated": "2026-09-14",
+  "note": "Curated catalog of popular coffee gear. Ranges are commonly cited values; the user can always correct them in the form. | grind calibration points (calibPoints/uniformity, P0) merged in. | espresso brewers carry pressureRegime (fixed pump vs. variable/piloted). | v11-13 (13 supersedes both sides' 11): every calibration point used to sit in the FILTER range (400-1300 um), so where espresso falls on a dial could only be extrapolated, and drifted. Each espresso-capable grinder now carries an ESPRESSO anchor at 250 um (the centre of the 200-300 um window), placed at the centre of its published espresso setting range - from the maker's own microns-per-click where there is one (1Zpresso, Weber), else from published/community setting ranges. A window a grinder reaches only partly is CLIPPED to what it reaches, not refused - nearly every grinder, filter ones included, goes fine enough for a turbo/soup shot. Silence is reserved for a window lying entirely off the dial (a filter-only grinder asked about espresso). | v12: baskets join the catalog (kind \"basket\", basketStyle + basketDoseGrams) so they are picked like papers instead of typed. A basket is a sub-item of the MACHINE and is never a lever - it only moves where the espresso grind zone sits. | v14: the grinder catalog grows again - the Femobook line, the Eureka Mignon family, and a batch of hand and electric grinders across brands. Truly stepless dials whose zero is set at assembly and differs per unit (Eureka Mignon, Option-O Remi, Mazzer Philos, Fiorenzato F64 Evo) carry no calibPoints - their printed numbers are personal to each grinder, never a cross-grinder translation. | v15: a new kind \"burrs\" (burrDiameterMm, burrGeometry, uniformity as the character these meules give - no adjustment range, no calibPoints: swapping burrs moves the zero and breaks the grinder's own curve) with 7 aftermarket sets (SSP MP/HU/Cast/Brew at 64 and 98mm, DLC-coated 64mm, Option-O Mizen ES). A set only earns an entry if it can actually be fitted to ANOTHER grinder: a grinder's own proprietary burrs are not a choice and would only cost their owner a curve. Conversely a few grinders LEAVE THE FACTORY on a set listed here (Fellow Ode Gen 2 on SSP MPs, Lagom P64 on Mizens), so they carry stockBurrsFamilies: naming those describes the grinder instead of re-burring it, and its curve - measured with them in - holds. Grinder iteration hygiene: the missing \"Turin DF64 (Gen 1)\" entry joins with its OWN stock-burr curve (the bare \"df64\" alias stayed on Gen 2 only, to not silently re-point already-synced saved gear - each generation now also carries its own specific alias, e.g. \"df64 gen1\"/\"df64 gen 2\"); the existing \"DF64 / + SSP Multipurpose\" entry keeps its id, aliases and measured curve untouched (only its notes gained a cross-reference); Comandante C40 MK3 is now a same-curve alias of the MK4 entry (identical burrs, cosmetic revision only). | v16: the grinder catalog widens again across brands - 1Zpresso K-Plus/K-Pro, Kingrinder K3/K5/K7, Timemore Chestnut Slim/X/G1/Nano, Hario Skerton Plus, Porlex Tall, Made By Knock Feldgrind, Normcore V3, VSSL Java, Sage Dose Control Pro, Rancilio Rocky, Gaggia MDF, Melitta Calibra, Krups GX5000, De'Longhi Dedica KG521 and KG79, Baratza Sette 30 and Forte, Eureka Atom and Zenith 65E, Fiorenzato F4 Nano, Mahlkönig E65S, Turin DF83, Varia VS6, Niche Duo, Capresso Infinity, Cuisinart DBM-8 and OXO Brew Conical Burr. Where a model shares its maker's own confirmed burr, click count and micron span with an already-catalogued sibling (1Zpresso K-Max for K-Plus/K-Pro, Kingrinder K2 for K3/K5, Baratza Vario+ for Forte), it reuses that measured curve rather than inventing a new one. Ceado, Compak, Macap, Anfim, Solis, Graef, Weber Key Mk1 and Hario Mini Mill Plus were checked and left out for lack of a specific, source-backed espresso or filter reference point. | v18 (2026-09-06, CUP-132): an electric filter machine is a batchBrewer ONLY when it is one-button (the machine heats, pours and times on its own: Moccamaster, Ratio, Bonavita, Wilfa). A PROGRAMMABLE machine, where the user sets the bloom, the pours and the temperature (Fellow Aiden, xBloom, Breville Precision Brewer), is declared pourOver: its recipe has the manual-filter structure, exactly like the OXO Rapid Brewer precedent. Fellow Aiden and xBloom added. | v19 (2026-09-08, CUP-165): the method label is gone. Every brewer declares a STRUCTURE instead - the shape of the recipe it takes, which is the one thing every screen and every lever needed: manual (bloom, pours in grams, pour style; the valve hybrids Clever/Switch/Bonavita Immersion Dripper are here, their valve gestures ride in each step's note), programmed (same structure, the user programs it: Fellow Aiden, xBloom, Breville Precision Brewer), reservoir (bloom and pours in grams, no pour style: OXO Rapid Brewer, AeroPress, Delter, Tricolate, NextLevel Pulsar), immersion (dose, water, temperature, a steeping rest: French press, Espro, and provisionally the siphons until they get their own descriptor), electricFilter (one-button machines: Moccamaster, Wilfa Svart Performance, Ratio Six/Eight, Bonavita Connoisseur), espresso, moka (dose and water weighed, no temperature lever) and cold (ratio, grind, hours). Structures reserved but not implemented: siphon, ibrik. A brewer the catalog does not know picks its structure in its own form. | v19 (suite, 09/09/2026, CUP-165, decision d'Arthur) : une entree cafetiere peut porter tempBand [min, max], la fenetre de temperature de CETTE cafetiere. Elle sert au PREMIER plan ; ensuite, si la personne brasse hors de cette fenetre, le dial-in avance d'un degre depuis SA valeur et ne l'y ramene jamais (meme logique que le plancher 1:14). Defaut par structure quand l'entree n'en porte pas : 88-94 pour les drippers manuels, programmables et a reservoir ; 88-99 pour une immersion (French press, Espro, siphons provisoires), dont le PREMIER plan ouvre a 94 ; 88-96 pour l'espresso ; moka, froid et filtre electrique un bouton n'ont pas de levier de temperature. Trois exceptions seulement : OXO Rapid Brewer 94-99, AeroPress et Delter 80-88 (leur recette maison ouvre a 85). Une entree peut aussi refuser le STYLE de versement avec pourStyle false : le NextLevel Pulsar est un filtre manuel a valve, ses impulsions restent des versements en quantites, mais la facon de poser l'eau n'y decide rien. | v20 (2026-09-14, CUP-210) : une entree cafetiere espresso porte temperatureAdjustable, le seul fait qui dise si la temperature d'eau se REGLE sur cette machine. Vrai : Breville Barista Pro/Touch/Express, Lelit Bianca et MaraX, Profitec Pro 500, La Marzocco Linea Micra, Decent DE1, Hibrew H10B, De'Longhi La Specialista Arte et Magnifica S, et les leviers manuels remplis a la bouilloire (Flair 58 et Neo Flex, Cafelat Robot, Wacaco Nanopresso et Picopresso, ROK EspressoGC). Faux : De'Longhi Dedica, Gaggia Classic Pro, Rancilio Silvia, Rocket Appartamento, La Pavoni Europiccola. Une machine espresso que le catalogue ne connait pas, ou une entree sans le champ, ne regle pas sa temperature : l'app n'en propose alors aucune et n'en demande aucune. | v22 (2026-09-16, CUP-245, decision d'Arthur) : le NextLevel Pulsar rejoint les hybrides a valve (structure valveHybrid, pourStyle false conserve). Sa recette maison de premiere extraction est celle de Jonathan Gagne : 25 g, bloom d'environ 3 fois la dose valve fermee pendant une minute, puis la valve ouverte et le reste de l'eau par petites impulsions.",
   "items": [
     {
       "kind": "grinder",
@@ -842,9 +842,7 @@
         "v60-01",
         "v60-02"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
       "notes": "Category-defining 60-degree cone with spiral ribs and one large hole; fast, bright, clarity-forward, pour-technique sensitive."
     },
     {
@@ -858,9 +856,7 @@
         "v60 mugen",
         "v60 one pour"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
       "notes": "V60 body with smoother walls and minimal ribs for higher flow restriction; designed for a single continuous pour."
     },
     {
@@ -872,11 +868,7 @@
         "switch",
         "hario switch"
       ],
-      "brewMethods": [
-        "pourOver",
-        "immersion",
-        "hybrid"
-      ],
+      "structure": "valveHybrid",
       "notes": "V60-shaped valve dripper: steep like immersion, flip the steel-ball switch to drain like pour-over, or combine both in one brew."
     },
     {
@@ -889,9 +881,7 @@
         "flower dripper",
         "flower"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
       "notes": "60-degree cone with flower-shaped ribs holding an air gap for full bloom; balanced, forgiving, even extraction."
     },
     {
@@ -904,9 +894,8 @@
         "deep27",
         "cafec deep 27"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
+      "bloomFloorSeconds": 20,
       "notes": "Narrow 27-degree deep flower-dripper cone for a tall bed and single cups; slower flow, more body and sweetness. The deep bed wants a FAIRLY COARSE grind, coarser than a standard V60 (about 760-810 um)."
     },
     {
@@ -919,9 +908,7 @@
         "deep45",
         "cafec deep 45"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
       "notes": "45-degree deep flower-dripper cone tuned for larger 3-7 cup batches with the same deep-bed richness."
     },
     {
@@ -936,9 +923,7 @@
         "origami m",
         "air"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
       "notes": "Fluted ceramic or resin cone (sizes S/M); accepts both V60 cone and Kalita Wave flat filters, so flow can be tuned. Fast and clean."
     },
     {
@@ -952,9 +937,7 @@
         "kono md",
         "kono meimon"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
       "notes": "Classic 60-degree cone with short lower ribs for bypass control; rounder, heavier-bodied old-school Japanese cup."
     },
     {
@@ -965,9 +948,7 @@
       "aliases": [
         "tricolate"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "reservoir",
       "notes": "Restricted single-pour cone with a flow-control disc/lid; long contact time, high extraction, very clean."
     },
     {
@@ -979,9 +960,7 @@
         "december",
         "december dripper"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
       "notes": "Stainless flat-bottom brewer with an adjustable aperture base (12 holes, 4 settings) to dial flow rate and hit target brew time."
     },
     {
@@ -994,9 +973,7 @@
         "goat story",
         "gray cano"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
       "notes": "Cast-aluminium 60-degree cone with Lava Rib interior and steam air pocket; heats fast, holds temp, even drawdown."
     },
     {
@@ -1009,9 +986,7 @@
         "tornado",
         "tornado duo"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
       "notes": "Double-wall glass conical with internal vortex ribs that regulate flow; insulated to hold heat."
     },
     {
@@ -1024,9 +999,7 @@
         "brewista gem",
         "gem series"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
       "notes": "Diamond-shaped ceramic cone by WBrC champion Stefanos Domatiotis; dual horizontal/vertical ribs and a covering lid for clarity and consistency."
     },
     {
@@ -1039,9 +1012,7 @@
         "crystal eye",
         "crystal eye 02"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
       "notes": "Glass/PCTG 60-degree cone with a three-layer rib structure for filter adherence and flow control."
     },
     {
@@ -1054,9 +1025,7 @@
         "crystal eye b75",
         "timemore b75"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
       "notes": "Flat-bottom Orea-style brewer with 75-degree walls and ribbed 10-hole base; fast forgiving flow, lets you grind fine."
     },
     {
@@ -1070,9 +1039,7 @@
         "phoenix",
         "st anthony"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
       "notes": "Steeper 70-degree cone (vs V60's 60) for a taller bed and more filtration; cleaner, more delicate cup."
     },
     {
@@ -1086,9 +1053,7 @@
         "gabi master",
         "dripmaster"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
       "notes": "Cone dripper paired with a flow-distribution waterspout insert for even, hands-off water dispersion."
     },
     {
@@ -1101,9 +1066,7 @@
         "gino",
         "not neutral"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
       "notes": "Ceramic cone with internal ribs and a slightly shallower angle; even, balanced extraction."
     },
     {
@@ -1117,9 +1080,7 @@
         "stagg x",
         "stagg xf"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
       "notes": "Double-wall steel dripper with ridged walls; X is conical-ish, XF is flat-bottom. Heat-retentive, even bed, ratio markings inside."
     },
     {
@@ -1134,9 +1095,7 @@
         "april glass",
         "april ceramic"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
       "notes": "Scandinavian competition-favorite flat-bottom brewer (Patrik Rolf); large single drain, fast flow, clean repeatable comp-style brews."
     },
     {
@@ -1150,9 +1109,7 @@
         "orea v3",
         "orea v4"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
       "notes": "Flat-floor brewer with a very open base; extremely fast drawdown. V4 is modular with interchangeable bottoms. Competition staple."
     },
     {
@@ -1167,9 +1124,7 @@
         "wave 155",
         "wave 185"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
       "notes": "Reference flat-bottom 3-hole brewer; forgiving, even extraction, wavy filter stabilizes the bed."
     },
     {
@@ -1181,9 +1136,7 @@
         "blue bottle",
         "blue bottle dripper"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
       "notes": "Minimalist single-hole flat-bottom ceramic; slow controlled flow for sweet, balanced cups."
     },
     {
@@ -1197,9 +1150,7 @@
         "lv3",
         "nextlevel brewer"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
       "notes": "Original zero-bypass flat-bed brewer with stepless flow-control valve; impermeable walls force all water through the bed."
     },
     {
@@ -1211,12 +1162,9 @@
         "pulsar",
         "nextlevel pulsar"
       ],
-      "brewMethods": [
-        "pourOver",
-        "immersion",
-        "hybrid"
-      ],
-      "notes": "Flat-bottom immersion/percolation hybrid with shower screen and stepless valve (Jonathan Gagne collab); clarity-focused, no bypass."
+      "structure": "valveHybrid",
+      "notes": "Flat-bottom immersion/percolation hybrid with shower screen and stepless valve (Jonathan Gagne collab); clarity-focused, no bypass.",
+      "pourStyle": false
     },
     {
       "kind": "brewer",
@@ -1229,9 +1177,7 @@
         "1x4",
         "melitta classic"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
       "notes": "Original wedge single-hole cone; mass-market, easy, the historical pour-over standard."
     },
     {
@@ -1244,11 +1190,7 @@
         "bonavita dripper",
         "immersion dripper"
       ],
-      "brewMethods": [
-        "pourOver",
-        "immersion",
-        "hybrid"
-      ],
+      "structure": "valveHybrid",
       "notes": "Flat-bottom immersion brewer with a bottom release valve; steep-then-drain, very forgiving."
     },
     {
@@ -1262,9 +1204,7 @@
         "wilfa pour over",
         "svart"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
       "notes": "Flat-bottom brewer designed with Tim Wendelboe; matched to Wilfa filters for even, comp-grade extraction."
     },
     {
@@ -1278,9 +1218,7 @@
         "flatbed",
         "loveramics flatbed"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
       "notes": "Fast-flowing Kalita-Wave-style ceramic flat-bottom dripper, multi-hole; well-priced, even extraction."
     },
     {
@@ -1293,9 +1231,7 @@
         "chemex classic",
         "6-cup"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "manual",
       "notes": "Hourglass carafe using thick bonded paper filters; very slow flow, exceptionally clean, low-body cup."
     },
     {
@@ -1307,11 +1243,7 @@
         "clever",
         "clever dripper"
       ],
-      "brewMethods": [
-        "pourOver",
-        "immersion",
-        "hybrid"
-      ],
+      "structure": "valveHybrid",
       "notes": "Plastic cone with a gravity-actuated shut-off valve that opens when set on a mug; near-foolproof immersion-then-drip, paper-clean cup."
     },
     {
@@ -1326,9 +1258,7 @@
         "cafetiere",
         "brazil"
       ],
-      "brewMethods": [
-        "immersion"
-      ],
+      "structure": "immersion",
       "notes": "Classic steep-and-plunge with a single metal mesh; oils and fines pass through for a heavy, full body."
     },
     {
@@ -1343,9 +1273,7 @@
         "espro p7",
         "espro press"
       ],
-      "brewMethods": [
-        "immersion"
-      ],
+      "structure": "immersion",
       "notes": "French press with a patented double micro-filter (basket-in-basket) that traps grit and stops extraction at plunge; much cleaner than a standard press."
     },
     {
@@ -1362,9 +1290,10 @@
         "aeropress clear",
         "aeropress premium"
       ],
-      "brewMethods": [
-        "aeropress",
-        "immersion"
+      "structure": "reservoir",
+      "tempBand": [
+        80,
+        88
       ],
       "notes": "Combined immersion plus manual pressure through a paper or metal filter; variants differ only in size/material, not method."
     },
@@ -1378,9 +1307,10 @@
         "delter press",
         "delter coffee press"
       ],
-      "brewMethods": [
-        "aeropress",
-        "hybrid"
+      "structure": "reservoir",
+      "tempBand": [
+        80,
+        88
       ],
       "notes": "Injection piston press: a Jet-Seal keeps water off the grounds until you press, then injects water through the puck; pour-over-like, avoids true immersion agitation."
     },
@@ -1395,9 +1325,7 @@
         "hario cold brew bottle",
         "cold brew bottle"
       ],
-      "brewMethods": [
-        "coldBrew"
-      ],
+      "structure": "cold",
       "notes": "Fridge pitcher with a tall mesh filter basket; brews ready-to-drink (not concentrate) cold brew in ~8-12h."
     },
     {
@@ -1410,9 +1338,7 @@
         "toddy cold brew",
         "cold brew system"
       ],
-      "brewMethods": [
-        "coldBrew"
-      ],
+      "structure": "cold",
       "notes": "Bucket-style immersion brewer making a strong concentrate (~1:3 to serve) through a felt/paper filter; classic low-acid cold brew, 12-24h."
     },
     {
@@ -1427,8 +1353,10 @@
         "rapid brewer",
         "oxo good grips"
       ],
-      "brewMethods": [
-        "pourOver"
+      "structure": "reservoir",
+      "tempBand": [
+        94,
+        99
       ],
       "notes": "Compact pressure-assisted brewer: the water is pressed through the bed rather than free-falling, so the brew is a bloom then ONE single pour with all the remaining water, never staged fractional pours. Its rapid cold brew PERCOLATES under pressure too: grind FINER than filter there, never coarse, and the concentrate is meant to be diluted to serve."
     },
@@ -1443,9 +1371,7 @@
         "kbgv",
         "kbgv select"
       ],
-      "brewMethods": [
-        "batchBrewer"
-      ],
+      "structure": "electricFilter",
       "notes": "SCA/ECBC-certified Dutch-built drip brewer; brews half or full 1.25L carafe to Golden Cup standard."
     },
     {
@@ -1458,9 +1384,7 @@
         "ratio six",
         "ratio 6"
       ],
-      "brewMethods": [
-        "batchBrewer"
-      ],
+      "structure": "electricFilter",
       "notes": "Simulated-pour-over auto drip; Series 2 added redesigned carafe and reservoir markings."
     },
     {
@@ -1472,9 +1396,7 @@
         "ratio eight",
         "ratio 8"
       ],
-      "brewMethods": [
-        "batchBrewer"
-      ],
+      "structure": "electricFilter",
       "notes": "Walnut-paneled flagship one-button drip brewer; Series 2 refresh."
     },
     {
@@ -1489,9 +1411,7 @@
         "bdc450",
         "bdc400"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "programmed",
       "notes": "SCA-certified PROGRAMMABLE drip: adjustable temperature, bloom time and flow rate, so the user sets the recipe the way a hand pourer does. Declared pourOver for that reason (manual-filter structure, temperature a lever), not batchBrewer."
     },
     {
@@ -1503,9 +1423,7 @@
         "aiden",
         "fellow aiden"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "programmed",
       "notes": "Programmable precision brewer: each profile sets the water temperature, the bloom (ratio and duration) and pulsed pours, single-cup or batch basket. The user writes the recipe, so it reads as a pour-over (bloom, staged pours, temperature a lever), never as a one-button batch brewer."
     },
     {
@@ -1519,9 +1437,7 @@
         "xbloom studio",
         "xbloom original"
       ],
-      "brewMethods": [
-        "pourOver"
-      ],
+      "structure": "programmed",
       "notes": "App-programmable pour-over machine with built-in grinder and scale: every recipe sets the temperature, the bloom, the pour pattern and the pauses. Reads as a pour-over (the user writes the structure), never as a one-button batch brewer."
     },
     {
@@ -1534,9 +1450,7 @@
         "wilfa svart performance",
         "wspl-3"
       ],
-      "brewMethods": [
-        "batchBrewer"
-      ],
+      "structure": "electricFilter",
       "notes": "Tim Wendelboe-designed Norwegian filter machine; holds 92-96C, adjustable flow with steep-and-release."
     },
     {
@@ -1550,9 +1464,7 @@
         "bonavita 8-cup",
         "one-touch"
       ],
-      "brewMethods": [
-        "batchBrewer"
-      ],
+      "structure": "electricFilter",
       "notes": "Single-button thermal-carafe drip brewer."
     },
     {
@@ -1566,9 +1478,7 @@
         "technica",
         "next syphon"
       ],
-      "brewMethods": [
-        "siphon"
-      ],
+      "structure": "immersion",
       "notes": "Borosilicate vacuum pot with alcohol/beam-heater burner (3 and 5-cup); Hario pioneered the format."
     },
     {
@@ -1581,9 +1491,7 @@
         "yama siphon",
         "yama vacuum pot"
       ],
-      "brewMethods": [
-        "siphon"
-      ],
+      "structure": "immersion",
       "notes": "Hand-blown glass stovetop/burner vacuum pot (3, 5, 8-cup); long-standing siphon staple."
     },
     {
@@ -1596,9 +1504,7 @@
         "cafe de tiamo",
         "tiamo syphon"
       ],
-      "brewMethods": [
-        "siphon"
-      ],
+      "structure": "immersion",
       "notes": "Taiwanese glass vacuum brewer; same gravity-then-vacuum siphon principle as Hario/Yama."
     },
     {
@@ -1612,10 +1518,9 @@
         "flair 58+2",
         "flair 58 plus"
       ],
-      "brewMethods": [
-        "espresso"
-      ],
+      "structure": "espresso",
       "pressureRegime": "variable",
+      "temperatureAdjustable": true,
       "notes": "58mm group manual lever; pour off-boil water and pull by hand, with detachable preheat controller. Current flagship."
     },
     {
@@ -1628,10 +1533,9 @@
         "flair neo",
         "flair neo flex"
       ],
-      "brewMethods": [
-        "espresso"
-      ],
+      "structure": "espresso",
       "pressureRegime": "variable",
+      "temperatureAdjustable": true,
       "notes": "Entry-level lever maker with pressurized-style basket; easiest Flair on-ramp."
     },
     {
@@ -1645,10 +1549,9 @@
         "cafelat robot",
         "robot barista"
       ],
-      "brewMethods": [
-        "espresso"
-      ],
+      "structure": "espresso",
       "pressureRegime": "variable",
+      "temperatureAdjustable": true,
       "notes": "Die-cast lever press with twin arms; no electricity. Barista version adds an in-basket pressure gauge."
     },
     {
@@ -1660,10 +1563,9 @@
         "wacaco",
         "nanopresso"
       ],
-      "brewMethods": [
-        "espresso"
-      ],
+      "structure": "espresso",
       "pressureRegime": "variable",
+      "temperatureAdjustable": true,
       "notes": "Hand-pumped portable espresso for ground coffee (~18 bar claimed); travel and camping staple."
     },
     {
@@ -1674,10 +1576,9 @@
       "aliases": [
         "picopresso"
       ],
-      "brewMethods": [
-        "espresso"
-      ],
+      "structure": "espresso",
       "pressureRegime": "variable",
+      "temperatureAdjustable": true,
       "notes": "Compact pro-oriented portable with a naked 52mm 18g basket for true specialty shots on the go."
     },
     {
@@ -1690,10 +1591,9 @@
         "rok espresso",
         "espressogc"
       ],
-      "brewMethods": [
-        "espresso"
-      ],
+      "structure": "espresso",
       "pressureRegime": "variable",
+      "temperatureAdjustable": true,
       "notes": "Twin-lever manual press producing 5-10 bar; Commercial/Pro editions add a gauge."
     },
     {
@@ -1706,10 +1606,9 @@
         "gaggia classic",
         "classic pro"
       ],
-      "brewMethods": [
-        "espresso"
-      ],
+      "structure": "espresso",
       "pressureRegime": "fixed",
+      "temperatureAdjustable": false,
       "notes": "Prosumer 58mm-portafilter machine with a commercial-style steam wand; a common first upgrade from pod machines."
     },
     {
@@ -1721,10 +1620,9 @@
         "rancilio",
         "silvia"
       ],
-      "brewMethods": [
-        "espresso"
-      ],
+      "structure": "espresso",
       "pressureRegime": "fixed",
+      "temperatureAdjustable": false,
       "notes": "58mm single-boiler prosumer classic, largely unchanged for two decades; commercial-grade steam wand."
     },
     {
@@ -1738,10 +1636,9 @@
         "sage barista express",
         "bes870"
       ],
-      "brewMethods": [
-        "espresso"
-      ],
+      "structure": "espresso",
       "pressureRegime": "fixed",
+      "temperatureAdjustable": true,
       "notes": "Built-in conical burr grinder, 54mm portafilter and steam wand in one all-in-one machine.",
       "builtInGrinder": {
         "grinderMinSetting": 1,
@@ -1760,10 +1657,9 @@
         "barista pro",
         "bes878"
       ],
-      "brewMethods": [
-        "espresso"
-      ],
+      "structure": "espresso",
       "pressureRegime": "fixed",
+      "temperatureAdjustable": true,
       "notes": "Built-in conical burr grinder, 54mm portafilter, digital temperature control (PID) in one all-in-one machine.",
       "builtInGrinder": {
         "grinderMinSetting": 1,
@@ -1782,10 +1678,9 @@
         "barista touch",
         "ses880"
       ],
-      "brewMethods": [
-        "espresso"
-      ],
+      "structure": "espresso",
       "pressureRegime": "fixed",
+      "temperatureAdjustable": true,
       "notes": "Built-in conical burr grinder, 54mm portafilter, touchscreen and automatic milk texturing in one all-in-one machine.",
       "builtInGrinder": {
         "grinderMinSetting": 1,
@@ -1804,10 +1699,9 @@
         "specialista arte",
         "ec9155"
       ],
-      "brewMethods": [
-        "espresso"
-      ],
+      "structure": "espresso",
       "pressureRegime": "fixed",
+      "temperatureAdjustable": true,
       "notes": "Built-in conical burr grinder, 54mm portafilter, manual milk frother in one all-in-one machine.",
       "builtInGrinder": {
         "grinderSettingUnit": "clicks",
@@ -1824,10 +1718,9 @@
         "ecam 20.110",
         "ecam20110"
       ],
-      "brewMethods": [
-        "espresso"
-      ],
+      "structure": "espresso",
       "pressureRegime": "fixed",
+      "temperatureAdjustable": true,
       "notes": "Fully automatic bean-to-cup machine with a built-in conical burr grinder; no separate portafilter (brews straight into the cup).",
       "builtInGrinder": {
         "grinderMinSetting": 1,
@@ -1846,10 +1739,9 @@
         "dedica",
         "de'longhi dedica"
       ],
-      "brewMethods": [
-        "espresso"
-      ],
+      "structure": "espresso",
       "pressureRegime": "fixed",
+      "temperatureAdjustable": false,
       "notes": "Slim 15-bar pump machine with a small single/double portafilter; compact-kitchen staple."
     },
     {
@@ -1861,10 +1753,9 @@
         "lelit",
         "bianca"
       ],
-      "brewMethods": [
-        "espresso"
-      ],
+      "structure": "espresso",
       "pressureRegime": "variable",
+      "temperatureAdjustable": true,
       "notes": "Dual-boiler 58mm machine with a flow-control paddle (pressure profiling) and a PID display."
     },
     {
@@ -1876,10 +1767,9 @@
         "mara x",
         "marax"
       ],
-      "brewMethods": [
-        "espresso"
-      ],
+      "structure": "espresso",
       "pressureRegime": "fixed",
+      "temperatureAdjustable": true,
       "notes": "Heat-exchanger 58mm machine with a flow-control paddle and a PID-controlled brew boiler."
     },
     {
@@ -1891,10 +1781,9 @@
         "rocket",
         "appartamento"
       ],
-      "brewMethods": [
-        "espresso"
-      ],
+      "structure": "espresso",
       "pressureRegime": "fixed",
+      "temperatureAdjustable": false,
       "notes": "Compact heat-exchanger machine with a copper boiler and E61 group; a popular home upgrade."
     },
     {
@@ -1906,10 +1795,9 @@
         "profitec",
         "pro 500"
       ],
-      "brewMethods": [
-        "espresso"
-      ],
+      "structure": "espresso",
       "pressureRegime": "fixed",
+      "temperatureAdjustable": true,
       "notes": "Dual-boiler PID machine with an E61 group, built on the same platform as the ECM Synchronika."
     },
     {
@@ -1922,10 +1810,9 @@
         "linea micra",
         "marzocco"
       ],
-      "brewMethods": [
-        "espresso"
-      ],
+      "structure": "espresso",
       "pressureRegime": "fixed",
+      "temperatureAdjustable": true,
       "notes": "Home-sized single-boiler descendant of La Marzocco's commercial Linea, with app-controlled profiling."
     },
     {
@@ -1939,10 +1826,9 @@
         "de1pro",
         "de1+"
       ],
-      "brewMethods": [
-        "espresso"
-      ],
+      "structure": "espresso",
       "pressureRegime": "variable",
+      "temperatureAdjustable": true,
       "notes": "Software-driven machine exposing full pressure/flow profiling and shot graphs on its touchscreen."
     },
     {
@@ -1955,10 +1841,9 @@
         "europiccola",
         "pavoni lever"
       ],
-      "brewMethods": [
-        "espresso"
-      ],
+      "structure": "espresso",
       "pressureRegime": "variable",
+      "temperatureAdjustable": false,
       "notes": "Classic manual spring-lever machine, hand-pulled shots with no pump or electronics."
     },
     {
@@ -1971,9 +1856,7 @@
         "moka express",
         "moka pot"
       ],
-      "brewMethods": [
-        "mokaPot"
-      ],
+      "structure": "moka",
       "notes": "Classic stovetop aluminium moka pot; the original moka design."
     },
     {
@@ -1985,9 +1868,7 @@
         "brikka",
         "bialetti brikka"
       ],
-      "brewMethods": [
-        "mokaPot"
-      ],
+      "structure": "moka",
       "notes": "Pressure-valve moka pot; silicone pressure regulator builds extra pressure for a crema-like layer."
     },
     {
@@ -2196,7 +2077,6 @@
       "grinderMinSetting": 1,
       "grinderMaxSetting": 60,
       "grinderSettingUnit": "numbers",
-      "brewMethods": [],
       "notes": "40mm conical, espresso-tuned. Max ~820µm (barely reaches filter coarseness); fines-heavy at coarse — better for espresso.",
       "uniformity": "fines-heavy",
       "calibPoints": [
@@ -2228,7 +2108,6 @@
       "grinderMinSetting": 0,
       "grinderMaxSetting": 90,
       "grinderSettingUnit": "numbers",
-      "brewMethods": [],
       "notes": "DF64 (Gen1) + SSP Multipurpose 64mm flat. Measured PSD: median µm ≈ 205 + 13.4×dial. Low fines, high clarity. Now also expressible as the catalog's separate \"Turin DF64 (Gen 1)\" grinder fitted with the standalone \"SSP Multi Purpose 64 mm\" burrs entry - this entry is kept as-is (own id, aliases and measured curve) so gear already saved against it stays intact.",
       "uniformity": "uniform",
       "calibPoints": [
@@ -4691,10 +4570,9 @@
         "hibrew h10b",
         "h10"
       ],
-      "brewMethods": [
-        "espresso"
-      ],
+      "structure": "espresso",
       "pressureRegime": "fixed",
+      "temperatureAdjustable": true,
       "notes": "20-bar pump, 51mm portafilter, PID with adjustable extraction temperature (90-95C) and adjustable pre-infusion (0-10s), thermoblock heater; ships with both a pressurized and a non-pressurized basket. H10A is the 58mm-portafilter variant (separate machine, not modeled here); H10B Plus and H11 are undocumented and not added. Sources: hibrew.com/products/hibrew-espresso-h10b ; brewcoffeehome.com/hibrew-h10b-espresso-machine-review ; amazon.com/dp/B0DLP26373 (checked 2026-09-03)."
     }
   ]
