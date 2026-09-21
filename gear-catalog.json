@@ -1,7 +1,7 @@
 {
-  "version": 26,
-  "updated": "2026-09-20",
-  "note": "Curated catalog of popular coffee gear. Ranges are commonly cited values; the user can always correct them in the form. | grind calibration points (calibPoints/uniformity, P0) merged in. | espresso brewers carry pressureRegime (fixed pump vs. variable/piloted). | v11-13 (13 supersedes both sides' 11): every calibration point used to sit in the FILTER range (400-1300 um), so where espresso falls on a dial could only be extrapolated, and drifted. Each espresso-capable grinder now carries an ESPRESSO anchor at 250 um (the centre of the 200-300 um window), placed at the centre of its published espresso setting range - from the maker's own microns-per-click where there is one (1Zpresso, Weber), else from published/community setting ranges. A window a grinder reaches only partly is CLIPPED to what it reaches, not refused - nearly every grinder, filter ones included, goes fine enough for a turbo/soup shot. Silence is reserved for a window lying entirely off the dial (a filter-only grinder asked about espresso). | v12: baskets join the catalog (kind \"basket\", basketStyle + basketDoseGrams) so they are picked like papers instead of typed. A basket is a sub-item of the MACHINE and is never a lever - it only moves where the espresso grind zone sits. | v14: the grinder catalog grows again - the Femobook line, the Eureka Mignon family, and a batch of hand and electric grinders across brands. Truly stepless dials whose zero is set at assembly and differs per unit (Eureka Mignon, Option-O Remi, Mazzer Philos, Fiorenzato F64 Evo) carry no calibPoints - their printed numbers are personal to each grinder, never a cross-grinder translation. | v15: a new kind \"burrs\" (burrDiameterMm, burrGeometry, uniformity as the character these meules give - no adjustment range, no calibPoints: swapping burrs moves the zero and breaks the grinder's own curve) with 7 aftermarket sets (SSP MP/HU/Cast/Brew at 64 and 98mm, DLC-coated 64mm, Option-O Mizen ES). A set only earns an entry if it can actually be fitted to ANOTHER grinder: a grinder's own proprietary burrs are not a choice and would only cost their owner a curve. Conversely a few grinders LEAVE THE FACTORY on a set listed here (Fellow Ode Gen 2 on SSP MPs, Lagom P64 on Mizens), so they carry stockBurrsFamilies: naming those describes the grinder instead of re-burring it, and its curve - measured with them in - holds. Grinder iteration hygiene: the missing \"Turin DF64 (Gen 1)\" entry joins with its OWN stock-burr curve (the bare \"df64\" alias stayed on Gen 2 only, to not silently re-point already-synced saved gear - each generation now also carries its own specific alias, e.g. \"df64 gen1\"/\"df64 gen 2\"); the existing \"DF64 / + SSP Multipurpose\" entry keeps its id, aliases and measured curve untouched (only its notes gained a cross-reference); Comandante C40 MK3 is now a same-curve alias of the MK4 entry (identical burrs, cosmetic revision only). | v16: the grinder catalog widens again across brands - 1Zpresso K-Plus/K-Pro, Kingrinder K3/K5/K7, Timemore Chestnut Slim/X/G1/Nano, Hario Skerton Plus, Porlex Tall, Made By Knock Feldgrind, Normcore V3, VSSL Java, Sage Dose Control Pro, Rancilio Rocky, Gaggia MDF, Melitta Calibra, Krups GX5000, De'Longhi Dedica KG521 and KG79, Baratza Sette 30 and Forte, Eureka Atom and Zenith 65E, Fiorenzato F4 Nano, Mahlk\u00f6nig E65S, Turin DF83, Varia VS6, Niche Duo, Capresso Infinity, Cuisinart DBM-8 and OXO Brew Conical Burr. Where a model shares its maker's own confirmed burr, click count and micron span with an already-catalogued sibling (1Zpresso K-Max for K-Plus/K-Pro, Kingrinder K2 for K3/K5, Baratza Vario+ for Forte), it reuses that measured curve rather than inventing a new one. Ceado, Compak, Macap, Anfim, Solis, Graef, Weber Key Mk1 and Hario Mini Mill Plus were checked and left out for lack of a specific, source-backed espresso or filter reference point. | v18 (2026-09-06, CUP-132): an electric filter machine is a batchBrewer ONLY when it is one-button (the machine heats, pours and times on its own: Moccamaster, Ratio, Bonavita, Wilfa). A PROGRAMMABLE machine, where the user sets the bloom, the pours and the temperature (Fellow Aiden, xBloom, Breville Precision Brewer), is declared pourOver: its recipe has the manual-filter structure, exactly like the OXO Rapid Brewer precedent. Fellow Aiden and xBloom added. | v19 (2026-09-08, CUP-165): the method label is gone. Every brewer declares a STRUCTURE instead - the shape of the recipe it takes, which is the one thing every screen and every lever needed: manual (bloom, pours in grams, pour style; the valve hybrids Clever/Switch/Bonavita Immersion Dripper are here, their valve gestures ride in each step's note), programmed (same structure, the user programs it: Fellow Aiden, xBloom, Breville Precision Brewer), reservoir (bloom and pours in grams, no pour style: OXO Rapid Brewer, AeroPress, Delter, Tricolate, NextLevel Pulsar), immersion (dose, water, temperature, a steeping rest: French press, Espro, and provisionally the siphons until they get their own descriptor), electricFilter (one-button machines: Moccamaster, Wilfa Svart Performance, Ratio Six/Eight, Bonavita Connoisseur), espresso, moka (dose and water weighed, no temperature lever) and cold (ratio, grind, hours). Structures reserved but not implemented: siphon, ibrik. A brewer the catalog does not know picks its structure in its own form. | v19 (suite, 09/09/2026, CUP-165, decision d'Arthur) : une entree cafetiere peut porter tempBand [min, max], la fenetre de temperature de CETTE cafetiere. Elle sert au PREMIER plan ; ensuite, si la personne brasse hors de cette fenetre, le dial-in avance d'un degre depuis SA valeur et ne l'y ramene jamais (meme logique que le plancher 1:14). Defaut par structure quand l'entree n'en porte pas : 88-94 pour les drippers manuels, programmables et a reservoir ; 88-99 pour une immersion (French press, Espro, siphons provisoires), dont le PREMIER plan ouvre a 94 ; 88-96 pour l'espresso ; moka, froid et filtre electrique un bouton n'ont pas de levier de temperature. Trois exceptions seulement : OXO Rapid Brewer 94-99, AeroPress et Delter 80-88 (leur recette maison ouvre a 85). Une entree peut aussi refuser le STYLE de versement avec pourStyle false : le NextLevel Pulsar est un filtre manuel a valve, ses impulsions restent des versements en quantites, mais la facon de poser l'eau n'y decide rien. | v20 (2026-09-14, CUP-210) : une entree cafetiere espresso porte temperatureAdjustable, le seul fait qui dise si la temperature d'eau se REGLE sur cette machine. Vrai : Breville Barista Pro/Touch/Express, Lelit Bianca et MaraX, Profitec Pro 500, La Marzocco Linea Micra, Decent DE1, Hibrew H10B, De'Longhi La Specialista Arte et Magnifica S, et les leviers manuels remplis a la bouilloire (Flair 58 et Neo Flex, Cafelat Robot, Wacaco Nanopresso et Picopresso, ROK EspressoGC). Faux : De'Longhi Dedica, Gaggia Classic Pro, Rancilio Silvia, Rocket Appartamento, La Pavoni Europiccola. Une machine espresso que le catalogue ne connait pas, ou une entree sans le champ, ne regle pas sa temperature : l'app n'en propose alors aucune et n'en demande aucune. | v22 (2026-09-16, CUP-245, decision d'Arthur) : le NextLevel Pulsar rejoint les hybrides a valve (structure valveHybrid, pourStyle false conserve). Sa recette maison de premiere extraction est celle de Jonathan Gagne : 25 g, bloom d'environ 3 fois la dose valve fermee pendant une minute, puis la valve ouverte et le reste de l'eau par petites impulsions. | v23 (2026-09-19, CUP-243, decision d'Arthur) : une entree filtre papier peut porter flowClass, sa classe de debit mesuree AVEC du cafe (jamais a l'eau seule) : \"fast\" (Sibarist FAST, Sibarist B3 FLAT) ou \"slow\" (Hario V60 01 et 02 tabbed, Chemex Bonded). Absent = debit normal (Cafec Abaca, Abaca+, T-92, T-90, T-83, Kalita Wave 185, Origami), comme tout filtre inconnu ou saisi a la main. Sur une percolation, un papier lent ouvre la mouture d'un palier (+60 um), un rapide la resserre d'un palier. Les notes des filtres qui contredisaient ce classement sont corrigees. Palier revise de 40 a 60 um le 19/09/2026 (revue) d'apres le test Sibarist de Coffee Circle (Comandante C40, meme cafe, 22 clics papier Hario contre 17 clics Sibarist FAST). | v24 (2026-09-20, CUP-280, decision d'Arthur) : le Mahlkonig EK43 MANQUAIT, et la gamme de meules SSP s'arretait a 7 entrees. Moulins ajoutes, avec leur source citee dans leurs notes : EK43 et EK43 S (meme manuel Mahlkonig, meme molette, \"0\" le plus fin et \"16\" le plus grossier ; SANS point de calage, la seule plage publiee, 180-803 um, etant une fenetre de mesure et non la portee du moulin, qui va jusqu'au cafe froid : posee en courbe, elle collait un simple V60 sur le reglage le plus grossier, vu au simulateur), EK Omnia (le cadran lit l'ECART DES MEULES, 0-800 um selon le manuel du fabricant), K30 (0-10 par le manuel), Option-O Lagom P100 (pas de 75 um par numero, derive du \"Each line (0.1) moves 0.0075 mm\" publie par Option-O ; meules SSP HU 98 d'usine), Zerno Z1 (0-1400 um publies), Varia EVO (140 pas de 10 um) et Timemore Chestnut S3 (15 um le clic). Les cadrans en MICRONS (EK Omnia, Zerno Z1) mesurent un ecart de meules, pas une taille de particule : ils n'ont donc AUCUN calibPoint, l'app porte le bon cadran et refuse de le traduire plutot que d'inventer une courbe. Meules : 22 jeux SSP supplementaires, un par profil et par diametre (98, 83, 80, 78, 74, 71, 65, 115 et 120 mm), avec les montages publies dans leurs notes ; seul le 83 mm Robur est CONIQUE. La 98 MP a ete corrigee : elle pretendait etre vendue aussi sous le nom LU, ce qui est faux (SSP vend MP, HU, LU, ULU et Sweet Lab comme cinq produits distincts a cette taille), donc ses alias \"ssp lu\" sont passes a la nouvelle entree Low Uniformity 98 mm. ECARTES faute de source : les Mazzer classiques (Super Jolly, Mini, Major, Robur, Kony), dont le manuel du fabricant decrit un collier SANS AUCUN CHIFFRE IMPRIME, donc sans plage modelisable ; E80/Peak, Ditting, Mythos, Anfim et Compak, faute de plage lue directement. Un champ absent vaut mieux qu'un chiffre estime. | v25 (2026-09-20, CUP-280, decision d'Arthur) : le DIXIEME devient un fait du catalogue. Il etait decide par une seule ligne codee en dur, \u00ab marque = 1Zpresso \u00bb, donc tous les moulins SANS FIN du catalogue (EK43, X54, X64, Lagom, Sculptor, Varia, Eureka, DF54...) etaient ranges d'office en nombres entiers, et l'interrupteur \u00ab Reglage au dixieme \u00bb pose a la main par la personne etait ECRASE a chaque version du catalogue. Une entree porte maintenant grinderDecimals. Classement, un moulin a la fois et jamais au jugement : FAUX pour toute unite en clics (un cran est un cran) et pour les cadrans deja en microns ; FAUX pour les bagues crantees que les notes decrivent comme telles (Baratza Virtuoso+/Sette/Vario/Forte, dont seule la bague MACRO est modelisee, EG-1 en pas de 5 um, et les petits electriques a N positions) ; VRAI pour les 1Zpresso, dont l'echelle EST une notation numero.clic, et pour les moulins dont les notes disent sans fin avec une echelle chiffree imprimee. ABSENT partout ailleurs, et c'est une reponse : l'app garde les nombres entiers ET ne touche plus a l'interrupteur de la personne. Restent a sourcer, faute de mecanisme ecrit dans leurs notes : Niche Zero et Duo, Turin DF64 Gen 1/Gen 2/DF83, Fellow Ode Gen 1/Gen 2 et Opus, Wilfa Uniform, Knock Aergrind, Baratza Encore et Encore ESP. | v26 (2026-09-20, CUP-281, decision d'Arthur, en conversation : \"debrouille-toi pour qu'elle soit prise en compte\") : l'AeroPress XL rejoint le catalogue comme une entree distincte (brand \"AeroPress\", model \"AeroPress XL\", family \"aeropress-xl\"), au lieu d'un simple alias de recherche de l'entree standard qui effacait sa taille au resync (GearCatalogEntry.apply ecrase toujours le Modele enregistre avec le model du catalogue). L'alias \"aeropress xl\" quitte l'entree standard pour la nouvelle entree ; l'alias nu \"aeropress\" reste sur l'entree standard (precedent DF64 v15 : un alias nu doit toujours pointer l'entree d'origine, sinon du materiel deja enregistre change de famille au prochain resync). Meme structure reservoir et meme tempBand [80, 88] que l'AeroPress standard (sa recette maison ouvre a 85 C elle aussi). Capacite : le fabricant annonce 20 oz / environ 590 ml pour la XL contre 10 oz / environ 295 ml pour l'AeroPress standard (aeropress.com, fiche produit XL, consultee le 20/09/2026), mais ce chiffre de contenance n'est pas de la meme nature que le plafond de 260/300 g de l'app (une mesure empirique du volume de percolation avec bloom, jamais celle du fabricant) : sans un plafond etabli selon la meme methode, la XL n'en recoit aucun, comme la Delter. Numero de version saute de 24 a 25 : reserves par la branche parallele CUP-280 (catalogue moulins/meules SSP), non mergee a ce commit.",
+  "version": 28,
+  "updated": "2026-09-21",
+  "note": "Curated catalog of popular coffee gear. Ranges are commonly cited values; the user can always correct them in the form. | grind calibration points (calibPoints/uniformity, P0) merged in. | espresso brewers carry pressureRegime (fixed pump vs. variable/piloted). | v11-13 (13 supersedes both sides' 11): every calibration point used to sit in the FILTER range (400-1300 um), so where espresso falls on a dial could only be extrapolated, and drifted. Each espresso-capable grinder now carries an ESPRESSO anchor at 250 um (the centre of the 200-300 um window), placed at the centre of its published espresso setting range - from the maker's own microns-per-click where there is one (1Zpresso, Weber), else from published/community setting ranges. A window a grinder reaches only partly is CLIPPED to what it reaches, not refused - nearly every grinder, filter ones included, goes fine enough for a turbo/soup shot. Silence is reserved for a window lying entirely off the dial (a filter-only grinder asked about espresso). | v12: baskets join the catalog (kind \"basket\", basketStyle + basketDoseGrams) so they are picked like papers instead of typed. A basket is a sub-item of the MACHINE and is never a lever - it only moves where the espresso grind zone sits. | v14: the grinder catalog grows again - the Femobook line, the Eureka Mignon family, and a batch of hand and electric grinders across brands. Truly stepless dials whose zero is set at assembly and differs per unit (Eureka Mignon, Option-O Remi, Mazzer Philos, Fiorenzato F64 Evo) carry no calibPoints - their printed numbers are personal to each grinder, never a cross-grinder translation. | v15: a new kind \"burrs\" (burrDiameterMm, burrGeometry, uniformity as the character these meules give - no adjustment range, no calibPoints: swapping burrs moves the zero and breaks the grinder's own curve) with 7 aftermarket sets (SSP MP/HU/Cast/Brew at 64 and 98mm, DLC-coated 64mm, Option-O Mizen ES). A set only earns an entry if it can actually be fitted to ANOTHER grinder: a grinder's own proprietary burrs are not a choice and would only cost their owner a curve. Conversely a few grinders LEAVE THE FACTORY on a set listed here (Fellow Ode Gen 2 on SSP MPs, Lagom P64 on Mizens), so they carry stockBurrsFamilies: naming those describes the grinder instead of re-burring it, and its curve - measured with them in - holds. Grinder iteration hygiene: the missing \"Turin DF64 (Gen 1)\" entry joins with its OWN stock-burr curve (the bare \"df64\" alias stayed on Gen 2 only, to not silently re-point already-synced saved gear - each generation now also carries its own specific alias, e.g. \"df64 gen1\"/\"df64 gen 2\"); the existing \"DF64 / + SSP Multipurpose\" entry keeps its id, aliases and measured curve untouched (only its notes gained a cross-reference); Comandante C40 MK3 is now a same-curve alias of the MK4 entry (identical burrs, cosmetic revision only). | v16: the grinder catalog widens again across brands - 1Zpresso K-Plus/K-Pro, Kingrinder K3/K5/K7, Timemore Chestnut Slim/X/G1/Nano, Hario Skerton Plus, Porlex Tall, Made By Knock Feldgrind, Normcore V3, VSSL Java, Sage Dose Control Pro, Rancilio Rocky, Gaggia MDF, Melitta Calibra, Krups GX5000, De'Longhi Dedica KG521 and KG79, Baratza Sette 30 and Forte, Eureka Atom and Zenith 65E, Fiorenzato F4 Nano, Mahlkönig E65S, Turin DF83, Varia VS6, Niche Duo, Capresso Infinity, Cuisinart DBM-8 and OXO Brew Conical Burr. Where a model shares its maker's own confirmed burr, click count and micron span with an already-catalogued sibling (1Zpresso K-Max for K-Plus/K-Pro, Kingrinder K2 for K3/K5, Baratza Vario+ for Forte), it reuses that measured curve rather than inventing a new one. Ceado, Compak, Macap, Anfim, Solis, Graef, Weber Key Mk1 and Hario Mini Mill Plus were checked and left out for lack of a specific, source-backed espresso or filter reference point. | v18 (2026-09-06, CUP-132): an electric filter machine is a batchBrewer ONLY when it is one-button (the machine heats, pours and times on its own: Moccamaster, Ratio, Bonavita, Wilfa). A PROGRAMMABLE machine, where the user sets the bloom, the pours and the temperature (Fellow Aiden, xBloom, Breville Precision Brewer), is declared pourOver: its recipe has the manual-filter structure, exactly like the OXO Rapid Brewer precedent. Fellow Aiden and xBloom added. | v19 (2026-09-08, CUP-165): the method label is gone. Every brewer declares a STRUCTURE instead - the shape of the recipe it takes, which is the one thing every screen and every lever needed: manual (bloom, pours in grams, pour style; the valve hybrids Clever/Switch/Bonavita Immersion Dripper are here, their valve gestures ride in each step's note), programmed (same structure, the user programs it: Fellow Aiden, xBloom, Breville Precision Brewer), reservoir (bloom and pours in grams, no pour style: OXO Rapid Brewer, AeroPress, Delter, Tricolate, NextLevel Pulsar), immersion (dose, water, temperature, a steeping rest: French press, Espro, and provisionally the siphons until they get their own descriptor), electricFilter (one-button machines: Moccamaster, Wilfa Svart Performance, Ratio Six/Eight, Bonavita Connoisseur), espresso, moka (dose and water weighed, no temperature lever) and cold (ratio, grind, hours). Structures reserved but not implemented: siphon, ibrik. A brewer the catalog does not know picks its structure in its own form. | v19 (suite, 09/09/2026, CUP-165, decision d'Arthur) : une entree cafetiere peut porter tempBand [min, max], la fenetre de temperature de CETTE cafetiere. Elle sert au PREMIER plan ; ensuite, si la personne brasse hors de cette fenetre, le dial-in avance d'un degre depuis SA valeur et ne l'y ramene jamais (meme logique que le plancher 1:14). Defaut par structure quand l'entree n'en porte pas : 88-94 pour les drippers manuels, programmables et a reservoir ; 88-99 pour une immersion (French press, Espro, siphons provisoires), dont le PREMIER plan ouvre a 94 ; 88-96 pour l'espresso ; moka, froid et filtre electrique un bouton n'ont pas de levier de temperature. Trois exceptions seulement : OXO Rapid Brewer 94-99, AeroPress et Delter 80-88 (leur recette maison ouvre a 85). Une entree peut aussi refuser le STYLE de versement avec pourStyle false : le NextLevel Pulsar est un filtre manuel a valve, ses impulsions restent des versements en quantites, mais la facon de poser l'eau n'y decide rien. | v20 (2026-09-14, CUP-210) : une entree cafetiere espresso porte temperatureAdjustable, le seul fait qui dise si la temperature d'eau se REGLE sur cette machine. Vrai : Breville Barista Pro/Touch/Express, Lelit Bianca et MaraX, Profitec Pro 500, La Marzocco Linea Micra, Decent DE1, Hibrew H10B, De'Longhi La Specialista Arte et Magnifica S, et les leviers manuels remplis a la bouilloire (Flair 58 et Neo Flex, Cafelat Robot, Wacaco Nanopresso et Picopresso, ROK EspressoGC). Faux : De'Longhi Dedica, Gaggia Classic Pro, Rancilio Silvia, Rocket Appartamento, La Pavoni Europiccola. Une machine espresso que le catalogue ne connait pas, ou une entree sans le champ, ne regle pas sa temperature : l'app n'en propose alors aucune et n'en demande aucune. | v22 (2026-09-16, CUP-245, decision d'Arthur) : le NextLevel Pulsar rejoint les hybrides a valve (structure valveHybrid, pourStyle false conserve). Sa recette maison de premiere extraction est celle de Jonathan Gagne : 25 g, bloom d'environ 3 fois la dose valve fermee pendant une minute, puis la valve ouverte et le reste de l'eau par petites impulsions. | v23 (2026-09-19, CUP-243, decision d'Arthur) : une entree filtre papier peut porter flowClass, sa classe de debit mesuree AVEC du cafe (jamais a l'eau seule) : \"fast\" (Sibarist FAST, Sibarist B3 FLAT) ou \"slow\" (Hario V60 01 et 02 tabbed, Chemex Bonded). Absent = debit normal (Cafec Abaca, Abaca+, T-92, T-90, T-83, Kalita Wave 185, Origami), comme tout filtre inconnu ou saisi a la main. Sur une percolation, un papier lent ouvre la mouture d'un palier (+60 um), un rapide la resserre d'un palier. Les notes des filtres qui contredisaient ce classement sont corrigees. Palier revise de 40 a 60 um le 19/09/2026 (revue) d'apres le test Sibarist de Coffee Circle (Comandante C40, meme cafe, 22 clics papier Hario contre 17 clics Sibarist FAST). | v24 (2026-09-20, CUP-280, decision d'Arthur) : le Mahlkonig EK43 MANQUAIT, et la gamme de meules SSP s'arretait a 7 entrees. Moulins ajoutes, avec leur source citee dans leurs notes : EK43 et EK43 S (meme manuel Mahlkonig, meme molette, \"0\" le plus fin et \"16\" le plus grossier ; SANS point de calage, la seule plage publiee, 180-803 um, etant une fenetre de mesure et non la portee du moulin, qui va jusqu'au cafe froid : posee en courbe, elle collait un simple V60 sur le reglage le plus grossier, vu au simulateur), EK Omnia (le cadran lit l'ECART DES MEULES, 0-800 um selon le manuel du fabricant), K30 (0-10 par le manuel), Option-O Lagom P100 (pas de 75 um par numero, derive du \"Each line (0.1) moves 0.0075 mm\" publie par Option-O ; meules SSP HU 98 d'usine), Zerno Z1 (0-1400 um publies), Varia EVO (140 pas de 10 um) et Timemore Chestnut S3 (15 um le clic). Les cadrans en MICRONS (EK Omnia, Zerno Z1) mesurent un ecart de meules, pas une taille de particule : ils n'ont donc AUCUN calibPoint, l'app porte le bon cadran et refuse de le traduire plutot que d'inventer une courbe. Meules : 22 jeux SSP supplementaires, un par profil et par diametre (98, 83, 80, 78, 74, 71, 65, 115 et 120 mm), avec les montages publies dans leurs notes ; seul le 83 mm Robur est CONIQUE. La 98 MP a ete corrigee : elle pretendait etre vendue aussi sous le nom LU, ce qui est faux (SSP vend MP, HU, LU, ULU et Sweet Lab comme cinq produits distincts a cette taille), donc ses alias \"ssp lu\" sont passes a la nouvelle entree Low Uniformity 98 mm. ECARTES faute de source : les Mazzer classiques (Super Jolly, Mini, Major, Robur, Kony), dont le manuel du fabricant decrit un collier SANS AUCUN CHIFFRE IMPRIME, donc sans plage modelisable ; E80/Peak, Ditting, Mythos, Anfim et Compak, faute de plage lue directement. Un champ absent vaut mieux qu'un chiffre estime. | v25 (2026-09-20, CUP-280, decision d'Arthur) : le DIXIEME devient un fait du catalogue. Il etait decide par une seule ligne codee en dur, « marque = 1Zpresso », donc tous les moulins SANS FIN du catalogue (EK43, X54, X64, Lagom, Sculptor, Varia, Eureka, DF54...) etaient ranges d'office en nombres entiers, et l'interrupteur « Reglage au dixieme » pose a la main par la personne etait ECRASE a chaque version du catalogue. Une entree porte maintenant grinderDecimals. Classement, un moulin a la fois et jamais au jugement : FAUX pour toute unite en clics (un cran est un cran) et pour les cadrans deja en microns ; FAUX pour les bagues crantees que les notes decrivent comme telles (Baratza Virtuoso+/Sette/Vario/Forte, dont seule la bague MACRO est modelisee, EG-1 en pas de 5 um, et les petits electriques a N positions) ; VRAI pour les 1Zpresso, dont l'echelle EST une notation numero.clic, et pour les moulins dont les notes disent sans fin avec une echelle chiffree imprimee. ABSENT partout ailleurs, et c'est une reponse : l'app garde les nombres entiers ET ne touche plus a l'interrupteur de la personne. Restent a sourcer, faute de mecanisme ecrit dans leurs notes : Niche Zero et Duo, Turin DF64 Gen 1/Gen 2/DF83, Fellow Ode Gen 1/Gen 2 et Opus, Wilfa Uniform, Knock Aergrind, Baratza Encore et Encore ESP. | v26 (2026-09-20, CUP-281, decision d'Arthur, en conversation : \"debrouille-toi pour qu'elle soit prise en compte\") : l'AeroPress XL rejoint le catalogue comme une entree distincte (brand \"AeroPress\", model \"AeroPress XL\", family \"aeropress-xl\"), au lieu d'un simple alias de recherche de l'entree standard qui effacait sa taille au resync (GearCatalogEntry.apply ecrase toujours le Modele enregistre avec le model du catalogue). L'alias \"aeropress xl\" quitte l'entree standard pour la nouvelle entree ; l'alias nu \"aeropress\" reste sur l'entree standard (precedent DF64 v15 : un alias nu doit toujours pointer l'entree d'origine, sinon du materiel deja enregistre change de famille au prochain resync). Meme structure reservoir et meme tempBand [80, 88] que l'AeroPress standard (sa recette maison ouvre a 85 C elle aussi). Capacite : le fabricant annonce 20 oz / environ 590 ml pour la XL contre 10 oz / environ 295 ml pour l'AeroPress standard (aeropress.com, fiche produit XL, consultee le 20/09/2026), mais ce chiffre de contenance n'est pas de la meme nature que le plafond de 260/300 g de l'app (une mesure empirique du volume de percolation avec bloom, jamais celle du fabricant) : sans un plafond etabli selon la meme methode, la XL n'en recoit aucun, comme la Delter. Numero de version saute de 24 a 25 : reserves par la branche parallele CUP-280 (catalogue moulins/meules SSP), non mergee a ce commit. | v27 (2026-09-21, CUP-291, revue) : corrige la note du catalogue pour fellow-stagg, qui decrivait a tort le Stagg X comme conique et le Stagg XF comme fond plat. Les deux sont fond plat (\"flat bottom, steep walls\", page produit Fellow \"Stagg X Dripper\" ; nucleuscoffee.com, \"Fellow Stagg X Brewer Review — The Best Flat Bottom Dripper?\" ; coffeeadastra.com), seule leur TAILLE differe — deja corrige cote classement (DoseGrindAdjustment.familyClasses, CUP-291 20/09/2026), la note du catalogue restait perimee. | v28 (2026-09-21, CUP-292, suite) : sourcage du diametre (burrDiameterMm) et de la geometrie (burrGeometry, flat/conical) directement sur l'entree grinder, pour 98 des 129 moulins du catalogue (chaque chiffre cite une fiche fabricant ou revendeur de pieces, jamais deduit du nom du modele : le \"64\" de DF64 n'est pas une source). acceptedBurrDiameterMm lit desormais d'abord ce champ propre au moulin, puis a defaut stockBurrsFamilies comme avant ; un nouveau acceptedBurrGeometry suit la meme regle et burrsSuggestions (GearTabView) filtre maintenant aussi sur la geometrie, sans jamais exclure un cote inconnu. 31 moulins restent sans diametre publie malgre la recherche (Porlex Mini II, 1Zpresso Q-Air, Timemore Chestnut C2 Max, Hario Skerton/Skerton Pro/Skerton Plus, Orphan Espresso Apex, Kingrinder K5, Normcore V3, Sage Dose Control Pro, Gaggia MDF, Melitta Calibra, Krups GX5000 et Expert GVX2, De'Longhi KG521 Dedica/KG79/KG89, Cuisinart DBM-8 et CBM-18, Zassenhaus Santiago, Rhinowares Hand Grinder, JavaPresse Manual, Melitta Molino, Cafflano Krinder, Peugeot Kronos et L'Arbre a Cafe, Cafede Kona Manual Grinder, Baratza Maestro, Kalita Next G et Nice Cut G, Hario V60 EVC-8B) : voir tout le catalogue de meules, sans filtre, comme prevu. Cas signale sans le trancher : l'Orphan Espresso Apex porte des \"Ghost Tooth\" asymetriques (78 mm cote rotatif, 75 mm cote fixe) ni conique ni fond plat au sens de BurrGeometry, laisse sans diametre ni geometrie plutot que force dans l'un des deux.",
   "items": [
     {
       "kind": "grinder",
@@ -37,7 +37,9 @@
           "micron": 900.0
         }
       ],
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 39,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -66,7 +68,9 @@
           "micron": 900.0
         }
       ],
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 60,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -92,7 +96,9 @@
           "micron": 700.0
         }
       ],
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 48,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -117,7 +123,9 @@
           "micron": 700.0
         }
       ],
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 48,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -146,7 +154,9 @@
           "micron": 1050.0
         }
       ],
-      "uniformity": "balanced"
+      "uniformity": "balanced",
+      "burrDiameterMm": 48,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -175,7 +185,9 @@
           "micron": 980.0
         }
       ],
-      "uniformity": "balanced"
+      "uniformity": "balanced",
+      "burrDiameterMm": 48,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -204,7 +216,9 @@
           "micron": 900.0
         }
       ],
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 48,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -229,7 +243,9 @@
           "micron": 700.0
         }
       ],
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 40,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -262,7 +278,9 @@
           "micron": 900.0
         }
       ],
-      "uniformity": "balanced"
+      "uniformity": "balanced",
+      "burrDiameterMm": 47,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -291,7 +309,9 @@
           "micron": 690.0
         }
       ],
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 54,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -315,7 +335,9 @@
           "micron": 700.0
         }
       ],
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 38,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -344,7 +366,9 @@
           "micron": 880.0
         }
       ],
-      "uniformity": "fines-heavy"
+      "uniformity": "fines-heavy",
+      "burrDiameterMm": 38,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -377,7 +401,9 @@
           "micron": 900.0
         }
       ],
-      "uniformity": "balanced"
+      "uniformity": "balanced",
+      "burrDiameterMm": 38,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -409,7 +435,9 @@
           "micron": 900.0
         }
       ],
-      "uniformity": "balanced"
+      "uniformity": "balanced",
+      "burrDiameterMm": 48,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -440,7 +468,9 @@
           "micron": 900.0
         }
       ],
-      "uniformity": "balanced"
+      "uniformity": "balanced",
+      "burrDiameterMm": 48,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -467,7 +497,9 @@
           "micron": 1090.0
         }
       ],
-      "uniformity": "fines-heavy"
+      "uniformity": "fines-heavy",
+      "burrDiameterMm": 40,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -497,7 +529,9 @@
           "micron": 1270.0
         }
       ],
-      "uniformity": "fines-heavy"
+      "uniformity": "fines-heavy",
+      "burrDiameterMm": 40,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -528,7 +562,9 @@
           "micron": 960.0
         }
       ],
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 64,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -554,7 +590,9 @@
           "micron": 880.0
         }
       ],
-      "uniformity": "fines-heavy"
+      "uniformity": "fines-heavy",
+      "burrDiameterMm": 40,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -577,7 +615,9 @@
           "micron": 700.0
         }
       ],
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 63,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -611,7 +651,9 @@
           "micron": 1000.0
         }
       ],
-      "uniformity": "balanced"
+      "uniformity": "balanced",
+      "burrDiameterMm": 64,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -638,7 +680,9 @@
           "micron": 900.0
         }
       ],
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 58,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -661,7 +705,9 @@
           "micron": 700.0
         }
       ],
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 24,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -708,7 +754,9 @@
           "micron": 700.0
         }
       ],
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 83,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -737,7 +785,9 @@
           "micron": 1030.0
         }
       ],
-      "uniformity": "fines-heavy"
+      "uniformity": "fines-heavy",
+      "burrDiameterMm": 40,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -789,7 +839,9 @@
           "micron": 700.0
         }
       ],
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 40,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -817,7 +869,9 @@
           "micron": 850.0
         }
       ],
-      "uniformity": "balanced"
+      "uniformity": "balanced",
+      "burrDiameterMm": 38,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -850,7 +904,9 @@
           "micron": 900.0
         }
       ],
-      "uniformity": "balanced"
+      "uniformity": "balanced",
+      "burrDiameterMm": 54,
+      "burrGeometry": "flat"
     },
     {
       "kind": "brewer",
@@ -1104,7 +1160,7 @@
         "stagg xf"
       ],
       "structure": "manual",
-      "notes": "Double-wall steel dripper with ridged walls; X is conical-ish, XF is flat-bottom. Heat-retentive, even bed, ratio markings inside."
+      "notes": "Double-wall steel dripper with ridged walls; BOTH X and XF are flat-bottom, steep-walled baskets (Fellow's own \"Stagg X Dripper\" product page; nucleuscoffee.com, \"Fellow Stagg X Brewer Review — The Best Flat Bottom Dripper?\"; coffeeadastra.com) — only their SIZE differs, not the geometry (corrected 2026-09-21, CUP-291; this note used to say X was conical). Heat-retentive, even bed, ratio markings inside."
     },
     {
       "kind": "brewer",
@@ -2134,7 +2190,9 @@
           "setting": 60.0,
           "micron": 820.0
         }
-      ]
+      ],
+      "burrDiameterMm": 40,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -2165,7 +2223,9 @@
           "setting": 59.0,
           "micron": 996.0
         }
-      ]
+      ],
+      "burrDiameterMm": 64,
+      "burrGeometry": "flat"
     },
     {
       "kind": "basket",
@@ -2340,7 +2400,9 @@
           "setting": 80.0,
           "micron": 950.0
         }
-      ]
+      ],
+      "burrDiameterMm": 38,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -2373,7 +2435,9 @@
           "setting": 220.0,
           "micron": 1000.0
         }
-      ]
+      ],
+      "burrDiameterMm": 38,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -2406,7 +2470,9 @@
           "setting": 280.0,
           "micron": 1200.0
         }
-      ]
+      ],
+      "burrDiameterMm": 48,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -2439,7 +2505,9 @@
           "setting": 260.0,
           "micron": 1150.0
         }
-      ]
+      ],
+      "burrDiameterMm": 53,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -2472,7 +2540,9 @@
           "setting": 250.0,
           "micron": 1250.0
         }
-      ]
+      ],
+      "burrDiameterMm": 68,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -2505,7 +2575,9 @@
           "setting": 37.0,
           "micron": 1200.0
         }
-      ]
+      ],
+      "burrDiameterMm": 48,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -2534,7 +2606,9 @@
           "setting": 126.0,
           "micron": 1100.0
         }
-      ]
+      ],
+      "burrDiameterMm": 38,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -2567,7 +2641,9 @@
           "setting": 126.0,
           "micron": 1100.0
         }
-      ]
+      ],
+      "burrDiameterMm": 38,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -2600,7 +2676,9 @@
           "setting": 126.0,
           "micron": 1150.0
         }
-      ]
+      ],
+      "burrDiameterMm": 48,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -2666,7 +2744,9 @@
           "setting": 111.0,
           "micron": 1150.0
         }
-      ]
+      ],
+      "burrDiameterMm": 42,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -2732,7 +2812,9 @@
           "setting": 40.0,
           "micron": 1200.0
         }
-      ]
+      ],
+      "burrDiameterMm": 38,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -2762,7 +2844,9 @@
           "setting": 11.0,
           "micron": 900.0
         }
-      ]
+      ],
+      "burrDiameterMm": 48,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -2796,7 +2880,9 @@
           "setting": 1300.0,
           "micron": 1300.0
         }
-      ]
+      ],
+      "burrDiameterMm": 48,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -2859,7 +2945,9 @@
           "setting": 34.0,
           "micron": 1090.0
         }
-      ]
+      ],
+      "burrDiameterMm": 39,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -2883,7 +2971,9 @@
       "grinderSettingUnit": "numbers",
       "grinderDecimals": true,
       "notes": "Stepless dial: numbers are arbitrary and differ per unit (the zero is set at assembly) - settings are personal to your grinder, no cross-grinder translation. Covers the whole Mignon line (Specialità, Silenzio, Zero, Manuale, Oro, Perfetto...) which shares the same 50-55mm flat stepless collar (Oro runs 65mm); all variants are espresso-capable.",
-      "uniformity": "balanced"
+      "uniformity": "balanced",
+      "burrDiameterMm": 50,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -2899,7 +2989,9 @@
       "grinderSettingUnit": "numbers",
       "grinderDecimals": true,
       "notes": "Stepless dial: numbers are arbitrary and differ per unit - settings are personal to your grinder, no cross-grinder translation. 38mm conical burr set: conventional burrs for drip/press (can't reach espresso) or contemporary burrs for espresso and Turkish.",
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 38,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -2915,7 +3007,9 @@
       "grinderSettingUnit": "numbers",
       "grinderDecimals": true,
       "notes": "Stepless dial: numbers are arbitrary and differ per unit - settings are personal to your grinder, no cross-grinder translation. 64mm flat burr single-dose grinder; also offers a stepped 6-micron mode, not modeled here.",
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 64,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -2931,7 +3025,9 @@
       "grinderSettingUnit": "numbers",
       "grinderDecimals": true,
       "notes": "Stepless dial: numbers are arbitrary and differ per unit - settings are personal to your grinder, no cross-grinder translation. 64mm flat burr, touchscreen on-demand espresso grinder with no clicks or detents at all.",
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 64,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -2966,7 +3062,9 @@
           "setting": 30.0,
           "micron": 950.0
         }
-      ]
+      ],
+      "burrDiameterMm": 40,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -3000,7 +3098,9 @@
           "setting": 10.0,
           "micron": 1150.0
         }
-      ]
+      ],
+      "burrDiameterMm": 54,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -3025,7 +3125,9 @@
           "micron": 1400.0
         }
       ],
-      "uniformity": "balanced"
+      "uniformity": "balanced",
+      "burrDiameterMm": 64,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -3059,7 +3161,9 @@
           "setting": 13.9,
           "micron": 1035.0
         }
-      ]
+      ],
+      "burrDiameterMm": 64,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -3093,7 +3197,9 @@
           "setting": 12.5,
           "micron": 1200.0
         }
-      ]
+      ],
+      "burrDiameterMm": 78,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -3130,7 +3236,9 @@
           "setting": 6.8,
           "micron": 1245.0
         }
-      ]
+      ],
+      "burrDiameterMm": 64,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -3164,7 +3272,9 @@
           "setting": 12.1,
           "micron": 1200.0
         }
-      ]
+      ],
+      "burrDiameterMm": 48,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -3198,7 +3308,9 @@
           "setting": 10.0,
           "micron": 1100.0
         }
-      ]
+      ],
+      "burrDiameterMm": 64,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -3232,7 +3344,9 @@
           "setting": 18.6,
           "micron": 1200.0
         }
-      ]
+      ],
+      "burrDiameterMm": 80,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -3260,7 +3374,9 @@
           "micron": 700.0
         }
       ],
-      "uniformity": "balanced"
+      "uniformity": "balanced",
+      "burrDiameterMm": 64,
+      "burrGeometry": "flat"
     },
     {
       "kind": "burrs",
@@ -3726,7 +3842,9 @@
           "setting": 5.5,
           "micron": 1050.0
         }
-      ]
+      ],
+      "burrDiameterMm": 48,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -3755,7 +3873,9 @@
           "setting": 5.5,
           "micron": 1050.0
         }
-      ]
+      ],
+      "burrDiameterMm": 48,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -3788,7 +3908,9 @@
           "setting": 126.0,
           "micron": 1150.0
         }
-      ]
+      ],
+      "burrDiameterMm": 48,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -3846,7 +3968,9 @@
           "setting": 107.0,
           "micron": 900.0
         }
-      ]
+      ],
+      "burrDiameterMm": 53,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -3875,7 +3999,9 @@
           "setting": 26.0,
           "micron": 1000.0
         }
-      ]
+      ],
+      "burrDiameterMm": 38,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -3904,7 +4030,9 @@
           "setting": 20.0,
           "micron": 1000.0
         }
-      ]
+      ],
+      "burrDiameterMm": 42,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -3933,7 +4061,9 @@
           "setting": 27.0,
           "micron": 1050.0
         }
-      ]
+      ],
+      "burrDiameterMm": 38,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -3962,7 +4092,9 @@
           "setting": 32.0,
           "micron": 1200.0
         }
-      ]
+      ],
+      "burrDiameterMm": 38,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -4023,7 +4155,9 @@
           "setting": 8.5,
           "micron": 1100.0
         }
-      ]
+      ],
+      "burrDiameterMm": 30,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -4056,7 +4190,9 @@
           "setting": 4.9,
           "micron": 1300.0
         }
-      ]
+      ],
+      "burrDiameterMm": 38,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -4114,7 +4250,9 @@
           "setting": 35.0,
           "micron": 1200.0
         }
-      ]
+      ],
+      "burrDiameterMm": 38,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -4176,7 +4314,9 @@
           "setting": 50.0,
           "micron": 1050.0
         }
-      ]
+      ],
+      "burrDiameterMm": 50,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -4340,7 +4480,9 @@
           "setting": 30.0,
           "micron": 950.0
         }
-      ]
+      ],
+      "burrDiameterMm": 40,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -4374,7 +4516,9 @@
           "setting": 10.0,
           "micron": 1150.0
         }
-      ]
+      ],
+      "burrDiameterMm": 54,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -4392,7 +4536,9 @@
       "grinderSettingUnit": "numbers",
       "grinderDecimals": true,
       "notes": "Stepless dial like the Mignon line: numbers are reference marks that differ per unit, no cross-grinder translation (the exact printed range isn't independently confirmed, shown here as the Mignon's own reference span). Covers the 60/65/75mm Atom W flat-burr line - larger and more commercial than the Mignon's 50-65mm collar.",
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 65,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -4408,7 +4554,9 @@
       "grinderSettingUnit": "numbers",
       "grinderDecimals": true,
       "notes": "Stepless dial, 65mm flat burrs, commercial hi-speed grinder; numbers are reference marks only, no cross-grinder translation, and the exact printed range isn't independently confirmed.",
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 64,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -4424,7 +4572,9 @@
       "grinderSettingUnit": "numbers",
       "grinderDecimals": true,
       "notes": "Stepless micrometric dial (the numbered scale is for personal reference only, like the F64 Evo's), 64mm flat burrs, doserless espresso grinder.",
-      "uniformity": "balanced"
+      "uniformity": "balanced",
+      "burrDiameterMm": 58,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -4440,7 +4590,9 @@
       "grinderSettingUnit": "numbers",
       "grinderDecimals": true,
       "notes": "Stepless collar with an 80-step reference scale (Mahlkonig's own manual); the burr-gap adjustment spans roughly 180-580 microns, which is not the particle-median curve this catalog needs, and the numbers are personal to each unit. 65mm flat burrs.",
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 65,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -4472,7 +4624,9 @@
           "setting": 80.0,
           "micron": 900.0
         }
-      ]
+      ],
+      "burrDiameterMm": 83,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -4504,7 +4658,9 @@
           "setting": 20.0,
           "micron": 1200.0
         }
-      ]
+      ],
+      "burrDiameterMm": 58,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -4531,7 +4687,9 @@
           "setting": 48.0,
           "micron": 1050.0
         }
-      ]
+      ],
+      "burrDiameterMm": 83,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -4559,7 +4717,9 @@
           "setting": 14.5,
           "micron": 1050.0
         }
-      ]
+      ],
+      "burrDiameterMm": 40,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -4617,7 +4777,9 @@
           "setting": 13.0,
           "micron": 1050.0
         }
-      ]
+      ],
+      "burrDiameterMm": 40,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -4634,7 +4796,9 @@
       "grinderSettingUnit": "numbers",
       "grinderDecimals": true,
       "notes": "uncalibrated: no published micron data (checked 2026-09-03). 48mm conical burrs, stepless 0-36 dial, dual speed (400/500rpm). G5 Plus shares the same burr set. Sources: hibrew.com/products/hibrew-coffee-grinder-g5 ; amazon.com/dp/B0F1D5GWFG. Field observation (one Cupsight user, espresso, 2026-08/09): 9-9.5 ran 30-58s, 15 ran 22s.",
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 48,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -4650,7 +4814,9 @@
       "grinderDecimals": false,
       "micronsPerDialUnit": 33.0,
       "notes": "38mm stainless conical burr, 30 clicks per turn, 33 microns per click published by Wacaco (a 60-microclick range from the fully-closed zero) - no absolute anchor micron value is published, so this carries the per-click step but no calibPoints. Manual's brew-method starting points, in clicks from the closed zero, cited as-is and not converted to microns: espresso 10-20, filter coffee 20-26, pour over 34-42, French press 42-46. The newer Exagrind Pro-E uses a different 14.5 micron/click, 207-setting scale - separate hardware, not modeled here. Sources: wacaco.com/products/exagrind ; amazon.com/dp/B09W2273L7 (checked 2026-09-03).",
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 38,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -4664,7 +4830,9 @@
       "grinderMaxSetting": 8,
       "grinderSettingUnit": "numbers",
       "notes": "uncalibrated: only an overall range is published, not a per-setting curve (checked 2026-09-03). Ceramic conical burr, community-cited range 350-1400 microns; settings above 6 run coarser than 1400 microns. Brand's own chart, cited as-is - not converted to microns: espresso at 0, V60 0.5-2, French press 2-5. Source: honestcoffeeguide.com/handground-precision-coffee-grinder-grind-settings/.",
-      "uniformity": "balanced"
+      "uniformity": "balanced",
+      "burrDiameterMm": 40,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -4710,7 +4878,9 @@
       "grinderMaxSetting": 10,
       "grinderSettingUnit": "numbers",
       "notes": "Stepless top adjustment (split collar on a fine-threaded axle); the Pharos 2.0 adds an indexing scale on the collar, but like the catalog's other stepless grinders the zero is set per unit, so no cross-grinder calibration - the 0-10 range here is a nominal placeholder, not a real scale. 68mm Italian conical steel burrs, forgiving down to roughly 1g/turn at espresso settings. No published micron chart (checked 2026-09-03). Source: blackoutcoffee.com Pharos hands-on posts.",
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 68,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -4771,7 +4941,9 @@
       "grinderMaxSetting": 12,
       "grinderSettingUnit": "numbers",
       "notes": "uncalibrated: no published micron chart found (checked 2026-09-03). 35mm conical steel burr, 12 numbered settings (1 finest/espresso-fine, 12 coarsest/French press), preset timer. Sources: target.com/p/bodum-bistro-conical-burr-electric-coffee-grinder-black/-/A-91920642 ; homegrounds.co/bodum-bistro-grinder-review/.",
-      "uniformity": "balanced"
+      "uniformity": "balanced",
+      "burrDiameterMm": 35,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -4872,7 +5044,9 @@
       "grinderMaxSetting": 40,
       "grinderSettingUnit": "numbers",
       "notes": "uncalibrated: only an overall range is published, not a per-setting curve (checked 2026-09-03). Discontinued but common secondhand; flat ceramic burr, 40 macro settings (1-40, modeled here) plus an 11-step MICROadjust lever (A-K, ~10 microns/step per Baratza, not modeled), community-cited overall range 200-1170 microns. Sources: honestcoffeeguide.com/baratza-preciso-grind-settings/ ; breville-production-aem-assets.s3.us-west-2.amazonaws.com/Baratza/Legacy+Grinders/Preciso/Preciso-Manual-EN-v2.2-SS.pdf.",
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 40,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -4901,7 +5075,9 @@
       "grinderMaxSetting": 10,
       "grinderSettingUnit": "numbers",
       "notes": "Stepless micrometric adjustment, roughly 0.02mm (20 micron) burr shift per full turn of the ring per the manufacturer, but no numbered/indexed scale to anchor a setting to a micron value, and like the catalog's other stepless grinders the zero is set per unit - no cross-grinder calibration; the 0-10 range here is a nominal placeholder, not a real scale. 48mm Swiss stainless conical burr, French press through espresso. Sources: alternativebrewing.com.au/products/lido-3-hand-grinder ; frenchpresscoffee.com/blogs/perfect-cup-of-coffee/lido-3-review (checked 2026-09-03).",
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 48,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -4916,7 +5092,9 @@
       "grinderSettingUnit": "numbers",
       "grinderDecimals": false,
       "notes": "uncalibrated: only an overall range is published, not a per-setting curve (checked 2026-09-03). Conical steel burr, marked positions from coarse to fine (steep/French press, filter, AeroPress, mocca) with fine-tuning steps between them - sources disagree on the exact count (roughly 20 to 40 distinct positions), modeled here as 1-40. Community-cited overall range 310-1100 microns; filter-only, no espresso setting. Distinct model from the already-catalogued Wilfa Uniform. Sources: honestcoffeeguide.com/wilfa-svart-aroma-grind-settings/ ; beanbros.co/products/wilfa-svart-aroma-coffee-grinder.",
-      "uniformity": "balanced"
+      "uniformity": "balanced",
+      "burrDiameterMm": 58,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -4994,7 +5172,9 @@
       "grinderSettingUnit": "numbers",
       "grinderDecimals": false,
       "notes": "uncalibrated: no published per-setting micron chart found (checked 2026-09-03). Original Vario, predating the already-catalogued Vario+: flat ceramic burr, same macro ring (1-10, modeled here) plus a stepless micro ring (A-Z) for finer adjustment, not modeled. Discontinued but common secondhand; the curve is not assumed to match the Vario+'s measured one since no source ties the two burr generations together. Source: honestcoffeeguide.com/baratza-vario-grind-settings/.",
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 54,
+      "burrGeometry": "flat"
     },
     {
       "kind": "brewer",
@@ -5029,7 +5209,9 @@
       "grinderSettingUnit": "numbers",
       "grinderDecimals": true,
       "notes": "98mm cast steel flat burrs. Hand wheel with a printed grinding-degree scale: the maker's own manual states \"The finest setting is '0' and the coarsest setting is '16'\", so 0 is fine and 16 is coarse, the opposite way round from most hand grinders. The EKK43 and the Turkish-capable EK43 T share that same wheel and scale. NO calibPoints, and that is a decision, not an omission: the only published setting-to-micron span for this dial (180-803 um over the 0-16 scale) is a measurement WINDOW, not the grinder's reach - the EK43 is sold down to cold brew, well past 803 um. Carried as a curve it made every target above ~800 um clamp to the coarsest setting, and a plain V60 first plan came out at 16 (seen in the simulator, 2026-09-20, CUP-280). So the dial here is the maker's and the translation waits for the owner's own anchor (GrindAnchorOffer), which is what the app already does for every grinder it cannot read. SSP's 98mm sets (HU, LU, ULU, MP, Sweet Lab) fit this grinder. Sources: downloads.mahlkoenig.de/Service/Mahlkoenig_EK43_EK43_S_EKK43_Allround_Grinder_Original_instruction_manual_EN.pdf ; honestcoffeeguide.com/mahlkonig-ek43-0-16-grind-settings/ (checked 2026-09-20).",
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 98,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -5047,7 +5229,9 @@
       "grinderSettingUnit": "numbers",
       "grinderDecimals": true,
       "notes": "The short-body EK43: same 98mm cast steel burrs and the same hand wheel, and the maker ships ONE manual for both, stating the same scale (0 finest, 16 coarsest). Same published span, and the same refusal to turn it into a curve, for the reason spelled out on the EK43 entry. Too tall for bag grinding; the EK43 ST is its Turkish-capable variant. Sources: downloads.mahlkoenig.de/Service/Mahlkoenig_EK43_EK43_S_EKK43_Allround_Grinder_Original_instruction_manual_EN.pdf ; honestcoffeeguide.com/mahlkonig-ek43-s-grind-settings/ (checked 2026-09-20).",
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 98,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -5064,7 +5248,9 @@
       "grinderSettingUnit": "microns",
       "grinderDecimals": false,
       "notes": "The EK43's successor: the same 98mm cast steel burrs, but the dial reads the BURR GAP, not a degree number. The maker's manual states the Disc Distance Detection sets the grinding degree \"on the basis of the distance between the grinding discs (0-800 um): The higher the um value, the greater the distance between the grinding disks and the coarser the coffee grinding\", so the scale here is those 0-800 um, like the Weber Key Mk2's. NO calibPoints: a burr gap is not a particle size and nobody publishes the conversion for this grinder, so the app carries the right dial and refuses to translate it rather than inventing a curve. Sources: downloads.mahlkoenig.de/Service/Mahlkoenig_EK OMNIA_Allround_Grinder_Original_instruction_manual_EN_WEB.pdf ; brewitgroup.com/wp-content/uploads/2026/05/Mahlkonig_Product_Sheet_EK_Omnia.pdf (checked 2026-09-20).",
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 98,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -5082,7 +5268,9 @@
       "grinderSettingUnit": "numbers",
       "grinderDecimals": true,
       "notes": "Shop espresso grinder. The maker's manual states \"'0' is the finest setting and '10' is the coarsest setting\", rotation left for fine and right for coarse, so 0 is fine here as on the EK43. 65mm burrs, per SSP's published fitment for its 65mm sets (K30, K30 Vario, E65S, E65S GbW). No calibPoints: the collar is stepless and its printed zero is set at assembly, so the numbers are personal to each machine, like the Eureka Mignon's. Sources: manualslib.com/manual/858793/Mahlkonig-K30-Es.html?page=9 ; cmsale.com/products/grinders/ssp-burrs/ssp-65mm-hu-burrs-red-speed-coating (checked 2026-09-20).",
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 65,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -5103,7 +5291,9 @@
       ],
       "micronsPerDialUnit": 75.0,
       "notes": "98mm SSP High-Uniformity flat burrs from the factory, which is why naming those burrs describes this grinder rather than re-burring it. Stepless collar: Option-O publishes the pitch, \"Each line (0.1) moves 0.0075 mm (7.5 micron) vertically\", so one whole dial number is 75 um - carried here as the thread pitch, which stays inert until the owner gives one lived setting. No calibPoints: the printed zero is personal to each unit. The 1-10 printed range comes from reviews, not from Option-O's own page, which states the pitch but not the range. Sources: option-o.com/lagom-p100 ; robertasami.com/coffee/option-o-p100 (checked 2026-09-20).",
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 98,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -5119,7 +5309,9 @@
       "grinderSettingUnit": "microns",
       "grinderDecimals": false,
       "notes": "64mm single-dose grinder whose Precision Micron Dial reads the burr gap: the maker publishes a \"0 - 1400um Grind Range\". Modeled in microns like the Lido OG and the EK Omnia. It ships with the buyer's choice of SSP set (High Uniformity, Multipurpose, Cast, Unimodal Brew) or the Mazzer 233M, so no stock burr family is declared - name the set you actually have. No calibPoints: a gap is not a particle size. Source: zerno.co/products/zerno-z1 (checked 2026-09-20).",
-      "uniformity": "uniform"
+      "uniformity": "uniform",
+      "burrDiameterMm": 64,
+      "burrGeometry": "flat"
     },
     {
       "kind": "grinder",
@@ -5135,7 +5327,9 @@
       "grinderSettingUnit": "clicks",
       "grinderDecimals": false,
       "micronsPerDialUnit": 10.0,
-      "notes": "38mm stainless Hypernova burr set. Varia publishes \"140 Steps of Adjustment\" with \"each step measuring 10 microns\", so the pitch is the maker's; the 0-140 range is that step count read from the closed zero, the catalog's convention for click grinders, NOT a printed end number Varia states. No calibPoints and no uniformity class: no anchor micron value and no burr character are published, and an empty class reads as unknown rather than as a guess. Source: variabrewing.com/products/evo-hand-grinder (checked 2026-09-20)."
+      "notes": "38mm stainless Hypernova burr set. Varia publishes \"140 Steps of Adjustment\" with \"each step measuring 10 microns\", so the pitch is the maker's; the 0-140 range is that step count read from the closed zero, the catalog's convention for click grinders, NOT a printed end number Varia states. No calibPoints and no uniformity class: no anchor micron value and no burr character are published, and an empty class reads as unknown rather than as a guess. Source: variabrewing.com/products/evo-hand-grinder (checked 2026-09-20).",
+      "burrDiameterMm": 38,
+      "burrGeometry": "conical"
     },
     {
       "kind": "grinder",
@@ -5151,7 +5345,9 @@
       "grinderSettingUnit": "clicks",
       "grinderDecimals": false,
       "micronsPerDialUnit": 15.0,
-      "notes": "S2C890 burr in SUS420 hardened steel. Timemore publishes \"0.015mm/grid ultra-fine adjustment\" (15 microns a click) and a burr gap \"precisely aligned to 0.075 mm at the finest grind setting (0 clicks)\", so 0 is the fine end. The 90 top is the coarsest published use (\"French Press: 80-90 clicks\"), not a stated dial end. Its published brew bands, cited as-is and not converted to microns: espresso 1-15, moka 5-20, pour over 50-80, French press 80-90. No calibPoints: a burr gap is not a particle size, and no anchor micron value is published. No uniformity class either - Timemore claims fewer fines in the 200-250 um band, which is not enough to class the burr. Source: timemoreeu.com/products/timemore-chestnut-manual-coffee-grinder-s3 (checked 2026-09-20)."
+      "notes": "S2C890 burr in SUS420 hardened steel. Timemore publishes \"0.015mm/grid ultra-fine adjustment\" (15 microns a click) and a burr gap \"precisely aligned to 0.075 mm at the finest grind setting (0 clicks)\", so 0 is the fine end. The 90 top is the coarsest published use (\"French Press: 80-90 clicks\"), not a stated dial end. Its published brew bands, cited as-is and not converted to microns: espresso 1-15, moka 5-20, pour over 50-80, French press 80-90. No calibPoints: a burr gap is not a particle size, and no anchor micron value is published. No uniformity class either - Timemore claims fewer fines in the 200-250 um band, which is not enough to class the burr. Source: timemoreeu.com/products/timemore-chestnut-manual-coffee-grinder-s3 (checked 2026-09-20).",
+      "burrDiameterMm": 42,
+      "burrGeometry": "conical"
     }
   ]
 }
