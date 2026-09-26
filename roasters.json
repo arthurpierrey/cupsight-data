@@ -1,5 +1,5 @@
 {
- "version": 14,
+ "version": 15,
  "updated": "2026-09-26",
  "note": "Styles: ultralight (moderne/radical, ultra clair — ex. Substance, Datura, Picky Chemist), light (clair, inclut le style nordique CLASSIQUE type Wendelboe), modern (specialty équilibré), classic (traditionnel). Nordic (Wendelboe) ≠ ultralight. Classement conservateur — corrections bienvenues via PR. Fenêtres de repos (restDaysMin/Max, jours après torréfaction, référence FILTRE, une seule fenêtre pour toutes les méthodes — décision 2026-08-07) : restSource=published quand le torréfacteur la publie lui-même (verbatim), restSource=inferred quand elle est inférée du STYLE — médianes des fenêtres publiées du catalogue (modern 5-21, light 7-30, ultralight 10-28, classic 4-14, ce dernier sans donnée publiée ; la médiane light recalculée le 2026-09-06 sur les 23 fenêtres publiées donne 7-29, portée par Tanat, les fiches light plus anciennes gardent 7-30 en attendant un recalcul groupé). La machine s'est révélée NON prédictive (planchers Loring 3-21 j, même médiane que Probat) : roastMachine reste un fait documentaire, rien ne le lit.",
  "roasters": [
@@ -2182,6 +2182,23 @@
    "notes": "Micro-torréfaction fondée fin 2019, torréfactions claires.",
    "restDaysMin": 7,
    "restDaysMax": 30,
+   "restSource": "inferred"
+  },
+  {
+   "name": "La Brûlerie du Pilori",
+   "aliases": [
+    "Brûlerie du Pilori",
+    "La Brulerie du Pilori Angers",
+    "Pilori Angers"
+   ],
+   "country": "FR",
+   "city": "Angers",
+   "website": "",
+   "style": "classic",
+   "notes": "Brûlerie artisanale d'Angers depuis 1983, maison traditionnelle.",
+   "curation": "CUP-401 (26/09/2026) : ajoutée pour réunir « La Brûlerie du Pilori » et « La Brulerie du Pilori Angers » (deux graphies, deux fiches). Maison depuis 1983, 6 rue Saint-Étienne (PagesJaunes, Petit Futé) ; « une maison à l'ancienne qui a gardé ses valeurs » (Gault&Millau, fr.gaultmillau.com/en/artisans/brulerie-du-pilori). Style classic par cette description ; fenêtre inferred du style classic (4-14), comme les autres maisons classiques du catalogue. labruleriedupilori.fr ne répondait pas le 26/09.",
+   "restDaysMin": 4,
+   "restDaysMax": 14,
    "restSource": "inferred"
   }
  ]
